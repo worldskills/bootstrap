@@ -478,8 +478,8 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 500;
+  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 100;
   line-height: 1.1;
   color: inherit;
 }
@@ -727,6 +727,21 @@ address {
   margin-bottom: 20px;
   font-style: normal;
   line-height: 1.428571429;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  letter-spacing: -0.045em;
 }
 
 code,
