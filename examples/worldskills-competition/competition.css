@@ -1,0 +1,15 @@
+body {
+    padding: 30px 0;
+}
+
+nav.navbar {
+    z-index: 998 !important;
+}
+
+.sidebar h4 a {
+    color: #111;
+}
+
+li.active a {
+    color: #111;
+}
