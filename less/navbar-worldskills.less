@@ -1,0 +1,17 @@
+.navbar > .navbar-form {
+
+    /* Clean layout for form outside of navbar-collapse */
+    @media (max-width: @grid-float-breakpoint) {
+        display: inline-block;
+        margin: 0;
+        border: 0;
+    }
+}
+
+.navbar-collapse {
+
+    /* Remove space for navbar in default view */
+    @media (min-width: @grid-float-breakpoint) {
+        padding-left: 0;
+    }
+}
