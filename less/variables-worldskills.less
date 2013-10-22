@@ -3,14 +3,26 @@
 // -------------------------
 
 @brand-font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+@brand-font-weight: 700;
 
 @headings-font-family: @brand-font-family;
-
-@headings-font-weight: 100;
-@headings-small-font-weight: 500;
+@headings-font-weight: @brand-font-weight;
 
 
 // Grid system
 // --------------------------------------------------
 
 @grid-float-breakpoint: @screen-md-min;
+
+
+// Navbar
+// -------------------------
+
+@navbar-worldskills-height: 100px;
+@navbar-worldskills-padding-vertical: ((@navbar-worldskills-height - @line-height-computed) / 2);
+
+@navbar-inverse-color: @gray-lighter;
+@navbar-inverse-bg: #0061AA;
+
+@navbar-inverse-link-color: @gray-lighter;
+

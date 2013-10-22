@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>WorldSkills Application Template</title>
+
+<!-- Bootstrap core CSS -->
+<link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="application.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+</head>
+<body>
+
+    <div class="navbar navbar-worldskills navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">CIS</a>
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Personnel</a></li>
+                    <li><a href="#">Assessment</a></li>
+                    <li class="dropdown active"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Competition <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Skills &amp; Skill Rules</a></li>
+                            <li class="active"><a href="#">Assessment Criteria</a></li>
+                            <li><a href="#">Marking Days</a></li>
+                            <li><a href="#">Marking Forms</a></li>
+                            <li><a href="#">Reports</a></li>
+                            <li><a href="#">Certificates</a></li>
+                        </ul></li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            System <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Config</a></li>
+                            <li><a href="#">Competition Dates</a></li>
+                            <li><a href="#">User Groups</a></li>
+                            <li><a href="#">Positions</a></li>
+                            <li><a href="#">Edit Members</a></li>
+                            <li><a href="#">Criterion Identifiers</a></li>
+                            <li><a href="#">Subjective Judging Rules</a></li>
+                            <li><a href="#">Import Data</a></li>
+                            <li><a href="#">Export Data</a></li>
+                            <li><a href="#">View System Events</a></li>
+                            <li><a href="#">Manage Application</a></li>
+                        </ul></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            John Doe <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Change Password</a></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul></li>
+                </ul>
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default sr-only">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-sm-10 col-sm-push-2">
+
+                <ol class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Competition</a></li>
+                    <li class="active">Assessment Criteria</li>
+                </ol>
+
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <h1>Assessment Criteria</h1>
+                    </div>
+
+                    <div class="col-md-6">
+                        <p class="pull-right">
+                            <a href="#" class="btn btn-success">Add new</a>
+                            <a href="#" class="btn btn-danger">Delete</a>
+                            <a href="#" class="btn btn-default">Duplicate</a>
+                        </p>
+                    </div>
+                </div>
+
+                <hr />
+
+                <div id="content">
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label for="input1" class="col-lg-3 control-label">Skill Number</label>
+                            <div class="col-lg-3">
+                                <input type="text" class="form-control" id="input1">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="input2" class="col-lg-3 control-label">Name</label>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control" id="input2">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="input2" class="col-lg-3 control-label">Subjective Marking</label>
+                            <div class="col-lg-6">
+                                <select class="form-control">
+                                    <option>Choose one</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-offset-3 col-lg-6">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Identify the judge when entering a score
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-offset-3 col-lg-6">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Competitors are organised in groups/teams
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-offset-3 col-lg-6">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Allow compatriot marking
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-offset-3 col-lg-6">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Allow to generate a landscape marking form
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-offset-3 col-lg-6">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" checked="checked"> Generate 500 scale marks and medals
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-offset-3 col-lg-9">
+                                <button type="submit" class="btn btn-success">Save</button>
+                                <button type="submit" class="btn btn-default">Cancel</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <div class="col-sm-2 col-sm-pull-10 sidebar" role="navigation">
+
+
+                <div class="list-group">
+                    <a href="#" class="list-group-item">Skills &amp; Skill Rules</a>
+                    <a href="#" class="list-group-item active">Assessment Criteria</a>
+                    <a href="#" class="list-group-item">Marking Days</a>
+                    <a href="#" class="list-group-item">Marking Forms</a>
+                    <a href="#" class="list-group-item">Certificates</a>
+                    <a href="#" class="list-group-item">Reports</a>
+                </div>
+                <hr class="visible-xs" />
+
+                <!-- 
+                    <div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Competition</h3>
+  </div>
+  <div class="panel-body">
+    
+                    <ul class="list-unstyled">
+                        <li><a href="#">Skills &amp; Skill Rules</a></li>
+                        <li class="active"><a href="#">Assessment Criteria</a></li>
+                        <li>
+                            <a href="#">Reports</a>
+
+                            <ul>
+                                <li><a href="#">Marking Scheme Defined</a></li>
+                                <li><a href="#">Aspects to Mark</a></li>
+                                <li><a href="#">Marked Aspects</a></li>
+                                <li><a href="#">Mark Entry Progress</a></li>
+                                <li><a href="#">Missing Marks</a></li>
+                            </ul>
+ 
+                        </li>
+                        <li><a href="#">Marking Days</a></li>
+                        <li><a href="#">Marking Forms</a></li>
+                        <li><a href="#">Certificates</a></li>
+                    </ul>
+  </div>
+</div>
+-->
+
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="row">
+
+            <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Personnel</a></li>
+                <li class="active">People</li>
+            </ol>
+
+            <p class="pull-right">
+                <a href="#" class="btn btn-success">Add Person</a>
+            </p>
+
+            <h1>People</h1>
+
+            <hr />
+
+            <div class="col-sm-9">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Skill</th>
+                            <th>Position</th>
+                            <th>Member</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>Howard</td>
+                            <td>Mcgraw</td>
+                            <td>37 Landscape Gardening</td>
+                            <td>Competitior</td>
+                            <td>CH - Switzerland</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>Lillian</td>
+                            <td>Bruce</td>
+                            <td>37 Landscape Gardening</td>
+                            <td>Competitior</td>
+                            <td>AE - United Arab Emirates</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>Tabatha</td>
+                            <td>Burlew</td>
+                            <td>17 Web Design</td>
+                            <td>Competitior</td>
+                            <td>AU - Australia</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>Courtney</td>
+                            <td>Blowe</td>
+                            <td>17 Web Design</td>
+                            <td>Expert</td>
+                            <td>BR - Brazil</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>Minta</td>
+                            <td>Lash</td>
+                            <td>37 Landscape Gardening</td>
+                            <td>Expert</td>
+                            <td>CA - Canada</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-sm-3">
+
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Filter</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="filter1">Name</label>
+                                <input type="text" class="form-control" id="filter1">
+                            </div>
+                            <div class="form-group">
+                                <label for="filter2">Category</label>
+                                <select class="form-control" id="filter2">
+                                    <option>-</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-default">Apply filters</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <hr />
+
+        <footer>
+            <div class="row">
+                <div class="col-xs-6 col-sm-4 col-md-2">
+                    <h5>CIS</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Personnel</a></li>
+                        <li><a href="#">Multi-Skill</a></li>
+                        <li><a href="#">Assessment</a></li>
+                        <li class="active"><a href="#">Competition</a></li>
+                        <li><a href="#">System</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-2">
+                    <h5>Language</h5>
+                    <ul class="list-unstyled">
+                        <li class="active"><a href="#">English</a></li>
+                        <li><a href="#">French</a></li>
+                        <li><a href="#">German</a></li>
+                        <li><a href="#">Italian</a></li>
+                        <li><a href="#">Portuguese</a></li>
+                    </ul>
+                </div>
+                <div class="clearfix visible-xs"></div>
+                <div class="col-xs-6 col-sm-4 col-md-2">
+                    <form class="form-inline" role="form">
+                        <div class="form-group">
+                            <h5>
+                                <label for="exampleInputEmail2">Search</label>
+                            </h5>
+                            <input type="search" class="form-control" placeholder="Search">
+                        </div>
+                    </form>
+                </div>
+                <div class="clearfix visible-sm"></div>
+                <div class="col-xs-6 col-sm-4 col-md-2"></div>
+                <div class="clearfix visible-xs"></div>
+                <div class="col-xs-6 col-sm-4 col-md-2">
+                    <h5>Worldwide</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="http://www.worldskills.org/" target="_blank">WorldSkills Members</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-2">
+                    <h5>International</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="http://www.worldskills.org/" target="_blank">Who is Who</a></li>
+                        <li><a href="http://www.worldskills.org/" target="_blank">Glossary</a></li>
+                        <li><a href="http://www.worldskills.org/" target="_blank">Forums</a></li>
+                        <li><a href="http://www.worldskills.org/" target="_blank">Room Management</a></li>
+                        <li><a href="http://www.worldskills.org/" target="_blank">Skill Management</a></li>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li><a href="http://www.worldskills.org/" target="_blank">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="row">
+                <div class="col-md-12">
+                    <p>© 2013 WorldSkills</p>
+                </div>
+            </div>
+
+        </footer>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+</body>
+</html>
