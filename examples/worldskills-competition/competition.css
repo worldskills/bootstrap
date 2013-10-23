@@ -17,6 +17,10 @@ nav.navbar {
     z-index: 998 !important;
 }
 
+.breadcrumb-bottom {
+    margin-top: 1.5em;
+}
+
 .sidebar h4 a {
     color: #111;
 }
