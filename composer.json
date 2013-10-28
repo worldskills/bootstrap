@@ -1,6 +1,5 @@
 {
 	"name" : "worldskills/bootstrap",
-	"version" : "3.0.0.1",
 	"type" : "component",
 	"authors" : [{
 			"name" : "Mark Otto",
