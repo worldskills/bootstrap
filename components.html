@@ -2021,9 +2021,9 @@ base_url: "../"
       <h4>Customize the collapsing point</h4>
       <p>Depending on the content in your navbar, you might need to change the point at which your navbar switches between collapsed and horizontal mode. Customize the <code>@grid-float-breakpoint</code> variable or add your own media query.</p>
     </div>
-    <div class="bs-callout bs-callout-warning" id="multiple-navbars-warning">
-      <h4>Multiple navbars require custom code</h4>
-      <p>Multiple nearby navbars with dropdown menus are not supported by default. You will need to override the <code>z-index</code>es of the dropdown menus yourself. Otherwise, the dropdown menu will display behind the other navbar.</p>
+    <div class="bs-callout bs-callout-danger">
+      <h4>Requires JavaScript</h4>
+      <p>If JavaScript is disabled and the viewport is narrow enough that the navbar collapses, it will be impossible to expand the navbar and view the content within the <code>.navbar-collapse</code>.</p>
     </div>
 
     <div class="bs-example">
@@ -2133,15 +2133,15 @@ base_url: "../"
 </nav>
 {% endhighlight %}
 
-<div class="bs-callout bs-callout-danger">
-  <h4>Plugin dependency</h4>
-  <p>The responsive navbar requires the <a href="../javascript/#collapse">collapse plugin</a> to be included in your version of Bootstrap.</p>
-</div>
+    <div class="bs-callout bs-callout-danger">
+      <h4>Plugin dependency</h4>
+      <p>The responsive navbar requires the <a href="../javascript/#collapse">collapse plugin</a> to be included in your version of Bootstrap.</p>
+    </div>
 
-<div class="bs-callout bs-callout-warning">
-  <h4>Make navbars accessible</h4>
-  <p>Be sure to add a <code>role="navigation"</code> to every navbar to help with accessibility.</p>
-</div>
+    <div class="bs-callout bs-callout-warning">
+      <h4>Make navbars accessible</h4>
+      <p>Be sure to add a <code>role="navigation"</code> to every navbar to help with accessibility.</p>
+    </div>
 
 
     <h2 id="navbar-forms">Forms</h2>
@@ -2177,14 +2177,14 @@ base_url: "../"
 </form>
 {% endhighlight %}
 
-<div class="bs-callout bs-callout-danger">
-  <h4>Always add labels</h4>
-  <p>Screen readers will have trouble with your forms if you don't include a label for every input. For these inline navbar forms, you can hide the labels using the <code>.sr-only</code> class.</p>
-</div>
+    <div class="bs-callout bs-callout-danger">
+      <h4>Always add labels</h4>
+      <p>Screen readers will have trouble with your forms if you don't include a label for every input. For these inline navbar forms, you can hide the labels using the <code>.sr-only</code> class.</p>
+    </div>
 
 
     <h2 id="navbar-buttons">Buttons</h2>
-    <p>For buttons not residing in a <code>&lt;form&gt;</code>, add this class to vertically center buttons within a navbar.</p>
+    <p>Add the <code>.navbar-btn</code> class to <code>&lt;button&gt;</code> elements not residing in a <code>&lt;form&gt;</code> to vertically center them in the navbar.</p>
     <div class="bs-example">
       <nav class="navbar navbar-default" role="navigation">
         <div class="navbar-header">
@@ -2205,6 +2205,10 @@ base_url: "../"
 <button type="button" class="btn btn-default navbar-btn">Sign in</button>
 {% endhighlight %}
 
+    <div class="bs-callout bs-callout-warning">
+      <h4>Context-specific usage</h4>
+      <p>Like the standard <a href="{{ page.base_url }}css#buttons">button classes</a>, <code>.navbar-btn</code> can be used on <code>&lt;a&gt;</code> and <code>&lt;input&gt;</code> elements. However, neither <code>.navbar-btn</code> nor the standard button classes should be used on <code>&lt;a&gt;</code> elements within <code>.navbar-nav</code>.</p>
+    </div>
 
     <h2 id="navbar-text">Text</h2>
     <p>Wrap strings of text in an element with <code>.navbar-text</code>, usually on a <code>&lt;p&gt;</code> tag for proper leading and color.</p>
@@ -2774,22 +2778,22 @@ body { padding-bottom: 70px; }
       <div class="row">
         <div class="col-sm-6 col-md-3">
           <a href="#" class="thumbnail">
-            <img data-src="holder.js/100%x180" alt="Generic placeholder thumbnail" src="data:image/png;base64,">
+            <img data-src="holder.js/100%x180" alt="Generic placeholder thumbnail">
           </a>
         </div>
         <div class="col-sm-6 col-md-3">
           <a href="#" class="thumbnail">
-            <img data-src="holder.js/100%x180" alt="Generic placeholder thumbnail" src="data:image/png;base64,">
+            <img data-src="holder.js/100%x180" alt="Generic placeholder thumbnail">
           </a>
         </div>
         <div class="col-sm-6 col-md-3">
           <a href="#" class="thumbnail">
-            <img data-src="holder.js/100%x180" alt="Generic placeholder thumbnail" src="data:image/png;base64,">
+            <img data-src="holder.js/100%x180" alt="Generic placeholder thumbnail">
           </a>
         </div>
         <div class="col-sm-6 col-md-3">
           <a href="#" class="thumbnail">
-            <img data-src="holder.js/100%x180" alt="Generic placeholder thumbnail" src="data:image/png;base64,">
+            <img data-src="holder.js/100%x180" alt="Generic placeholder thumbnail">
           </a>
         </div>
       </div>
@@ -2811,7 +2815,7 @@ body { padding-bottom: 70px; }
       <div class="row">
         <div class="col-sm-6 col-md-4">
           <div class="thumbnail">
-            <img data-src="holder.js/300x200" alt="Generic placeholder thumbnail" src="data:image/png;base64,">
+            <img data-src="holder.js/300x200" alt="Generic placeholder thumbnail">
             <div class="caption">
               <h3>Thumbnail label</h3>
               <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
@@ -2821,7 +2825,7 @@ body { padding-bottom: 70px; }
         </div>
         <div class="col-sm-6 col-md-4">
           <div class="thumbnail">
-            <img data-src="holder.js/300x200" alt="Generic placeholder thumbnail" src="data:image/png;base64,">
+            <img data-src="holder.js/300x200" alt="Generic placeholder thumbnail">
             <div class="caption">
               <h3>Thumbnail label</h3>
               <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
@@ -2831,7 +2835,7 @@ body { padding-bottom: 70px; }
         </div>
         <div class="col-sm-6 col-md-4">
           <div class="thumbnail">
-            <img data-src="holder.js/300x200" alt="Generic placeholder thumbnail" src="data:image/png;base64,">
+            <img data-src="holder.js/300x200" alt="Generic placeholder thumbnail">
             <div class="caption">
               <h3>Thumbnail label</h3>
               <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
@@ -3137,7 +3141,7 @@ body { padding-bottom: 70px; }
     <div class="bs-example">
       <div class="media">
         <a class="pull-left" href="#">
-          <img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image" src="data:image/png;base64,">
+          <img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image">
         </a>
         <div class="media-body">
           <h4 class="media-heading">Media heading</h4>
@@ -3146,14 +3150,14 @@ body { padding-bottom: 70px; }
       </div>
       <div class="media">
         <a class="pull-left" href="#">
-          <img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image" src="data:image/png;base64,">
+          <img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image">
         </a>
         <div class="media-body">
           <h4 class="media-heading">Media heading</h4>
           Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
           <div class="media">
             <a class="pull-left" href="#">
-              <img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image" src="data:image/png;base64,">
+              <img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image">
             </a>
             <div class="media-body">
               <h4 class="media-heading">Media heading</h4>
@@ -3181,7 +3185,7 @@ body { padding-bottom: 70px; }
       <ul class="media-list">
         <li class="media">
           <a class="pull-left" href="#">
-            <img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image" src="data:image/png;base64,">
+            <img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image">
           </a>
           <div class="media-body">
             <h4 class="media-heading">Media heading</h4>
@@ -3189,7 +3193,7 @@ body { padding-bottom: 70px; }
             <!-- Nested media object -->
             <div class="media">
               <a class="pull-left" href="#">
-                <img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image" src="data:image/png;base64,">
+                <img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image">
               </a>
               <div class="media-body">
                 <h4 class="media-heading">Nested media heading</h4>
@@ -3197,7 +3201,7 @@ body { padding-bottom: 70px; }
                 <!-- Nested media object -->
                 <div class="media">
                   <a class="pull-left" href="#">
-                    <img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image" src="data:image/png;base64,">
+                    <img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image">
                   </a>
                   <div class="media-body">
                     <h4 class="media-heading">Nested media heading</h4>
@@ -3209,7 +3213,7 @@ body { padding-bottom: 70px; }
             <!-- Nested media object -->
             <div class="media">
               <a class="pull-left" href="#">
-                <img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image" src="data:image/png;base64,">
+                <img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image">
               </a>
               <div class="media-body">
                 <h4 class="media-heading">Nested media heading</h4>
@@ -3220,7 +3224,7 @@ body { padding-bottom: 70px; }
         </li>
         <li class="media">
           <a class="pull-right" href="#">
-            <img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image" src="data:image/png;base64,">
+            <img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image">
           </a>
           <div class="media-body">
             <h4 class="media-heading">Media heading</h4>
