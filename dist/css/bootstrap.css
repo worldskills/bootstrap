@@ -5196,6 +5196,10 @@ textarea.input-group-sm > .input-group-btn > .btn {
   border-bottom-right-radius: 3px;
 }
 
+.pagination-condensed {
+  margin-top: 0;
+}
+
 .pager {
   padding-left: 0;
   margin: 20px 0;

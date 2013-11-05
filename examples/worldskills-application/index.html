@@ -86,7 +86,7 @@
 
         <div class="row">
 
-            <div class="col-sm-10 col-sm-push-2">
+            <div class="col-md-10 col-md-push-2">
 
                 <ol class="breadcrumb">
                     <li><a href="#">Home</a></li>
@@ -184,8 +184,9 @@
                 </div>
 
             </div>
-            <div class="col-sm-2 col-sm-pull-10 sidebar" role="navigation">
+            <div class="col-md-2 col-md-pull-10 sidebar" role="navigation">
 
+                <hr class="visible-xs visible-sm" />
 
                 <div class="list-group">
                     <a href="#" class="list-group-item">Skills &amp; Skill Rules</a>
@@ -195,7 +196,6 @@
                     <a href="#" class="list-group-item">Certificates</a>
                     <a href="#" class="list-group-item">Reports</a>
                 </div>
-                <hr class="visible-xs" />
 
                 <!-- 
                     <div class="panel panel-default">
@@ -253,7 +253,7 @@
                     <table class="table table-striped">
                         <thead>
                             <tr>
-                                <th>&nbsp;</th>
+                                <th><input type="checkbox" /></th>
                                 <th>First Name</th>
                                 <th>Last Name</th>
                                 <th>Skill</th>
@@ -261,49 +261,76 @@
                                 <th>Member</th>
                             </tr>
                         </thead>
+                        <tfoot><tr><td colspan="6"></td></tr></tfoot>
                         <tbody>
                             <tr>
                                 <td><input type="checkbox" /></td>
-                                <td>Howard</td>
-                                <td>Mcgraw</td>
+                                <td><a href="#">Howard</a></td>
+                                <td><a href="#">Mcgraw</a></td>
                                 <td>37 Landscape Gardening</td>
                                 <td>Competitior</td>
                                 <td>CH - Switzerland</td>
                             </tr>
                             <tr>
                                 <td><input type="checkbox" /></td>
-                                <td>Lillian</td>
-                                <td>Bruce</td>
+                                <td><a href="#">Lillian</a></td>
+                                <td><a href="#">Bruce</a></td>
                                 <td>37 Landscape Gardening</td>
                                 <td>Competitior</td>
                                 <td>AE - United Arab Emirates</td>
                             </tr>
                             <tr>
                                 <td><input type="checkbox" /></td>
-                                <td>Tabatha</td>
-                                <td>Burlew</td>
+                                <td><a href="#">Tabatha</a></td>
+                                <td><a href="#">Burlew</a></td>
                                 <td>17 Web Design</td>
                                 <td>Competitior</td>
                                 <td>AU - Australia</td>
                             </tr>
                             <tr>
                                 <td><input type="checkbox" /></td>
-                                <td>Courtney</td>
-                                <td>Blowe</td>
+                                <td><a href="#">Courtney</a></td>
+                                <td><a href="#">Blowe</a></td>
                                 <td>17 Web Design</td>
                                 <td>Expert</td>
                                 <td>BR - Brazil</td>
                             </tr>
                             <tr>
                                 <td><input type="checkbox" /></td>
-                                <td>Minta</td>
-                                <td>Lash</td>
+                                <td><a href="#">Minta</a></td>
+                                <td><a href="#">Lash</a></td>
                                 <td>37 Landscape Gardening</td>
                                 <td>Expert</td>
                                 <td>CA - Canada</td>
                             </tr>
                         </tbody>
                     </table>
+                </div>
+            
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="dropdown">
+                          <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                            Actions
+                            <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Delete selected</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Enable selected</a></li>
+                          </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <ul class="pagination pagination-condensed pull-right">
+                            <li><a href="#">&laquo; Previous</a></li>
+                            <li><a href="#">1</a></li>
+                            <li class="active"><a href="#">2 <span class="sr-only">(current)</span></a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">Next &raquo;</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="col-sm-3">
@@ -330,7 +357,7 @@
                                     <option>5</option>
                                 </select>
                             </div>
-                            <button type="submit" class="btn btn-default">Apply filters</button>
+                            <button type="submit" class="btn btn-primary">Apply filters</button>
                         </form>
                     </div>
                 </div>
