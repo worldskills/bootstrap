@@ -4820,7 +4820,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .navbar-inverse .navbar-toggle:hover,
 .navbar-inverse .navbar-toggle:focus {
-  background-color: #333333;
+  background-color: #004477;
 }
 
 .navbar-inverse .navbar-toggle .icon-bar {
@@ -4969,7 +4969,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .navbar-worldskills .navbar-toggle:hover,
 .navbar-worldskills .navbar-toggle:focus {
-  background-color: #333333;
+  background-color: #004477;
 }
 
 .navbar-worldskills .navbar-toggle .icon-bar {
@@ -5072,6 +5072,10 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-worldskills .navbar-form {
   margin-top: 32px;
   margin-bottom: 32px;
+}
+
+.navbar-worldskills .navbar-toggle {
+  margin-top: 32px;
 }
 
 .breadcrumb {
