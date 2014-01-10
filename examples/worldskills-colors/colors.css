@@ -18,7 +18,7 @@ html, body {
     width: 100%;
     left: 0;
     top: 0;
-    margin-top: 15%;    
+    margin-top: 5%;    
     text-align: center;
     color: #eee;
     font-family: Helvetica, Arial, sans-serif;
@@ -28,10 +28,17 @@ html, body {
 
 .box {
     width: 25%;
-    height: 20%;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    height: 25%;
     float: left;
+}
+
+.link {
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #bbb;
+    pointer-events: none;
 }
 
 /* Color */
