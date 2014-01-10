@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    clear: both;
+}
+
+.label {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    margin-top: 15%;    
+    text-align: center;
+    color: #eee;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 3em;
+}
+
+.box {
+    width: 25%;
+    height: 20%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    float: left;
+}
+
+/* Color */
+
+.pantone-red-dark {
+    background-color: #A0213C;
+}
+
+.pantone-red-light {
+    background-color: #E1516B;
+}
+
+
+.pantone-green-dark {
+    background-color: #1C5951;
+}
+
+.pantone-green-light {
+    background-color: #98C25A;
+}
+
+
+.pantone-blue-dark {
+    background-color: #11405A;
+}
+
+.pantone-blue-light {
+    background-color: #63B5DD;
+}
+
+
+.pantone-yellow-dark {
+    background-color: #F3A44D;
+}
+
+.pantone-yellow-light {
+    background-color: #F9D76C;
+}
+
+/* Brand */
+
+.brand-red-dark {
+    background-color: rgb(148, 9, 42);
+}
+
+.brand-red-light {
+    background-color: rgb(224, 52, 84);
+}
+
+
+.brand-green-dark {
+    background-color: rgb(13, 72, 63);
+}
+
+.brand-green-light {
+    background-color: rgb(131, 190, 38);
+}
+
+
+.brand-blue-dark {
+    background-color: rgb(9, 47, 76);
+}
+
+.brand-blue-light {
+    background-color: rgb(74, 162, 223);
+}
+
+
+.brand-yellow-dark {
+    background-color: rgb(244, 150, 13);
+}
+
+.brand-yellow-light {
+    background-color: rgb(250, 213, 48);
+}

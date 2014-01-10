@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WorldSkills Colors</title>
+<link href="colors.css" rel="stylesheet">
+</head>
+<body>
+    <div id="container-pantone" class="container">
+        <h2 class="label">HEX values for Pantone</h2>
+        <div class="box pantone-red-dark"></div>
+        <div class="box pantone-red-light"></div>
+        <div class="box pantone-green-dark"></div>
+        <div class="box pantone-green-light"></div>
+        <div class="box pantone-blue-dark"></div>
+        <div class="box pantone-blue-light"></div>
+        <div class="box pantone-yellow-dark"></div>
+        <div class="box pantone-yellow-light"></div>
+    </div>
+    <div id="container-brand" class="container" style="display: none;">
+        <h2 class="label">Brandbook</h2>
+        <div class="box brand-red-dark"></div>
+        <div class="box brand-red-light"></div>
+        <div class="box brand-green-dark"></div>
+        <div class="box brand-green-light"></div>
+        <div class="box brand-blue-dark"></div>
+        <div class="box brand-blue-light"></div>
+        <div class="box brand-yellow-dark"></div>
+        <div class="box brand-yellow-light"></div>
+    </div>
+    <script>
+    (function () {
+        var pantone = document.getElementById('container-pantone');
+        var brand = document.getElementById('container-brand');
+
+        pantone.addEventListener('click', function () {
+            pantone.style.display = 'none';
+            brand.style.display = 'block';
+        });
+        brand.addEventListener('click', function () {
+            brand.style.display = 'none';
+            pantone.style.display = 'block';
+       });
+    })();
+    </script>
+</body>
+</html>
