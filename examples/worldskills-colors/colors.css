@@ -81,36 +81,36 @@ html, body {
 /* Brand */
 
 .brand-red-dark {
-    background-color: rgb(148, 9, 42);
+    background-color: #95092A;
 }
 
 .brand-red-light {
-    background-color: rgb(224, 52, 84);
+    background-color: #E13353;
 }
 
 
 .brand-green-dark {
-    background-color: rgb(13, 72, 63);
+    background-color: #0D4940;
 }
 
 .brand-green-light {
-    background-color: rgb(131, 190, 38);
+    background-color: #85C026;
 }
 
 
 .brand-blue-dark {
-    background-color: rgb(9, 47, 76);
+    background-color: #09304E;
 }
 
 .brand-blue-light {
-    background-color: rgb(74, 162, 223);
+    background-color: #49A0DF;
 }
 
 
 .brand-yellow-dark {
-    background-color: rgb(244, 150, 13);
+    background-color: #F4970B;
 }
 
 .brand-yellow-light {
-    background-color: rgb(250, 213, 48);
+    background-color: #FAD42E;
 }
