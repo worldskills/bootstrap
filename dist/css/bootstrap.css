@@ -4245,7 +4245,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #fff;
 }
 .navbar-worldskills .navbar-brand {
-  padding: 40px 30px 40px 105px;
+  padding: 40px 15px 40px 105px;
   font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 24px;
   font-weight: 500;
@@ -4258,6 +4258,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin: 20px -15px;
 }
 @media (min-width: 992px) {
+  .navbar-worldskills .navbar-nav {
+    margin: 20px 0;
+  }
   .navbar-worldskills .navbar-nav > li {
     margin: 0 5px;
   }
@@ -4277,6 +4280,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-worldskills .navbar-toggle {
   margin-top: 32px;
+  margin-bottom: 32px;
 }
 .breadcrumb {
   padding: 8px 15px;
