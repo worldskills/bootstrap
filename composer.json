@@ -18,6 +18,10 @@
     "issues": "https://github.com/twbs/bootstrap/issues"
   },
   "license": "MIT",
+  "require" : {
+    "robloach/component-installer" : "*",
+    "components/jquery": "~1.9"
+  },
   "extra": {
     "branch-alias": {
       "dev-master": "3.0.x-dev"
