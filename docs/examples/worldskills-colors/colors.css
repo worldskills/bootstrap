@@ -1,116 +1,116 @@
 * {
-    margin: 0;
-    padding: 0;
+  padding: 0;
+  margin: 0;
 }
 
 html, body {
-    height: 100%;
+  height: 100%;
 }
 
 .container {
-    width: 100%;
-    height: 100%;
-    clear: both;
+  width: 100%;
+  height: 100%;
+  clear: both;
 }
 
 .label {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 0;
-    margin-top: 5%;    
-    text-align: center;
-    color: #eee;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: normal;
-    font-size: 3em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 5%;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 3em;
+  font-weight: normal;
+  color: #eee;
+  text-align: center;
 }
 
 .box {
-    width: 25%;
-    height: 25%;
-    float: left;
+  float: left;
+  width: 25%;
+  height: 25%;
 }
 
 .link {
-    position: absolute;
-    right: 50px;
-    bottom: 50px;
-    font-family: Helvetica, Arial, sans-serif;
-    color: #bbb;
-    pointer-events: none;
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #bbb;
+  pointer-events: none;
 }
 
 /* Color */
 
 .pantone-red-dark {
-    background-color: #A21B33;
+  background-color: #a21b33;
 }
 
 .pantone-red-light {
-    background-color: #DB4D69;
+  background-color: #db4d69;
 }
 
 
 .pantone-green-dark {
-    background-color: #005D55;
+  background-color: #005d55;
 }
 
 .pantone-green-light {
-    background-color: #92D400;
+  background-color: #92d400;
 }
 
 
 .pantone-blue-dark {
-    background-color: #004165;
+  background-color: #004165;
 }
 
 .pantone-blue-light {
-    background-color: #5EB6E4;
+  background-color: #5eb6e4;
 }
 
 
 .pantone-yellow-dark {
-    background-color: #F0AB00;
+  background-color: #f0ab00;
 }
 
 .pantone-yellow-light {
-    background-color: #F9DE42;
+  background-color: #f9de42;
 }
 
 /* Brand */
 
 .brand-red-dark {
-    background-color: #95092A;
+  background-color: #95092a;
 }
 
 .brand-red-light {
-    background-color: #E13353;
+  background-color: #e13353;
 }
 
 
 .brand-green-dark {
-    background-color: #0D4940;
+  background-color: #0d4940;
 }
 
 .brand-green-light {
-    background-color: #85C026;
+  background-color: #85c026;
 }
 
 
 .brand-blue-dark {
-    background-color: #09304E;
+  background-color: #09304e;
 }
 
 .brand-blue-light {
-    background-color: #49A0DF;
+  background-color: #49a0df;
 }
 
 
 .brand-yellow-dark {
-    background-color: #F4970B;
+  background-color: #f4970b;
 }
 
 .brand-yellow-light {
-    background-color: #FAD42E;
+  background-color: #fad42e;
 }
