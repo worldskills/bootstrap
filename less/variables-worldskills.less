@@ -1,4 +1,22 @@
 
+// Brand colors
+// -------------------------
+
+@worldskills-red-dark: #95092A;
+@worldskills-red-light: #E13353;
+@worldskills-green-dark: #0D4940;
+@worldskills-green-light: #85C026;
+@worldskills-blue-dark: #09304E;
+@worldskills-blue-light: #49A0DF;
+@worldskills-yellow-dark: #F4970B;
+@worldskills-yellow-light: #FAD42E;
+@worldskills-black: #221F20;
+@worldskills-grey-dark: #58585A;
+@worldskills-grey: #818285;
+@worldskills-grey-light: #A7A9AC;
+@worldskills-white: #efefef;
+
+
 // Typography
 // -------------------------
 
@@ -21,9 +39,11 @@
 @navbar-worldskills-height: 100px;
 @navbar-worldskills-padding-vertical: ((@navbar-worldskills-height - @line-height-computed) / 2);
 
-@navbar-inverse-color: @gray-lighter;
-@navbar-inverse-bg: #0061AA;
+@navbar-inverse-color: @worldskills-white;
+@navbar-inverse-bg: @worldskills-blue-dark;
 
-@navbar-inverse-link-color: @gray-lighter;
+@navbar-inverse-link-color: @worldskills-white;
+@navbar-inverse-link-active-color: @worldskills-blue-light;
+@navbar-inverse-link-active-bg: transparent;
 
-@navbar-inverse-toggle-hover-bg: darken(@navbar-inverse-bg, 10%);
+@navbar-inverse-toggle-hover-bg: darken(@navbar-inverse-link-active-color, 10%);
