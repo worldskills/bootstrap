@@ -1,43 +1,44 @@
 {
-  "name": "worldskills/bootstrap",
-  "type" : "component",
-  "description": "Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.",
-  "keywords": ["bootstrap", "css"],
-  "homepage": "http://getbootstrap.com",
-  "authors": [
-    {
-      "name": "Mark Otto",
-      "email": "markdotto@gmail.com"
-    },
-    {
-      "name": "Jacob Thornton",
-      "email": "jacobthornton@gmail.com"
-    }
-  ],
-  "support": {
-    "issues": "https://github.com/twbs/bootstrap/issues"
-  },
-  "license": "MIT",
-  "require" : {
-    "robloach/component-installer" : "*",
-    "components/jquery": "~1.9"
-  },
-  "extra": {
-    "branch-alias": {
-      "dev-master": "3.0.x-dev"
-    },
-    "component" : {
-      "scripts" : [
-        "dist/js/bootstrap.js"
-      ],
-      "files" : [
-        "dist/js/bootstrap.min.js",
-        "dist/css/*.css",
-        "fonts/*"
-      ],
-      "styles" : [
-        "dist/css/bootstrap.css"
-      ]
-    }
-  }
+	"name" : "worldskills/bootstrap",
+	"type" : "component",
+	"description" : "Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.",
+	"keywords" : [
+		"bootstrap",
+		"css"
+	],
+	"homepage" : "http://getbootstrap.com",
+	"authors" : [{
+			"name" : "Mark Otto",
+			"email" : "markdotto@gmail.com"
+		}, {
+			"name" : "Jacob Thornton",
+			"email" : "jacobthornton@gmail.com"
+		}
+	],
+	"support" : {
+		"issues" : "https://github.com/twbs/bootstrap/issues"
+	},
+	"license" : "MIT",
+	"require" : {
+		"robloach/component-installer" : "*",
+		"components/jquery" : "~1.9"
+	},
+	"extra" : {
+		"branch-alias" : {
+			"dev-master" : "3.0.x-dev"
+		},
+		"component" : {
+			"scripts" : [
+				"dist/js/bootstrap.js"
+			],
+			"files" : [
+				"dist/js/bootstrap.min.js",
+				"dist/css/*.css",
+				"dist/fonts/*"
+			],
+			"styles" : [
+				"dist/css/bootstrap.css"
+			]
+		}
+	}
 }
