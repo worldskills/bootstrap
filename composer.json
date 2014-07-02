@@ -1,10 +1,16 @@
 {
 	"name" : "worldskills/bootstrap",
 	"type" : "component",
-	"description" : "Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.",
+	"description" : "The most popular front-end framework for developing responsive, mobile first projects on the web.",
 	"keywords" : [
-		"bootstrap",
-		"css"
+	    "css",
+	    "js",
+	    "less",
+	    "mobile-first",
+	    "responsive",
+	    "front-end",
+	    "framework",
+	    "web"
 	],
 	"homepage" : "http://getbootstrap.com",
 	"authors" : [{
@@ -25,7 +31,7 @@
 	},
 	"extra" : {
 		"branch-alias" : {
-			"dev-master" : "3.0.x-dev"
+            "dev-master": "3.2.x-dev"
 		},
 		"component" : {
 			"scripts" : [
