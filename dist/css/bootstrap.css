@@ -1350,6 +1350,20 @@ h4,
 .h4 {
   letter-spacing: -.035em;
 }
+h1.align-top,
+.h1.align-top,
+h2.align-top,
+.h2.align-top,
+h3.align-top,
+.h3.align-top,
+h4.align-top,
+.h4.align-top,
+h5.align-top,
+.h5.align-top,
+h6.align-top,
+.h6.align-top {
+  margin-top: 0;
+}
 code,
 kbd,
 pre,
