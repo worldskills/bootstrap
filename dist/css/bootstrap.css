@@ -6208,6 +6208,30 @@ button.close {
        -o-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
 }
+@media (min-width: 768px) {
+  .pull-right-sm {
+    float: right !important;
+  }
+  .pull-left-sm {
+    float: left !important;
+  }
+}
+@media (min-width: 992px) {
+  .pull-right-md {
+    float: right !important;
+  }
+  .pull-left-md {
+    float: left !important;
+  }
+}
+@media (min-width: 1200px) {
+  .pull-right-lg {
+    float: right !important;
+  }
+  .pull-left-lg {
+    float: left !important;
+  }
+}
 @-ms-viewport {
   width: device-width;
 }
