@@ -3,14 +3,14 @@
 	"type" : "component",
 	"description" : "The most popular front-end framework for developing responsive, mobile first projects on the web.",
 	"keywords" : [
-	    "css",
-	    "js",
-	    "less",
-	    "mobile-first",
-	    "responsive",
-	    "front-end",
-	    "framework",
-	    "web"
+		"css",
+		"js",
+		"less",
+		"mobile-first",
+		"responsive",
+		"front-end",
+		"framework",
+		"web"
 	],
 	"homepage" : "http://getbootstrap.com",
 	"authors" : [{
@@ -29,9 +29,13 @@
 		"robloach/component-installer" : "*",
 		"components/jquery" : "~1.9"
 	},
+	"provide" : {
+		"twbs/bootstrap" : "~3.0",
+		"components/bootstrap" : "~3.0"
+	}
 	"extra" : {
 		"branch-alias" : {
-            "dev-master": "3.2.x-dev"
+			"dev-master" : "3.2.x-dev"
 		},
 		"component" : {
 			"scripts" : [
