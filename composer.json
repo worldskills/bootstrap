@@ -29,9 +29,10 @@
 		"robloach/component-installer" : "*",
 		"components/jquery" : "~1.9"
 	},
-	"provide" : {
-		"twbs/bootstrap" : "~3.0",
-		"components/bootstrap" : "~3.0"
+	"replace" : {
+		"twitter/bootstrap" : "self.version",
+		"twbs/bootstrap" : "self.version",
+		"components/bootstrap" : "self.version"
 	},
 	"extra" : {
 		"branch-alias" : {
