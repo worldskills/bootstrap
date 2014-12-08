@@ -1,0 +1,19 @@
+body {
+    padding-bottom: 20px;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.sidebar .list-unstyled a {
+    display: block;
+    padding-top: 4px;
+    padding-bottom: 6px;
+}
+
+.breadcrumb {
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #fff;
+}
