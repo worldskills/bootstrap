@@ -3453,6 +3453,10 @@ tbody.collapse.in {
   border-right: 4px solid transparent;
   border-left: 4px solid transparent;
 }
+.caret-reverse {
+  border-top: 0;
+  border-bottom: 4px dashed;
+}
 .dropup,
 .dropdown {
   position: relative;
