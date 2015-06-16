@@ -6823,4 +6823,8 @@ button.close {
     display: none !important;
   }
 }
+.caret-reverse {
+  border-top: 0;
+  border-bottom: 4px dashed;
+}
 /*# sourceMappingURL=bootstrap.css.map */
