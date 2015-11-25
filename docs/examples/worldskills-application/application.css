@@ -2,6 +2,6 @@
   margin-top: 0;
 }
 
-li.active a {
+.active a {
   color: #111;
 }

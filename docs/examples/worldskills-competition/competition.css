@@ -13,7 +13,7 @@ h5, h6,
   font-weight: 500;
 }
 
-nav.navbar {
+.navbar {
   z-index: 998 !important;
 }
 
@@ -25,6 +25,6 @@ nav.navbar {
   color: #111;
 }
 
-li.active a {
+.active a {
   color: #111;
 }
