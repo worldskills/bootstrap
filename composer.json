@@ -1,6 +1,3 @@
 {
-  "name": "worldskills/bootstrap",
-  "require": {
-    "twbs/bootstrap": "^4.1.0"
-  }
+  "name": "worldskills/bootstrap"
 }
