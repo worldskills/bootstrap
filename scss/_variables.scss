@@ -1,0 +1,61 @@
+// Variables
+
+
+// Body
+
+$body-bg: $white;
+$body-color: $gray-900;
+
+
+// Components
+
+$border-radius: .125rem;
+$border-radius-lg: .25rem;
+$border-radius-sm: .0625rem;
+
+
+// Fonts
+
+$font-family-sans-serif: "FrutigerLTW04", Frutiger, Arial, sans-serif;
+$font-family-serif: "Inria Serif", serif;
+
+$font-family-base: $font-family-sans-serif;
+
+$font-size-7xl: 7.5rem; // 120
+$font-size-6xl: 5.625rem; // 90
+$font-size-5xl: 3.75rem; // 60
+$font-size-4xl: 2.5rem; // 40
+$font-size-3xl: 2rem; // 32
+$font-size-2xl: 1.5em; // 24
+$font-size-xl: 1.25rem; // 20
+$font-size-lg: 1.125rem; // 18
+$font-size-base: 1rem; // 16
+$font-size-sm: 0.875rem; // 14
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-black: 800;
+$font-weight-extra-black: 900;
+
+$font-weight-base: $font-weight-normal;
+
+$line-height-base: 1.5;
+
+$h1-font-size: $font-size-5xl;
+$h2-font-size: $font-size-3xl;
+$h3-font-size: $font-size-2xl;
+$h4-font-size: $font-size-xl;
+$h5-font-size: $font-size-lg;
+$h6-font-size: $font-size-base;
+
+$headings-margin-bottom: 1rem;
+$headings-font-weight: $font-weight-bold;
+
+$lead-font-size: $font-size-2xl;
+
+$blockquote-font-size: $font-size-2xl;
+
+$hr-border-color: $gray-200;
+$hr-border-width: 1px;
+$hr-margin-y: 2rem;
