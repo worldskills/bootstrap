@@ -1,0 +1,31 @@
+// Inverse mixin.
+//
+// To be used for elements that require white text on a colored background.
+// Optionally specify the color of the background.
+@mixin inverse($bg-color:null) {
+  background-color: $bg-color;
+  color: $white;
+
+  a {
+    color: $white;
+
+    @include hover {
+      color: $white;
+    }
+  }
+
+  @if $bg-color {
+
+    .btn.bg-white {
+      color: $bg-color;
+    }
+
+    .btn.bg-white,
+    .btn-more.bg-white,
+    .btn-more.bg-white:hover,
+    .btn-more.btn-outline-light:hover {
+      @include background-svg(chevron, $bg-color);
+      color: $bg-color;
+    }
+  }
+}

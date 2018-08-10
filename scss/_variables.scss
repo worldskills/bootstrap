@@ -1,5 +1,10 @@
 // Variables
 
+$ws-navbar-breakpoint: md;
+$ws-navbar-height: 100px;
+$ws-zindex-hero-overlay: 50;
+$ws-zindex-logo-overlay: 70;
+$ws-zindex-navbar-overlay: 100;
 
 // Color system
 
@@ -104,7 +109,6 @@ $blue-hint-light: $blue-dark-tint-2 !default;
 $blue-hint-lighter: #8ca5bc !default;
 
 $colors: () !default;
-// stylelint-disable-next-line scss/dollar-variable-default
 $colors: map-merge(
   (
     "blue": $blue,
@@ -130,7 +134,6 @@ $secondary: $purple !default;
 $info: $cyan !default;
 
 $theme-colors: () !default;
-// stylelint-disable-next-line scss/dollar-variable-default
 $theme-colors: map-merge(
   (
     "primary": $primary,
@@ -139,6 +142,11 @@ $theme-colors: map-merge(
   ),
   $theme-colors
 );
+
+
+// Spacing
+
+$spacer: 1rem !default;
 
 
 // Links
@@ -207,6 +215,28 @@ $blockquote-font-size: $font-size-2xl !default;
 $hr-border-color: $gray-200 !default;
 $hr-border-width: 1px !default;
 $hr-margin-y: 2rem !default;
+
+
+// Buttons + Forms
+
+$input-btn-padding-x: 1.25rem !default;
+
+
+// Buttons
+
+$btn-padding-x: 2rem !default;
+$btn-font-weight: $font-weight-bold !default;
+
+
+// Navbar
+$navbar-padding-y: 8px !default;
+$navbar-font-size: $font-size-sm !default;
+$navbar-font-weight: $font-weight-base !default;
+$navbar-dark-color: $white !default;
+$navbar-dark-hover-color: $white !default;
+$navbar-dark-active-color: $cyan !default;
+$navbar-toggler-padding-y: 0.75rem !default;
+$navbar-toggler-padding-x: 0 !default;
 
 
 // Breadcrumbs

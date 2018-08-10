@@ -1,0 +1,24 @@
+
+
+
+// For sizing the .btn-more, and one or two other places where we need to make
+// .btn-more buttons smaller.
+// $size is 'sm', 'lg' or null.
+@mixin button-more-size($size: null) {
+
+  @if $size == sm {
+    padding-right: 1.8rem;
+    background-position: right 0.6rem top 47%;
+    background-size: 0.5rem;
+
+  } @else if $size == lg {
+    padding-right: 3.5rem;
+    background-position: right 1.3rem top 47%;
+    background-size: 0.8rem;
+
+  } @else {
+    padding-right: 3.5rem;
+    background-position: right 1.3rem top 47%;
+    background-size: 0.7rem;
+  }
+}

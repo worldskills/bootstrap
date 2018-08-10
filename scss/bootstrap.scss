@@ -4,6 +4,11 @@
 
 @import "bootstrap/bootstrap";
 
+@import "mixins/buttons";
 @import "mixins/ws_svg";
+@import "mixins/ws_inverse";
 
 @import "partials/breadcrumb";
+@import "partials/buttons";
+@import "partials/ws_hero";
+@import "partials/ws_navbar";

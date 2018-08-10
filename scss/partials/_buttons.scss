@@ -1,0 +1,41 @@
+// Custom button styles.
+
+// Add a chevron to the right side of the button's text.
+.btn-more {
+  max-width: 100%;
+  background-repeat: no-repeat;
+
+  @include button-more-size();
+
+  &.btn-sm {
+    @include button-more-size(sm);
+  }
+
+  &.btn-lg {
+    @include button-more-size(lg);
+  }
+
+  &,
+  &:hover {
+    @include background-svg(chevron, $link-color);
+  }
+
+  &.btn-outline-dark {
+    @include background-svg(chevron, $body-color);
+  }
+
+  &.btn-primary,
+  &.btn-outline-light,
+  &.btn-outline-dark:hover,
+  &.btn-outline-primary:hover {
+    @include background-svg(chevron, $white);
+  }
+}
+
+.btn-white {
+  background: $white;
+  color: $purple;
+  &:hover {
+    color: $purple;
+  }
+}

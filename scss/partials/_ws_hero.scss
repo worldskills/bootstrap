@@ -1,0 +1,204 @@
+// Hero
+
+// e.g.
+//
+// <div class="ws-hero">
+//   <h1 class="ws-hero-title">My title</h1>
+//   <div class="ws-hero-desc">
+//     <p>Some text</p>
+//   </div>
+//   <a class="btn btn-primary btn-more">Read more</a>
+// </div>
+//
+// or:
+//
+// <figure class="ws-hero">
+//   <blockquote class="ws-hero-title">My title</blockquote>
+//   <figcaption>
+//     <div class="ws-hero-desc">
+//       <p>Some text</p>
+//     </div>
+//     <a class="btn btn-primary btn-more">Read more</a>
+//   </figcaption>
+// </figure>
+
+
+.ws-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4.5rem ($grid-gutter-width * 2) 5.5rem;
+  text-rendering: optimizeLegibility;
+  background-position: center;
+  background-size: cover;
+
+  @include media-breakpoint-up(md) {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 7rem;
+    padding-bottom: 8rem;
+  }
+
+  form {
+    // For the subscription form.
+    width: 100%;
+  }
+}
+
+.ws-hero-title {
+  font-size: $font-size-3xl;
+  font-weight: $font-weight-black;
+  margin: 0 0 1rem 0;
+  letter-spacing: -0.02em;
+  width: 100%; // For IE11, otherwise the title is too wide.
+
+  @include media-breakpoint-up(sm) {
+    font-size: $font-size-4xl;
+  }
+  @include media-breakpoint-up(md) {
+    font-size: $font-size-5xl;
+  }
+}
+
+.ws-hero-desc {
+  font-size: $font-size-xl;
+  font-family: $font-family-serif;
+  max-width: 40em;
+  margin-bottom: 1rem;
+
+  & > * {
+    margin: 0;
+  }
+}
+
+// Variation with smaller text and height.
+.ws-hero-sm {
+
+  .ws-hero-title {
+    font-size: $font-size-2xl;
+    line-height: $headings-line-height;
+    margin: 0 0 1rem 0;
+
+    @include media-breakpoint-up(sm) {
+      font-size: $font-size-3xl;
+    }
+    @include media-breakpoint-up(md) {
+      font-size: $font-size-4xl;
+    }
+  }
+}
+
+
+// Color/style variations.
+
+.ws-hero-cyan,
+.ws-hero-purple,
+.ws-hero-gray {
+  background-repeat: repeat;
+  background-size: auto;
+
+  .ws-hero-title {
+    padding-top: 50px;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+  }
+}
+
+
+// Has a flag image as the .ws-hero-title's background image.
+.ws-hero-flag {
+  padding-top: 3rem;
+
+  @include media-breakpoint-up(md) {
+    padding-top: 5rem;
+  }
+
+  .ws-hero-title {
+    padding-top: 85px;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: auto 60px;
+  }
+}
+
+.ws-hero-standfirst {
+  padding-top: 5rem;
+  padding-bottom: 5.5rem;
+  @include background-svg("hero-bullet", $white);
+  background-repeat: no-repeat;
+  background-position: 50% 2.5rem;
+  background-size: auto;
+
+  .ws-hero-title {
+    order: 2;
+  }
+
+  p {
+    order: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  a.btn {
+    order: 3;
+  }
+}
+
+
+// An Image block, not a Feature block.
+// Has an image in the background, in the element's style attribute.
+.ws-hero-image {
+  @include inverse($purple);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+
+// Overlay block, used at top of home page.
+// See _ws_navbar.scss for associated navbar styles.
+.ws-hero-overlay {
+  margin-top: (-1 * $ws-navbar-height);
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+  position: relative;
+  z-index: $ws-zindex-hero-overlay;
+
+  @include media-breakpoint-up($ws-navbar-breakpoint) {
+    // At wider width the navbar will be in front of the hero block.
+
+    & {
+      // Move it up, so it goes behind navbar.
+      margin-top: (-2 * $ws-navbar-height);
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    // At widest width, make it taller, to keep rough proportions.
+    & {
+      padding-top: 13rem;
+      padding-bottom: 10rem;
+    }
+  }
+}
+
+.ws-hero-logo {
+  padding-top: 15px;
+  position: relative;
+  z-index: $ws-zindex-logo-overlay;
+
+  @include media-breakpoint-up($ws-navbar-breakpoint) {
+
+    top: (-1 * $ws-navbar-height);
+    left: 0;
+  }
+}
+
+.ws-hero .form-group {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 22em;
+}

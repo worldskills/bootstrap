@@ -1,0 +1,204 @@
+// Navbar
+// Custom/additional styles on top of Bootstrap's.
+// Add either .ws-navbar-main or .ws-navbar-sub to a .navbar to have it take
+// our styles.
+
+
+// Styles for both the main and sub navbars.
+.ws-navbar-main,
+.ws-navbar-sub {
+  font-size: $navbar-font-size;
+
+  .navbar-nav {
+
+    .nav-link {
+      color: $navbar-dark-color;
+
+      @include hover-focus {
+        color: $navbar-dark-hover-color;
+        text-decoration: underline;
+      }
+
+      &.disabled {
+        color: $navbar-dark-disabled-color;
+      }
+    }
+
+    .show > .nav-link,
+    .active > .nav-link,
+    .nav-link.show,
+    .nav-link.active {
+      color: $navbar-dark-active-color;
+    }
+  }
+
+  .navbar-text {
+    color: $navbar-dark-color;
+    a {
+      color: $navbar-dark-active-color;
+
+      @include hover-focus {
+        color: $navbar-dark-active-color;
+      }
+    }
+  }
+
+  @include media-breakpoint-up($ws-navbar-breakpoint) {
+
+
+  }
+}
+
+
+// Now, styles for only the main one.
+// Much of the first bunch here is for the narrow width only...
+.ws-navbar-main {
+  background-color: $purple;
+  @include background-svg("ws-navbar-stripe", $white);
+  background-position: 50% 0;
+  background-size: 100% 3px;
+  background-repeat: no-repeat;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+
+  .navbar-brand {
+    margin-left: $navbar-padding-x;
+    margin-bottom: $navbar-padding-y;
+  }
+
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .nav-item {
+    background-color: $white;
+    border-bottom: 1px solid $gray-300;
+    font-weight: $font-weight-black;
+    font-size: $font-size-xl;
+
+    .nav-link {
+      color: $link-color;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+
+      &:hover {
+        color: $link-color;
+      }
+    }
+
+    &.active {
+      .nav-link,
+      .nav-link:hover {
+        color: $purple;
+      }
+    }
+  }
+
+  .btn {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: $font-size-lg;
+    padding: $btn-padding-y-lg $btn-padding-x-lg;
+  }
+
+  // The 'open menu' button.
+  .navbar-toggler {
+    color: $navbar-dark-color;
+    font-weight: $font-weight-bold;
+    margin-right: $navbar-padding-x;
+    position: relative;
+
+    // Add a pseudo element to hold the chevron background.
+    // It will change orientiation when menu is open/closed.
+    &::before {
+      content: "";
+      @include background-svg(chevron, $navbar-dark-color);
+      background-position: left 50%;
+      background-repeat: no-repeat;
+      background-size: 0.6rem;
+      width: 1.5rem;
+      height: 1.5rem;
+      position: absolute;
+      left: -2rem;
+      // This is while the menu is open:
+      top: 0%;
+      transform: rotate(270deg);
+    }
+
+    &.collapsed {
+      &::before {
+        // And this is while the menu is collapsed (initial state):
+        top: 40%;
+        transform: rotate(90deg);
+      }
+    }
+
+  }
+
+  // Now we override some of the above for the wider widths:
+  @include media-breakpoint-up($ws-navbar-breakpoint) {
+
+    padding: $navbar-padding-y $navbar-padding-x;
+
+    .navbar-brand {
+      margin-left: 0;
+    }
+
+    .nav-item {
+      background-color: transparent;
+      border-bottom: none;
+      text-align: left;
+      font-weight: $navbar-font-weight;
+      font-size: $navbar-font-size;
+
+      .nav-link {
+        color: $navbar-dark-color;
+        padding-top: $navbar-padding-y;
+        padding-bottom: $navbar-padding-y;
+
+        &:hover {
+          color: $navbar-dark-hover-color;
+        }
+      }
+
+      &.active {
+        .nav-link,
+        .nav-link:hover {
+          color: $navbar-dark-active-color;
+        }
+      }
+    }
+
+    .btn {
+      margin: 0;
+      font-size: $navbar-font-size;
+      padding: $btn-padding-y-sm $btn-padding-x-sm;
+    }
+  }
+}
+
+
+// Variation for pages like the home page.
+// The navbar is immediately followed by a .ws-hero.ws-hero-overlay block.
+// See _ws_hero.scss for associated Hero block styles.
+.page-template-hero-overlay {
+
+  .ws-navbar-main {
+    z-index: $ws-zindex-navbar-overlay;
+
+    .navbar-brand {
+      display: none;
+    }
+
+    @include media-breakpoint-up($ws-navbar-breakpoint) {
+
+      background-color: transparent;
+      padding-top: 55px;
+    }
+  }
+
+  .ws-navbar-sub {
+    display: none;
+  }
+}
