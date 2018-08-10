@@ -22,12 +22,13 @@
     "scss/"
   ],
   "scripts": {
+    "bootstrap-copy": "cp -r node_modules/bootstrap/scss/ scss/bootstrap/",
     "css": "npm run css-compile && npm run css-prefix && npm run css-minify",
     "css-compile": "sass scss/bootstrap.scss dist/css/bootstrap.css",
     "css-prefix": "postcss --replace dist/css/bootstrap.css",
     "css-minify": "cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/bootstrap.min.css dist/css/bootstrap.css",
     "js": "npm run js-copy",
     "js-copy": "cp -r node_modules/bootstrap/dist/js/ dist/js/",
-    "dist": "npm run css && npm run js"
+    "dist": "npm run bootstrap-copy && npm run css && npm run js"
   }
 }
