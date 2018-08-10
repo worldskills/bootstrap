@@ -3,192 +3,218 @@
 
 // Color system
 
-$white: #fff;
-$gray-100: #f7f7f7;
-$gray-200: #e8e8e8;
-$gray-300: #d7d7d7;
-$gray-400: #acacac;
-$gray-500: #878787;
-$gray-600: #707070;
-$gray-700: #5A5A5A;
-$gray-800: #434343;
-$gray-900: #2D2D2D;
-$black: #000;
+$white: #fff !default;
+$gray-100: #f7f7f7 !default;
+$gray-200: #e8e8e8 !default;
+$gray-300: #d7d7d7 !default;
+$gray-400: #acacac !default;
+$gray-500: #878787 !default;
+$gray-600: #707070 !default;
+$gray-700: #5A5A5A !default;
+$gray-800: #434343 !default;
+$gray-900: #2D2D2D !default;
+$black: #000 !default;
 
-$yellow-tint-1: #DFC823;
-$yellow-tint-2: #E7D11B;
-$yellow-tint-3: #F1D800;
-$yellow-tint-4: #FEE300;
-$yellow-tint-5: #F6F06E;
-$yellow-tint-6: #F9F6AC;
-
-$orange-tint-1: #E34123;
-$orange-tint-2: #F15122;
-$orange-tint-3: #FF6C0C;
-$orange-tint-4: #F89041;
-$orange-tint-5: #FAA44F;
-$orange-tint-6: #FBB654;
-
-$red-tint-1: #AC0D56;
-$red-tint-2: #BF1561;
-$red-tint-3: #D51067;
-$red-tint-4: #DD3E75;
-$red-tint-5: #E35883;
-$red-tint-6: #EC7B98;
-
-$purple-tint-1: #4A0D66;
-$purple-tint-2: #5D2875;
-$purple-tint-3: #6E3E84;
-$purple-tint-4: #815593;
-$purple-tint-5: #936CA1;
-$purple-tint-6: #A483B0;
-
-$blue-dark-tint-1: #003764;
-$blue-dark-tint-2: #034973;
-$blue-dark-tint-3: #005882;
-$blue-dark-tint-4: #3974A0;
-$blue-dark-tint-5: #3E7EB1;
-$blue-dark-tint-6: #5290BD;
-
-$blue-tint-1: #00658F;
-$blue-tint-2: #0E779F;
-$blue-tint-3: #0084AD;
-$blue-tint-4: #0093B7;
-$blue-tint-5: #4AA5C3;
-$blue-tint-6: #74B6CF;
-
-$cyan-tint-1: #00BBE6;
-$cyan-tint-2: #33C1E7;
-$cyan-tint-3: #54C8E9;
-$cyan-tint-4: #72D0EB;
-$cyan-tint-5: #72D0EB;
-$cyan-tint-6: #72D0EB;
-
-$green-tint-1: #5FC5BD;
-$green-tint-2: #70C9C1;
-$green-tint-3: #81D6C9;
-$green-tint-4: #8AE2D1;
-$green-tint-5: #ABEADC;
-$green-tint-6: #C5F0E6;
-
-$blue: $blue-tint-3;
-$indigo: #362D79;
-$purple: $purple-tint-1;
-$pink: $red-tint-3;
-$red: $red-tint-1;
-$orange: $orange-tint-3;
-$yellow: $yellow-tint-4;
-$green: #5FC5BD;
-$teal: $green-tint-4;
-$cyan: $cyan-tint-4;
-
-$blue-dark: $blue-dark-tint-1;
-
-$blue-hint-light: $blue-dark-tint-2;
-$blue-hint-lighter: #8ca5bc;
-
-$colors: (
-  "blue": $blue,
-  "indigo": $indigo,
-  "purple": $purple,
-  "pink": $pink,
-  "red": $red,
-  "orange": $orange,
-  "yellow": $yellow,
-  "green": $green,
-  "teal": $teal,
-  "cyan": $cyan,
-  "white": $white,
-  "gray": $gray-600,
-  "gray-dark": $gray-800,
-  "blue-dark": $blue-dark,
+$grays: () !default;
+$grays: map-merge(
+  (
+    "100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900
+  ),
+  $grays
 );
 
-$primary: $blue;
-$secondary: $purple;
-$info: $cyan;
+$yellow-tint-1: #DFC823 !default;
+$yellow-tint-2: #E7D11B !default;
+$yellow-tint-3: #F1D800 !default;
+$yellow-tint-4: #FEE300 !default;
+$yellow-tint-5: #F6F06E !default;
+$yellow-tint-6: #F9F6AC !default;
 
-$theme-colors: (
-  "primary":    $primary,
-  "secondary":  $secondary,
-  "info":       $info,
+$orange-tint-1: #E34123 !default;
+$orange-tint-2: #F15122 !default;
+$orange-tint-3: #FF6C0C !default;
+$orange-tint-4: #F89041 !default;
+$orange-tint-5: #FAA44F !default;
+$orange-tint-6: #FBB654 !default;
+
+$red-tint-1: #AC0D56 !default;
+$red-tint-2: #BF1561 !default;
+$red-tint-3: #D51067 !default;
+$red-tint-4: #DD3E75 !default;
+$red-tint-5: #E35883 !default;
+$red-tint-6: #EC7B98 !default;
+
+$purple-tint-1: #4A0D66 !default;
+$purple-tint-2: #5D2875 !default;
+$purple-tint-3: #6E3E84 !default;
+$purple-tint-4: #815593 !default;
+$purple-tint-5: #936CA1 !default;
+$purple-tint-6: #A483B0 !default;
+
+$blue-dark-tint-1: #003764 !default;
+$blue-dark-tint-2: #034973 !default;
+$blue-dark-tint-3: #005882 !default;
+$blue-dark-tint-4: #3974A0 !default;
+$blue-dark-tint-5: #3E7EB1 !default;
+$blue-dark-tint-6: #5290BD !default;
+
+$blue-tint-1: #00658F !default;
+$blue-tint-2: #0E779F !default;
+$blue-tint-3: #0084AD !default;
+$blue-tint-4: #0093B7 !default;
+$blue-tint-5: #4AA5C3 !default;
+$blue-tint-6: #74B6CF !default;
+
+$cyan-tint-1: #00BBE6 !default;
+$cyan-tint-2: #33C1E7 !default;
+$cyan-tint-3: #54C8E9 !default;
+$cyan-tint-4: #72D0EB !default;
+$cyan-tint-5: #72D0EB !default;
+$cyan-tint-6: #72D0EB !default;
+
+$green-tint-1: #5FC5BD !default;
+$green-tint-2: #70C9C1 !default;
+$green-tint-3: #81D6C9 !default;
+$green-tint-4: #8AE2D1 !default;
+$green-tint-5: #ABEADC !default;
+$green-tint-6: #C5F0E6 !default;
+
+$blue: $blue-tint-3 !default;
+$indigo: #362D79 !default;
+$purple: $purple-tint-1 !default;
+$pink: $red-tint-3 !default;
+$red: $red-tint-1 !default;
+$orange: $orange-tint-3 !default;
+$yellow: $yellow-tint-4 !default;
+$green: #5FC5BD !default;
+$teal: $green-tint-4 !default;
+$cyan: $cyan-tint-4 !default;
+
+$blue-dark: $blue-dark-tint-1 !default;
+
+$blue-hint-light: $blue-dark-tint-2 !default;
+$blue-hint-lighter: #8ca5bc !default;
+
+$colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$colors: map-merge(
+  (
+    "blue": $blue,
+    "indigo": $indigo,
+    "purple": $purple,
+    "pink": $pink,
+    "red": $red,
+    "orange": $orange,
+    "yellow": $yellow,
+    "green": $green,
+    "teal": $teal,
+    "cyan": $cyan,
+    "white": $white,
+    "gray": $gray-600,
+    "gray-dark": $gray-800,
+    "blue-dark": $blue-dark,
+  ),
+  $colors
+);
+
+$primary: $blue !default;
+$secondary: $purple !default;
+$info: $cyan !default;
+
+$theme-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(
+  (
+    "primary": $primary,
+    "secondary": $secondary,
+    "info": $info,
+  ),
+  $theme-colors
 );
 
 
 // Links
 
-$link-color: $blue-tint-4;
-$link-hover-color: $blue-tint-1;
+$link-color: $blue-tint-4 !default;
+$link-hover-color: $blue-tint-1 !default;
 
 
 // Body
 
-$body-bg: $white;
-$body-color: $gray-900;
+$body-bg: $white !default;
+$body-color: $gray-900 !default;
 
 
 // Components
 
-$border-radius: .125rem;
-$border-radius-lg: .25rem;
-$border-radius-sm: .0625rem;
+$border-radius: .125rem !default;
+$border-radius-lg: .25rem !default;
+$border-radius-sm: .0625rem !default;
 
 
 // Fonts
 
-$font-family-sans-serif: "FrutigerLTW04", Frutiger, Arial, sans-serif;
-$font-family-serif: "Inria Serif", serif;
+$font-family-sans-serif: "FrutigerLTW04", Frutiger, Arial, sans-serif !default;
+$font-family-serif: "Inria Serif", serif !default;
 
-$font-family-base: $font-family-sans-serif;
+$font-family-base: $font-family-sans-serif !default;
 
-$font-size-7xl: 7.5rem; // 120
-$font-size-6xl: 5.625rem; // 90
-$font-size-5xl: 3.75rem; // 60
-$font-size-4xl: 2.5rem; // 40
-$font-size-3xl: 2rem; // 32
-$font-size-2xl: 1.5em; // 24
-$font-size-xl: 1.25rem; // 20
-$font-size-lg: 1.125rem; // 18
-$font-size-base: 1rem; // 16
-$font-size-sm: 0.875rem; // 14
+$font-size-7xl: 7.5rem !default; // 120
+$font-size-6xl: 5.625rem !default; // 90
+$font-size-5xl: 3.75rem !default; // 60
+$font-size-4xl: 2.5rem !default; // 40
+$font-size-3xl: 2rem !default; // 32
+$font-size-2xl: 1.5em !default; // 24
+$font-size-xl: 1.25rem !default; // 20
+$font-size-lg: 1.125rem !default; // 18
+$font-size-base: 1rem !default; // 16
+$font-size-sm: 0.875rem !default; // 14
 
-$font-weight-light: 300;
-$font-weight-normal: 400;
-$font-weight-bold: 700;
-$font-weight-black: 800;
-$font-weight-extra-black: 900;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
+$font-weight-black: 800 !default;
+$font-weight-extra-black: 900 !default;
 
-$font-weight-base: $font-weight-normal;
+$font-weight-base: $font-weight-normal !default;
 
-$line-height-base: 1.5;
+$line-height-base: 1.5 !default;
 
-$h1-font-size: $font-size-5xl;
-$h2-font-size: $font-size-3xl;
-$h3-font-size: $font-size-2xl;
-$h4-font-size: $font-size-xl;
-$h5-font-size: $font-size-lg;
-$h6-font-size: $font-size-base;
+$h1-font-size: $font-size-5xl !default;
+$h2-font-size: $font-size-3xl !default;
+$h3-font-size: $font-size-2xl !default;
+$h4-font-size: $font-size-xl !default;
+$h5-font-size: $font-size-lg !default;
+$h6-font-size: $font-size-base !default;
 
-$headings-margin-bottom: 1rem;
-$headings-font-weight: $font-weight-bold;
+$headings-margin-bottom: 1rem !default;
+$headings-font-weight: $font-weight-bold !default;
 
-$lead-font-size: $font-size-2xl;
+$lead-font-size: $font-size-2xl !default;
 
-$text-muted: $gray-500;
+$text-muted: $gray-500 !default;
 
-$blockquote-font-size: $font-size-2xl;
+$blockquote-font-size: $font-size-2xl !default;
 
-$hr-border-color: $gray-200;
-$hr-border-width: 1px;
-$hr-margin-y: 2rem;
+$hr-border-color: $gray-200 !default;
+$hr-border-width: 1px !default;
+$hr-margin-y: 2rem !default;
 
 
 // Breadcrumbs
 
-$breadcrumb-padding-x: 0;
-$breadcrumb-item-padding: 1.5rem;
+$breadcrumb-padding-x: 0 !default;
+$breadcrumb-item-padding: 1.5rem !default;
 
-$breadcrumb-bg: transparent;
-$breadcrumb-divider-color: $gray-400;
-$breadcrumb-active-color: $body-color;
-$breadcrumb-active-font-weight: normal;
+$breadcrumb-bg: transparent !default;
+$breadcrumb-divider-color: $gray-400 !default;
+$breadcrumb-active-color: $body-color !default;
+$breadcrumb-active-font-weight: normal !default;
