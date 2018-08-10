@@ -1,0 +1,40 @@
+// Breadcrumbs
+// Overriding some default Bootstrap styles.
+
+// .breadcrumb {
+//   a {
+//     color:     $cyan;
+//
+//     &:hover {
+//       color:   $cyan;
+//     }
+//   }
+// }
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.breadcrumb-item {
+  font-size: $font-size-sm;
+
+  &.active {
+    font-weight: $breadcrumb-active-font-weight;
+    display: none;
+
+    @include media-breakpoint-up(sm) {
+      display: list-item;
+    }
+  }
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  padding-right: 1.6rem;
+  @include background-svg(chevron, $breadcrumb-divider-color);
+  background-repeat: no-repeat;
+  background-position: left center;
+  content: ' ';
+  width: 1em;
+  height: 0.9em;
+}
