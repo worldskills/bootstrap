@@ -1,7 +1,12 @@
 // Variables
 
+// From this point down, we collapse the main navbar and hide the sub navbar.
+// They should have the .navbar-expand-md class too.
 $ws-navbar-breakpoint: md;
+
 $ws-navbar-height: 100px;
+
+// For we put a .hero-overlay "behind" the navbar:
 $ws-zindex-hero-overlay: 50;
 $ws-zindex-logo-overlay: 70;
 $ws-zindex-navbar-overlay: 100;
@@ -228,10 +233,15 @@ $btn-padding-x: 2rem !default;
 $btn-font-weight: $font-weight-bold !default;
 
 
+// Navs
+$nav-link-padding-y: 0.5rem;
+
+
 // Navbar
 $navbar-padding-y: 8px !default;
 $navbar-font-size: $font-size-sm !default;
 $navbar-font-weight: $font-weight-base !default;
+$navbar-brand-padding-y: 0.3rem;
 $navbar-dark-color: $white !default;
 $navbar-dark-hover-color: $white !default;
 $navbar-dark-active-color: $cyan !default;
