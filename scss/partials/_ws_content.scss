@@ -1,0 +1,34 @@
+// ws-content
+// For making some stylistic (not structural) adjustments to content blocks etc.
+
+.ws-content {
+
+  font-weight: $font-weight-light;
+
+  @include media-breakpoint-up(sm) {
+    p, li, dt, dd {
+      font-size: $font-size-lg;
+    }
+
+    p, ol, ul, dl, figure {
+      // Normally it's $paragraph-margin-bottom, which is 1rem.
+      // Make it bigger when the text is bigger.
+      margin-bottom: 1em;
+    }
+
+    p, ol, ul, dl {
+      max-width: 56rem;
+    }
+
+    .lead {
+      font-size: $lead-font-size;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    p, li, dt, dd {
+      font-size: $font-size-xl;
+    }
+  }
+
+}

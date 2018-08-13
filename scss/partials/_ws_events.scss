@@ -1,0 +1,63 @@
+// Lists of Events
+
+// <div class="row events">
+//   <div class="col-sm-4">
+//     <h2 class="events-title">January 2019<h2>
+//   </div>
+//   <div class="col-sm-8">
+//     <ol class='events-list">
+//       <li class="events-item">
+//         <h3 class="events-item-title">My Event</h3>
+//         <div class="events-item-desc">
+//           <p>...</p>
+//           <p>...</p>
+//         </div>
+//       </li>
+//       # ... more .events-item's
+//     </ol>
+//   </div>
+// </div>
+// # More .row.events
+
+.events {
+  border-bottom: $hr-border-width solid $hr-border-color;
+  margin-bottom: 4rem;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.events-title {
+  font-size: $font-size-2xl;
+  font-weight: $font-weight-bold;
+  margin: 0;
+}
+
+.events-list {
+  @include list-unstyled;
+  margin: 0;
+}
+
+.events-item {
+  padding-bottom: 2rem;
+  border-bottom: $hr-border-width solid $hr-border-color;
+  margin-bottom: 2rem;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.events-item-title {
+  font-size: $font-size-xl;
+  font-weight: $font-weight-bold;
+  margin: 0 0 0.5em 0;
+  color: $purple;
+}
+
+.events-item-desc {
+  p {
+    margin: 0;
+  }
+}

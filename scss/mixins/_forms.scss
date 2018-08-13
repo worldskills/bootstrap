@@ -1,0 +1,60 @@
+
+// Apply custom colors to a .form-control element.
+// $color is the color of the text the user will type.
+// $background-color is the input's background (and border).
+// $focus-color is used for placeholder text, and focus border/shadows.
+@mixin form-control-colors($color, $background-color, $focus-color) {
+
+  color: $color;
+  background-color: $background-color;
+  border-color: $background-color;
+
+  &:focus {
+    border-color: $focus-color;
+
+    @if $enable-shadows {
+      box-shadow: inset 0 1px 1px rgba($focus-color, .075), 0 0 0 $input-btn-focus-width rgba($focus-color, .25);
+    } @else {
+      box-shadow: 0 0 0 $input-btn-focus-width rgba($focus-color, .25);
+    }
+  }
+
+  // For IE11
+  &::-ms-input-placeholder {
+    color: $focus-color;
+  }
+
+  // For Edge. Needs it to be entirely separate from other placeholder
+  // declarations, for some reason.
+  &::-ms-input-placeholder {
+    color: $focus-color;
+  }
+
+  &::placeholder {
+    color: $focus-color;
+  }
+}
+
+// Add a default placeholder text style.
+.form-control {
+  // For IE11
+  &:-ms-input-placeholder{
+    color: $purple;
+    font-weight: $font-weight-bold;
+    opacity: 0.5;
+  }
+
+  // For Edge. Needs it to be entirely separate from other placeholder
+  // declarations, for some reason.
+  &::-ms-input-placeholder{
+    color: $purple;
+    font-weight: $font-weight-bold;
+    opacity: 0.5;
+  }
+
+  &::placeholder {
+    color: $purple;
+    font-weight: $font-weight-bold;
+    opacity: 0.5;
+  }
+}

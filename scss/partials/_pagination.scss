@@ -1,0 +1,41 @@
+// Pagination
+// Tweaking some of Bootstrap's default styles.
+
+.pagination {
+  font-weight: $font-weight-bold;
+  margin-top: ($spacer * 2);
+}
+
+.page-item.next .page-link {
+  @include background-svg(chevron, $pink);
+  background-position: right 1rem top 47%;
+  background-size: 0.7em;
+  background-repeat: no-repeat;
+  padding-right: 2.5rem;
+
+  &:hover {
+    @include background-svg(chevron, $white);
+  }
+}
+
+.page-item.next.disabled .page-link,
+.page-item.next.disabled .page-link:hover {
+   @include background-svg(chevron, $gray-400);
+}
+
+.page-item.prev .page-link {
+  @include background-svg("chevron-left", $pink);
+  background-position: left 1rem top 47%;
+  background-size: 0.7em;
+  background-repeat: no-repeat;
+  padding-left: 2.5rem;
+
+  &:hover {
+    @include background-svg("chevron-left", $white);
+  }
+}
+
+.page-item.prev.disabled .page-link,
+.page-item.prev.disabled .page-link:hover {
+  @include background-svg("chevron-left", $gray-400);
+}

@@ -1,0 +1,87 @@
+// Imglink blocks.
+// Probably an image at the top, with an h1 and p below it.
+
+
+// Use either in columns, which will keep all imglinks in a row the same height:
+
+// <div class="col-md-3 ws-imglink">
+//   <a href="#">
+//     <img class="ws-imglink-img" src="#">
+//     <h1 class="ws-imglink-title">Title</a>
+//   </a>
+//   <p class="ws-imglink-desc">Description</p>
+// </div>
+
+// Or as a .ws-block:
+
+// <div class="ws-block ws-imglink">
+//    [Same content as above]
+// </div>
+
+
+.ws-imglink {
+  margin-bottom: $grid-gutter-width;
+
+  // Add a background.
+  // Because if we apply a background to the element itself, then when it's
+  // a column, there is no visible gutter between each col/imglink.
+  &:before{
+      content: '';
+      position: absolute;
+      background: $gray-100;
+      display: block;
+      top: 0;
+      bottom: 0;
+      right: ($grid-gutter-width / 2);
+      left: ($grid-gutter-width / 2);
+      z-index: -1;
+  }
+}
+
+.ws-imglink-img {
+  width: 100%;
+  height: auto;
+}
+
+.ws-imglink-title {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-bold;
+  margin: $spacer $grid-gutter-width ($spacer * 0.5) $grid-gutter-width;
+
+  @include media-breakpoint-up(lg) {
+    font-size: $font-size-xl;
+  }
+}
+
+.ws-imglink-desc {
+  margin: 0 $grid-gutter-width;
+}
+
+@include media-breakpoint-only(md) {
+  // Smaller at this width, to still allow us to keep the blocks in columns.
+
+  .ws-imglink-title {
+    font-size: $font-size-base;
+  }
+
+  .ws-imglink-desc {
+    font-size: $font-size-sm;
+  }
+}
+
+
+// Variations for .ws-block.
+
+.ws-block.ws-imglink {
+
+  &:before {
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  @include media-breakpoint-down(sm) {
+    height: auto;
+    padding-bottom: $spacer;
+  }
+}

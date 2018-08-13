@@ -1,0 +1,33 @@
+// Horizontal navigation bar for within a page.
+// Combine with Bootstrap's .nav styles.
+
+// Should not be within a row/column or the sticky position won't work.
+
+// <ol class="nav ws-nav-page">
+//   <li class="nav-item active">
+//     <a href="#blah" class="nav-link">Blah</a>
+//   </li>
+//   <li class="nav-item">
+//     <a href="#moo" class="nav-link">Moo</a>
+//   </li>
+// </ol>
+
+.ws-nav-page {
+  display: none;
+  background: $white;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-bold;
+  justify-content: center;
+  @include sticky();
+
+  .active {
+
+    .nav-link {
+      color: $purple;
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+    display: flex;
+  }
+}

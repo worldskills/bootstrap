@@ -1,0 +1,96 @@
+// Tags (and Filters)
+
+// Normal tags:
+
+// <ul class="ws-tags">
+//   <li class="ws-tags-item">
+//     <a href="#">A tag</a>
+//   </li>
+//   <li class="ws-tags-item active">
+//     <span>Active tag</span>
+//   </li>
+// </ul>
+
+// Or the filter style, in which the active item is a clickable link with a
+// cross icon:
+
+// <ul class="ws-tags">
+//   <li class="ws-tags-item ws-tags-item-filter active">
+//     <a href="#">Active filter</a>
+//   </li>
+//   <li class="ws-tags-item ws-tags-item-filter">
+//     <a href="#">Inactive filter</a>
+//   </li>
+// </ul>
+
+
+.ws-tags {
+  @include list-unstyled;
+  font-weight: $font-weight-bold;
+  margin: 1rem 0;
+}
+
+.ws-tags-item {
+  display: inline-block;
+  border: 1px solid $gray-200;
+  border-radius: $border-radius;
+  margin-bottom: $list-inline-padding;
+
+  &:not(:last-child) {
+    margin-right: $list-inline-padding;
+  }
+
+  a,
+  span {
+    padding: 0.5rem ($spacer * 2);
+    display: block;
+    color: $ws-link-faded-color;
+  }
+
+  a:hover {
+    color: $link-hover-color;
+  }
+
+  &.active {
+    a {
+      color: $link-color;
+    }
+    span {
+      color: $body-color;
+    }
+  }
+}
+
+
+.ws-tags-item-filter {
+
+  a,
+  span {
+    padding-right: 65px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      display: block;
+      width: 40px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: none;
+      background-size: 18px 18px;
+    }
+  }
+
+  &.active {
+    a,
+    span {
+      &::after {
+        @include background-svg(close, $link-color);
+        background-color: $gray-200;
+      }
+    }
+  }
+}

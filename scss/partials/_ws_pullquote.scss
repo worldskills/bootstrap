@@ -1,0 +1,29 @@
+// Pullquote
+
+
+.ws-pullquote {
+  @include background-svg(quotes, $blue);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 50px;
+  margin-top: $spacer;
+  margin-bottom: $spacer;
+  max-width: 56rem;
+  padding-left: 65px;
+
+  @include media-breakpoint-up(sm) {
+    padding-left: 90px;
+  }
+
+  blockquote {
+    font-size: $font-size-2xl;
+    font-family: $font-family-serif;
+    font-style: italic;
+    color: $blue;
+    margin-bottom: ($spacer * 0.5);
+  }
+
+  figcaption {
+    font-weight: $font-weight-light;
+  }
+}

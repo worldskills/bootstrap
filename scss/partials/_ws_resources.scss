@@ -1,0 +1,47 @@
+// Resoures (e.g. downloads)
+
+// <ul class="row ws-resources">
+//   <li class="col-sm-3 ws-resources-item">
+//     <a href="#">
+//       <img src="#" alt="">
+//     </a>
+//     <span class="ws-resources-title">
+//       <a href="#">
+//         My great file
+//       </a>
+//     </span>
+//   </li>
+//   etc...
+// </ul>
+
+.ws-resources {
+  @include list-unstyled;
+  margin-top: $spacer;
+}
+
+.ws-resources-item {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin: 0 0 $spacer 0;
+
+  a {
+    align-self: left;
+  }
+}
+
+.ws-resources-img {
+  height: 160px;
+  width: auto;
+  margin-bottom: 0.5rem;
+
+  @include media-breakpoint-up(md) {
+    height: 240px;
+  }
+}
+
+.ws-resources-title {
+  font-weight: $font-weight-bold;
+  font-size: $font-size-xl;
+  line-height: 1.2;
+}

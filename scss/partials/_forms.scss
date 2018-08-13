@@ -1,0 +1,18 @@
+// Forms
+// Custom styles for form elements.
+
+
+// An inline form containing a text input and a button.
+// Keep them next to each other and stretch the input to take up as much space
+// as possible.
+.search-form {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center; // Prevent shorter elements from growing to same height as others (e.g., small buttons growing to normal sized button height)
+
+  .form-control {
+    flex-grow: 1;
+    flex-basis: 100px; // For Edge. Stops input being too wide, forcing .search-form to be wider than its container.
+    margin-right: $spacer;
+  }
+}

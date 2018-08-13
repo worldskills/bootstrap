@@ -1,0 +1,132 @@
+// Linklist
+// Used for page/article lists etc.
+
+// Use with a .ws-linklist-thumb and .ws-linklist-body elements, like a
+// Bootstrap media block:
+
+// <ul class="ws-linklist">
+//   <li class="ws-linklist-item">
+//     <img class="ws-linklist-thumb" src="#" width="160" height="120">
+//     <div class="ws-linklist-body">
+//       <h2 class="ws-linklist-title">
+//         <a href="#">My page title</a>
+//       </h2>
+//       <p class="ws-linklist-desc">This is standard size</p>
+//       <p class="ws-linklist-desc ws-linklist-desc-sm">This is small and gray</p>
+//     </div>
+//   </li>
+// </ul>
+
+// Or, without thumb and body, and within .ws-block:
+
+// <ul class="ws-linklist ws-block">
+//   <li class="ws-linklist-item">
+//     <h2 class="ws-linklist-title">
+//       <a href="#">My page title</a>
+//     </h2>
+//     <p class="ws-linklist-desc">Optional page description</p>
+//   </li>
+// </ul>
+
+// .ws-linklist-desc is optional.
+
+// Add .ws-linklist-sticky to the outer block to have it stick to top of page.
+
+
+// Base styles, with thumb and body:
+
+.ws-linklist {
+  padding-left: 0;
+  list-style: none;
+
+  &.ws-linklist-sticky {
+    @include sticky();
+  }
+}
+
+  .ws-linklist-item {
+    align-items: flex-start;
+    padding: ($spacer * 1.5) 0;
+    border-bottom: 1px solid $gray-300;
+
+    @include media-breakpoint-up(sm) {
+      display: flex;
+    }
+
+    &.active a {
+      color: $body-color;
+    }
+  }
+
+    .ws-linklist-thumb {
+      max-width: 160px;
+      margin-right: $grid-gutter-width;
+      margin-bottom: $spacer;
+
+      @include media-breakpoint-up(sm) {
+        margin-bottom: 0;
+      }
+    }
+
+    .ws-linklist-body {
+      flex: 1;
+
+      *:first-child {
+        margin-top: 0;
+      }
+
+      *:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+      .ws-linklist-title {
+        margin: 0 0 0.5rem 0;
+        font-size: $font-size-lg;
+        font-weight: $font-weight-bold;
+        width: 100%; // For IE11, otherwise the title goes too wide.
+      }
+
+      .ws-linklist-desc {
+        margin: 0.5rem 0;
+        line-height: 1.3125;
+      }
+
+      .ws-linklist-desc-sm {
+        font-size: $font-size-sm;
+        color: $text-muted;
+
+        &.active {
+          color: $link-color;
+        }
+      }
+
+
+// Variations for when within .ws-block, with no thumb and body.
+
+.ws-block.ws-linklist {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+
+  .ws-linklist-item {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  @include media-breakpoint-only(md) {
+    // Smaller at this width, to still allow us to keep the blocks in columns.
+
+    .ws-linklist-title {
+      font-size: $font-size-base;
+      margin: 0;
+    }
+
+    .ws-linklist-desc {
+      font-size: $font-size-sm;
+      margin: 0;
+    }
+  }
+}

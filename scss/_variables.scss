@@ -11,36 +11,7 @@ $ws-zindex-hero-overlay: 50;
 $ws-zindex-logo-overlay: 70;
 $ws-zindex-navbar-overlay: 100;
 
-// Color system
-
-$white: #fff !default;
-$gray-100: #f7f7f7 !default;
-$gray-200: #e8e8e8 !default;
-$gray-300: #d7d7d7 !default;
-$gray-400: #acacac !default;
-$gray-500: #878787 !default;
-$gray-600: #707070 !default;
-$gray-700: #5A5A5A !default;
-$gray-800: #434343 !default;
-$gray-900: #2D2D2D !default;
-$black: #000 !default;
-
-$grays: () !default;
-$grays: map-merge(
-  (
-    "100": $gray-100,
-    "200": $gray-200,
-    "300": $gray-300,
-    "400": $gray-400,
-    "500": $gray-500,
-    "600": $gray-600,
-    "700": $gray-700,
-    "800": $gray-800,
-    "900": $gray-900
-  ),
-  $grays
-);
-
+// Colors
 $yellow-tint-1: #DFC823 !default;
 $yellow-tint-2: #E7D11B !default;
 $yellow-tint-3: #F1D800 !default;
@@ -96,6 +67,40 @@ $green-tint-3: #81D6C9 !default;
 $green-tint-4: #8AE2D1 !default;
 $green-tint-5: #ABEADC !default;
 $green-tint-6: #C5F0E6 !default;
+
+// A light version of the standard link color.
+$ws-link-faded-color: $red-tint-6;
+
+
+// Color system
+
+$white: #fff !default;
+$gray-100: #f7f7f7 !default;
+$gray-200: #e8e8e8 !default;
+$gray-300: #d7d7d7 !default;
+$gray-400: #acacac !default;
+$gray-500: #878787 !default;
+$gray-600: #707070 !default;
+$gray-700: #5A5A5A !default;
+$gray-800: #434343 !default;
+$gray-900: #2D2D2D !default;
+$black: #000 !default;
+
+$grays: () !default;
+$grays: map-merge(
+  (
+    "100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900
+  ),
+  $grays
+);
 
 $blue: $blue-tint-3 !default;
 $indigo: #362D79 !default;
