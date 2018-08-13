@@ -42,11 +42,6 @@
       }
     }
   }
-
-  @include media-breakpoint-up($ws-navbar-breakpoint) {
-
-
-  }
 }
 
 
@@ -143,6 +138,7 @@
 
     .navbar-brand {
       margin-left: 0;
+      margin-bottom: 0;
     }
 
     .nav-item {
