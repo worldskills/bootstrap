@@ -24,13 +24,15 @@
   ],
   "scripts": {
     "bootstrap-copy": "cp -r node_modules/bootstrap/scss/ scss/bootstrap/",
-    "css": "npm run css-compile && npm run css-prefix && npm run css-minify",
+    "css": "npm run css-compile && npm run css-prefix && npm run css-minify && npm run css-copy",
     "css-compile": "sass scss/bootstrap.scss dist/css/bootstrap.css",
     "css-prefix": "postcss --replace dist/css/bootstrap.css",
     "css-minify": "cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/bootstrap.min.css dist/css/bootstrap.css",
+    "css-copy": "cp -r dist/css/ docs/dist/css/",
     "js": "npm run js-copy",
-    "js-copy": "cp -r node_modules/bootstrap/dist/js/ dist/js/ && cp -r node_modules/bootstrap/js/ js/",
-    "dist": "npm run bootstrap-copy && npm run css && npm run js",
+    "js-copy": "cp -r node_modules/bootstrap/dist/js/ dist/js/ && cp -r node_modules/bootstrap/dist/js/ docs/dist/js/ && cp -r node_modules/bootstrap/js/ js/",
+    "img-copy": "cp -r dist/img/ docs/dist/img/",
+    "dist": "npm run bootstrap-copy && npm run css && npm run js && npm run img-copy",
     "watch-css": "nodemon --watch scss/ --ext scss --exec \"npm run css\""
   }
 }
