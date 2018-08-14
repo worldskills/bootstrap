@@ -1,30 +1,30 @@
 // Variables
 
 // Where we keep background images.
-$ws-image-path: "../img/backgrounds/";
+$ws-image-path: "../img/backgrounds/" !default;
 
 // Although we have a 12-column grid, our blocks of content (like
 // features, heros, etc) use a bigger grid of 3 columns:
-$ws-columns: 3;
+$ws-columns: 3 !default;
 
 // The 2x1, 3x1 and 2x2 .ws-feature-image elements have an extra
 // breakpoint below which we change their layout, moving their image above the
 // 'inner' block.
-$ws-feature-image-breakpoint: 470px;
+$ws-feature-image-breakpoint: 470px !default;
 
 // At narrowest widths, how high are the .ws-block-* elements?
-$ws-block-min-height: 220px;
+$ws-block-min-height: 220px !default;
 
 // From this point down, we collapse the main navbar and hide the sub navbar.
 // They should have the .navbar-expand-md class too.
-$ws-navbar-breakpoint: md;
+$ws-navbar-breakpoint: md !default;
 
-$ws-navbar-height: 100px;
+$ws-navbar-height: 100px !default;
 
 // For we put a .hero-overlay "behind" the navbar:
-$ws-zindex-hero-overlay: 50;
-$ws-zindex-logo-overlay: 70;
-$ws-zindex-navbar-overlay: 100;
+$ws-zindex-hero-overlay: 50 !default;
+$ws-zindex-logo-overlay: 70 !default;
+$ws-zindex-navbar-overlay: 100 !default;
 
 // Colors
 $yellow-tint-1: #DFC823 !default;
@@ -84,7 +84,7 @@ $green-tint-5: #ABEADC !default;
 $green-tint-6: #C5F0E6 !default;
 
 // A light version of the standard link color.
-$ws-link-faded-color: $red-tint-6;
+$ws-link-faded-color: $red-tint-6 !default;
 
 
 // Color system
@@ -103,18 +103,18 @@ $black: #000 !default;
 
 $grays: () !default;
 $grays: map-merge(
-  (
-    "100": $gray-100,
-    "200": $gray-200,
-    "300": $gray-300,
-    "400": $gray-400,
-    "500": $gray-500,
-    "600": $gray-600,
-    "700": $gray-700,
-    "800": $gray-800,
-    "900": $gray-900
-  ),
-  $grays
+ (
+ "100": $gray-100,
+ "200": $gray-200,
+ "300": $gray-300,
+ "400": $gray-400,
+ "500": $gray-500,
+ "600": $gray-600,
+ "700": $gray-700,
+ "800": $gray-800,
+ "900": $gray-900
+ ),
+ $grays
 );
 
 $blue: $blue-tint-3 !default;
@@ -135,23 +135,23 @@ $blue-hint-lighter: #8ca5bc !default;
 
 $colors: () !default;
 $colors: map-merge(
-  (
-    "blue": $blue,
-    "indigo": $indigo,
-    "purple": $purple,
-    "pink": $pink,
-    "red": $red,
-    "orange": $orange,
-    "yellow": $yellow,
-    "green": $green,
-    "teal": $teal,
-    "cyan": $cyan,
-    "white": $white,
-    "gray": $gray-600,
-    "gray-dark": $gray-800,
-    "blue-dark": $blue-dark,
-  ),
-  $colors
+ (
+ "blue": $blue,
+ "indigo": $indigo,
+ "purple": $purple,
+ "pink": $pink,
+ "red": $red,
+ "orange": $orange,
+ "yellow": $yellow,
+ "green": $green,
+ "teal": $teal,
+ "cyan": $cyan,
+ "white": $white,
+ "gray": $gray-600,
+ "gray-dark": $gray-800,
+ "blue-dark": $blue-dark,
+ ),
+ $colors
 );
 
 $primary: $blue !default;
@@ -160,12 +160,12 @@ $info: $cyan !default;
 
 $theme-colors: () !default;
 $theme-colors: map-merge(
-  (
-    "primary": $primary,
-    "secondary": $secondary,
-    "info": $info,
-  ),
-  $theme-colors
+ (
+ "primary": $primary,
+ "secondary": $secondary,
+ "info": $info,
+ ),
+ $theme-colors
 );
 
 
@@ -182,7 +182,7 @@ $link-hover-color: $blue-tint-1 !default;
 
 // Grid columns
 
-$grid-gutter-width:           20px;
+$grid-gutter-width: 20px !default;
 
 
 // Body
@@ -259,14 +259,14 @@ $btn-font-weight: $font-weight-bold !default;
 
 
 // Navs
-$nav-link-padding-y: 0.5rem;
+$nav-link-padding-y: 0.5rem !default;
 
 
 // Navbar
 $navbar-padding-y: 8px !default;
 $navbar-font-size: $font-size-sm !default;
 $navbar-font-weight: $font-weight-base !default;
-$navbar-brand-padding-y: 0.3rem;
+$navbar-brand-padding-y: 0.3rem !default;
 $navbar-dark-color: $white !default;
 $navbar-dark-hover-color: $white !default;
 $navbar-dark-active-color: $cyan !default;
@@ -276,8 +276,8 @@ $navbar-toggler-padding-x: 0 !default;
 
 // Figures
 
-$figure-caption-font-size:          $font-size-base;
-$figure-caption-color:              $gray-400;
+$figure-caption-font-size: $font-size-base !default;
+$figure-caption-color: $gray-400 !default;
 
 
 // Breadcrumbs
