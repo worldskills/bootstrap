@@ -24,25 +24,6 @@
   .form-control {
     @include form-control-colors($white, $blue-hint-light, $blue-hint-lighter);
   }
-
-  // By default these wouldn't be white, so...
-  // If we start needing white ones elsewhere too, we should put this somewhere
-  // else where we don't generate it twice.
-  .ws-icon-facebook {
-    @include background-svg(facebook, $white);
-  }
-  .ws-icon-flickr {
-    @include background-svg(flickr, $white);
-  }
-  .ws-icon-instagram {
-    @include background-svg(instagram, $white);
-  }
-  .ws-icon-twitter {
-    @include background-svg(twitter, $white);
-  }
-  .ws-icon-youtube{
-    @include background-svg(youtube, $white);
-  }
 }
 
 // Each row within .page-footer should have this.
