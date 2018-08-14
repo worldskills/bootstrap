@@ -1,0 +1,87 @@
+// Image list
+// A list of images, each with some text, and a link.
+
+// Use the .ws-imglist-* classes in combination with row/col classes:
+
+// <ul clas="ws-imglist row">
+//   <li class="ws-imglist-item col-sm-3">
+//     <a href="#">
+//       <img class="ws-imglist-img" src="">
+//       <h2 class="ws-imglist-title">My title</h2>
+//     </a>
+//     <p class="ws-imglist-desc">My description</p>
+//   </li>
+// </ul>
+//
+// You can add an optional wrapper around the <img>. If this has a background-image
+// (like a flag) that will be sized small and positioned bottom-left in front of
+// the <img>:
+//
+// <ul clas="ws-imglist row">
+//   <li class="ws-imglist-item col-sm-3">
+//     <a href="#">
+//       <span class="ws-imglist-img-wrapper" style="background-image: url(example.png)">
+//         <img class="ws-imglist-img" src="">
+//       </span>
+//       <h2 class="ws-imglist-title">My title</h2>
+//     </a>
+//     <p class="ws-imglist-desc">My description</p>
+//   </li>
+// </ul>
+
+
+.ws-imglist {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.ws-imglist-item {
+  margin-bottom: 2rem;
+}
+
+.ws-imglist-img-wrapper {
+  display: inline-block;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 55px;
+}
+
+.ws-imglist-img {
+  max-width: 100%;
+  height: auto;
+
+  // So that any background-image on the container stays in front:
+  position: relative;
+  z-index: -1;
+}
+
+.ws-imglist-title {
+  font-size: $font-size-xl;
+  font-weight: $font-weight-bold;
+  line-height: 1.2;
+  margin: 0.8rem 0 0 0;
+}
+
+.ws-imglist-desc {
+  margin: 0;
+  font-size: $font-size-lg;
+  font-weight: $font-weight-bold;
+  line-height: 1.333333;
+}
+
+
+@include media-breakpoint-only(sm) {
+  // Make type a bit smaller at the last point we still have 4 columns.
+
+  .ws-imglist-title {
+    font-size: $font-size-lg;
+    line-height: 1.333333;
+  }
+
+  .ws-imglist-desc {
+    font-size: $font-size-base;
+    line-height: 1.5;
+  }
+}

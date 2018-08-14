@@ -1,5 +1,20 @@
 // Variables
 
+// Where we keep background images.
+$ws-image-path: "../img/backgrounds/";
+
+// Although we have a 12-column grid, our blocks of content (like
+// features, heros, etc) use a bigger grid of 3 columns:
+$ws-columns: 3;
+
+// The 2x1, 3x1 and 2x2 .ws-feature-image elements have an extra
+// breakpoint below which we change their layout, moving their image above the
+// 'inner' block.
+$ws-feature-image-breakpoint: 470px;
+
+// At narrowest widths, how high are the .ws-block-* elements?
+$ws-block-min-height: 220px;
+
 // From this point down, we collapse the main navbar and hide the sub navbar.
 // They should have the .navbar-expand-md class too.
 $ws-navbar-breakpoint: md;
@@ -165,6 +180,11 @@ $link-color: $blue-tint-4 !default;
 $link-hover-color: $blue-tint-1 !default;
 
 
+// Grid columns
+
+$grid-gutter-width:           20px;
+
+
 // Body
 
 $body-bg: $white !default;
@@ -252,6 +272,12 @@ $navbar-dark-hover-color: $white !default;
 $navbar-dark-active-color: $cyan !default;
 $navbar-toggler-padding-y: 0.75rem !default;
 $navbar-toggler-padding-x: 0 !default;
+
+
+// Figures
+
+$figure-caption-font-size:          $font-size-base;
+$figure-caption-color:              $gray-400;
 
 
 // Breadcrumbs

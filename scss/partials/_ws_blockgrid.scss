@@ -1,0 +1,69 @@
+// Blockgrid
+// A grid of square gray blocks, with things in them.
+// Used for the list of members' flags.
+
+// Combine with row/col classes to make it a grid:
+
+// <ul class="ws-blockgrid row">
+//
+//   <li class="ws-blockgrid-item col-sm-3">
+//     <div class="ws-blockgrid-block">
+//       <div class="ws-blockgrid-block-content">
+//         <a class="ws-blockgrid-block-link" href="#">
+//           <img src="#">
+//         </a>
+//       </div>
+//     </div>
+//     <a href="#">Title</a>
+//   </li>
+//
+//   <!-- etc. -->
+//
+// </ul>
+
+.ws-blockgrid {
+  @include list-unstyled;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.ws-blockgrid-item {
+  margin-bottom: 2rem;
+}
+
+// Square gray block:
+.ws-blockgrid-block {
+  background: $gray-100;
+  position: relative;
+  margin-bottom: 0.5rem;
+
+  // Keep it square.
+  &:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+}
+
+// Because we're adding that :after element to keep -block square,
+// we need to add this element inside it in which the actual content will go:
+.ws-blockgrid-block-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ws-blockgrid-block-link {
+  width: 64%;
+  height: auto;
+  display: block;
+
+  // The flag.
+  img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,48 @@
+// Block
+
+// Used to set the height of elements, such as .ws-feature elements.
+// A .ws-block will, by default, be as high as a single column is wide
+// (where, by 'column', I mean one of the large $ws-columns columns).
+
+// There are optionally dimension classes too, indicating width x height,
+// such as:
+// .ws-block-2x1
+// .ws-block-3x1
+// .ws-block-2x2
+
+
+.ws-block {
+  position: relative;
+  margin-bottom: $grid-gutter-width;
+
+  // At narrowest width, auto height, not square.
+  min-height: $ws-block-min-height;
+
+  // Make it as high as a col-4 column is wide at each width (from md upwards):
+  @each $breakpoint, $container-max-width in $container-max-widths {
+    @if $breakpoint != sm {
+      @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+        // Width of a single big column at this breakpoint:
+        height: ($container-max-width / $ws-columns) - $grid-gutter-width;
+      }
+    }
+  }
+}
+
+.ws-block-2x2 {
+  // Double height.
+  // Make it as high as a col-4 column is wide at each width:
+  @each $breakpoint, $container-max-width in $container-max-widths {
+    @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+      // Width of a single big column at this breakpoint
+      $col-width: ($container-max-width / $ws-columns) - $grid-gutter-width;
+      height: $col-width * ($ws-columns - 1) + $grid-gutter-width;
+    }
+  }
+}
+
+// Can be added to other elements (like .ws-hero) to give them the same
+// bottom margin as a .ws-block.
+.ws-block-mb {
+  margin-bottom: $grid-gutter-width;
+}

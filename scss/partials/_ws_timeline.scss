@@ -1,0 +1,155 @@
+// Horizontal and vertical timelines.
+// Horizontal timelines look the same as vertical at narrow widths.
+// Or if they have more than 4 events in them.
+
+
+// Vertical timeline is the default.
+// The 'about' element with thumbnail is optional.
+// Add the 'active' class to the 'ws-timeline-event' to make its marker 'on'.
+
+// <div class="ws-timeline">
+//   <div class="ws-timeline-event">
+//     <h2 class="ws-timeline-title">
+//       <a href="#">My Event</a>
+//     </h2>
+//     <p class="ws-timeline-date">9 August 2018</p>
+//     <div class="ws-timeline-about">
+//       <a href="#" class="ws-timeline-thumb">
+//         <img src="#" alt="">
+//       </a>
+//       <p class="ws-timeline-desc">My description</p>
+//     </div>
+//   </div>
+// </div>
+
+// Horizontal version:
+
+// <div class="ws-timeline ws-timeline-horizontal">
+//   <div class="ws-timeline-event">
+//     <h2 class="ws-timeline-title">
+//       <a href="#">My Event</a>
+//     </h2>
+//     <p class="ws-timeline-date">9 August 2018</p>
+//   </div>
+// </div>
+
+
+
+.ws-timeline {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+  background-image: url(#{$ws-image-path}timeline_vertical.png);
+  background-position: 10px 0;
+  background-repeat: repeat-y;
+}
+
+  .ws-timeline-event {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: url(#{$ws-image-path}timeline_event.png) 0 0 no-repeat;
+    padding-left: 55px;
+    margin-bottom: 2rem;
+
+    &:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0.5rem;
+      // Covers up the timeline's line background:
+      background-color: $white;
+    }
+
+    &.active {
+      background-image: url(#{$ws-image-path}timeline_event_active.png);
+    }
+  }
+
+    .ws-timeline-date {
+      color: $blue-dark;
+      order: 1;
+      margin: -0.1em 0 0 0;
+    }
+
+    .ws-timeline-title {
+      margin: 0;
+      order: 2;
+      font-size: $font-size-xl;
+    }
+
+    .ws-timeline-about {
+      order: 3;
+      margin-top: 1rem;
+    }
+
+      // At narrow widths, the thumb goes above the desc.
+      .ws-timeline-thumb {
+        display: block;
+      }
+
+      .ws-timeline-desc {
+        margin-bottom: 0;
+
+        .ws-timeline-thumb + & {
+          margin-top: 0.5rem;
+        }
+      }
+
+
+
+@include media-breakpoint-up(sm) {
+  // Vertical timelines at wider widths; image and desc adjacent.
+
+  .ws-timeline-about {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .ws-timeline-thumb {
+    margin-bottom: 0;
+    margin-right: $spacer;
+  }
+
+  .ws-timeline-thumb + .ws-timeline-desc {
+    margin-top: 0;
+  }
+}
+
+
+@include media-breakpoint-up(md) {
+  // Horizontal timelines at wider widths...
+
+  .ws-timeline-horizontal {
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url(#{$ws-image-path}timeline_horizontal.png);
+    background-position: 0 10px;
+    background-repeat: repeat-x;
+
+    .ws-timeline-event {
+      background-image: url(#{$ws-image-path}timeline_event.png);
+      padding: 55px 0 0 0;
+      margin: 0 $spacer;
+      max-width: 33%;
+
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &.active {
+        background-image: url(#{$ws-image-path}timeline_event_active.png);
+      }
+    }
+
+    .ws-timeline-date {
+      margin-top: 0;
+      margin-bottom: 0.3em;
+    }
+
+    .ws-timeline-title {
+      font-size: $font-size-2xl;
+    }
+  }
+}

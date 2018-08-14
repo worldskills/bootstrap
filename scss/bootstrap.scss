@@ -6,6 +6,7 @@
 
 @import "mixins/buttons";
 @import "mixins/forms";
+@import "mixins/image";
 @import "mixins/ws_svg";
 @import "mixins/ws_sticky";
 @import "mixins/ws_inverse";
@@ -16,11 +17,16 @@
 @import "partials/pagination";
 @import "partials/text";
 @import "partials/type";
+@import "partials/ws_block";
+@import "partials/ws_blockgrid";
 @import "partials/ws_content";
 @import "partials/ws_events";
+@import "partials/ws_fact";
+@import "partials/ws_feature";
 @import "partials/ws_heading";
 @import "partials/ws_hero";
 @import "partials/ws_imglink";
+@import "partials/ws_imglist";
 @import "partials/ws_layout";
 @import "partials/ws_linklist";
 @import "partials/ws_nav";
@@ -29,3 +35,4 @@
 @import "partials/ws_pullquote";
 @import "partials/ws_resources";
 @import "partials/ws_tag";
+@import "partials/ws_timeline";

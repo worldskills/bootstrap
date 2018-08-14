@@ -109,6 +109,46 @@
   }
 }
 
+.ws-hero-cyan {
+  @include inverse($blue);
+  @include background-image-retina("hero_bg_blue_cubes.png", "hero_bg_blue_cubes@2x.png", 144px, 250px);
+
+  .ws-hero-title {
+    @include background-image-retina("hero_bullet_1.png", "hero_bullet_1@2x.png" , 21px, 25px);
+  }
+}
+
+.ws-hero-purple {
+  @include inverse($purple);
+  @include background-image-retina("hero_bg_pink_cubes.png", "hero_bg_pink_cubes@2x.png", 144px, 250px);
+
+  .ws-hero-title {
+    @include background-svg("hero-bullet", $white);
+  }
+}
+
+.ws-hero-gray {
+  background-color: $gray-100;
+  @include background-image-retina("hero_bg_white_cubes.png", "hero_bg_white_cubes@2x.png", 144px, 250px);
+  color: $purple;
+}
+
+
+// Has a 'quote' graphic at top and quote background.
+.ws-hero-quote {
+  @include inverse($cyan);
+  @include background-image-retina("feature_bg_blue_quotes.png", "feature_bg_blue_quotes@2x.png", 722px, 423px);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin-bottom: 0;
+
+  .ws-hero-title {
+    padding-top: 50px;
+    background: url(#{$ws-image-path}feature_quotes.png) 50% 0 no-repeat;
+  }
+}
+
 
 // Has a flag image as the .ws-hero-title's background image.
 .ws-hero-flag {

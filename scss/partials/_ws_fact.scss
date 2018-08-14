@@ -1,0 +1,28 @@
+// Fact
+
+// For the Headline Numbers block.
+
+// e.g.:
+//
+// <aside class="ws-fact">
+//     <strong class="ws-fact-big">200</strong>
+//     <span class="ws-fact-small">bricks used in the build</span>
+// </aside>
+
+.ws-fact {
+  display: inline-block;
+  margin: 1rem 0;
+}
+
+.ws-fact-big {
+  display: block;
+  font-size: $font-size-7xl;
+  line-height: 1em;
+  font-weight: $font-weight-black;
+  color: $primary;
+}
+
+.ws-fact-small {
+  font-family: $font-family-serif;
+  font-size: $font-size-xl;
+}

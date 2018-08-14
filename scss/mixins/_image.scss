@@ -1,0 +1,23 @@
+// Image mixins
+
+
+// Pass the 1x and 2x filenames (both should be in the $ws-image-path directory).
+// Width and height are the dimensions of the 1x image.
+//
+// e.g.:
+//   @include background-image-retina("example.png", "example@2x.png", 100px, 50px);
+//
+@mixin background-image-retina($file-1x, $file-2x, $width-1x, $height-1x) {
+  background-image: url($ws-image-path + $file-1x);
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (   -moz-min-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi), // IE9-11 don't support dppx
+  only screen and (min-resolution: 2dppx) { // Standardized
+    background-image: url($ws-image-path + $file-2x);
+    background-size: $width-1x $height-1x;
+  }
+}
