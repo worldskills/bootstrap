@@ -26,15 +26,26 @@
   // Because if we apply a background to the element itself, then when it's
   // a column, there is no visible gutter between each col/imglink.
   &:before{
-      content: '';
-      position: absolute;
-      background: $gray-100;
-      display: block;
-      top: 0;
-      bottom: 0;
-      right: ($grid-gutter-width / 2);
-      left: ($grid-gutter-width / 2);
-      z-index: -1;
+    content: '';
+    position: absolute;
+    background-color: $gray-100;
+    display: block;
+    top: 0;
+    bottom: 0;
+    right: ($grid-gutter-width / 2);
+    left: ($grid-gutter-width / 2);
+    z-index: -1;
+  }
+}
+
+.ws-layout-gray {
+  .ws-imglink {
+    // Needed to make the :before background show in front of .ws-layout-gray:
+    z-index: 1;
+
+    &:before {
+      background-color: $white;
+    }
   }
 }
 
