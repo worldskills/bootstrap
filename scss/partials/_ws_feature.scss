@@ -78,16 +78,16 @@
   // Variations of colour / bg image:
 
   .ws-feature-blue-2 & {
-    @include background-image-retina("feature_bg_cyan_columns.png", "feature_bg_cyan_columns@2x.png", 329px, 165px);
+    @include background-image-retina("bg_columns_cyan.png", "bg_columns_cyan@2x.png", 329px, 165px);
     background-repeat: no-repeat;
     background-position: left bottom -74px;
   }
   .ws-feature-blue-3 & {
-    background-image: url(#{$ws-image-path}feature_bg_blue_stripes.png);
+    background-image: url(#{$ws-image-path}bg_stripes_blue.png);
     background-position: top right;
   }
   .ws-feature-blue-4 & {
-    background-image: url(#{$ws-image-path}feature_bg_blue_blocks.png);
+    background-image: url(#{$ws-image-path}bg_blocks_blue.png);
     background-position: bottom right;
   }
 
@@ -96,7 +96,7 @@
     @include inverse($orange);
   }
   .ws-feature-orange-2 & {
-    background-image: url(#{$ws-image-path}feature_bg_yellow_squares.png);
+    background-image: url(#{$ws-image-path}bg_squares_yellow.png);
     background-position: right top;
   }
 
@@ -105,17 +105,17 @@
     @include inverse($purple);
   }
   .ws-feature-purple & {
-    background-image: url(#{$ws-image-path}feature_bg_pink_blocks.png);
+    background-image: url(#{$ws-image-path}bg_blocks_pink.png);
     background-position: right bottom;
   }
   .ws-feature-purple-2 & {
-    background-image: url(#{$ws-image-path}feature_bg_pink_stripes.png), url(#{$ws-image-path}feature_bg_pink_stripes_2.png);;
+    background-image: url(#{$ws-image-path}bg_stripes_pink.png), url(#{$ws-image-path}bg_stripes_pink_2.png);
     background-position: right top, left bottom;
   }
 
   .ws-feature-lightblue & {
     @include inverse($cyan);
-    background-image: url(#{$ws-image-path}feature_bg_blue_squares.png);
+    background-image: url(#{$ws-image-path}bg_squares_blue.png);
     background-position: right top;
   }
 }
@@ -149,11 +149,12 @@
   }
 
   &.ws-feature-orange .ws-feature-inner {
-    background-image: url(#{$ws-image-path}feature_bg_pink_quotes.png);
+    background-image: url(#{$ws-image-path}bg_quotes_pink.png);
   }
 
   &.ws-feature-lightblue .ws-feature-inner {
-    background-image: url(#{$ws-image-path}feature_bg_blue_quotes.png);
+    background-image: url(#{$ws-image-path}bg_quotes_blue.png);
+    @include background-image-retina("bg_quotes_blue.png", "bg_quotes_blue@2x.png", 722px, 423px);
   }
 }
 
@@ -161,7 +162,7 @@
 .ws-feature-quote-1 {
   blockquote {
     padding-top: 40px;
-    @include background-image-retina("feature_quotes.png", "feature_quotes@2x.png", 50px, 30px);
+    @include background-image-retina("quotemarks.png", "quotemarks@2x.png", 50px, 30px);
     background-position: 0 0;
     background-repeat: no-repeat;
   }
