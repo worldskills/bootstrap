@@ -1,0 +1,14 @@
+.wsmember-bg-pink {
+  background-color: #D51067;
+}
+
+.wsmember-bg-blue {
+  background-color: #003764;
+}
+
+@media (min-width: 768px) {
+  .wsmember-navbar-main  .nav-item.active .nav-link,
+  .wsmember-navbar-main .nav-item.active .nav-link:hover {
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
