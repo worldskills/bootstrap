@@ -1,0 +1,11 @@
+.wsf-bg-bluegreen {
+  background-color: #006a8e;
+  background-image: url('./navbar_stripe.svg');
+}
+
+@media (min-width: 768px) {
+  .wsf-navbar-main  .nav-item.active .nav-link,
+  .wsf-navbar-main .nav-item.active .nav-link:hover {
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
