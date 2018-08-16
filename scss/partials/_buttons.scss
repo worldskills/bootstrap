@@ -25,7 +25,7 @@
   }
 
   &.btn-primary,
-  &.btn-outline-light,
+  &.btn-outline-white,
   &.btn-outline-dark:hover,
   &.btn-outline-primary:hover {
     @include background-svg(chevron, $white);

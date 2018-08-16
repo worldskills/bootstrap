@@ -26,7 +26,7 @@
 
     .btn-more.btn-white,
     .btn-more.btn-white:hover,
-    .btn-more.btn-outline-light:hover {
+    .btn-more.btn-outline-white:hover {
       @include background-svg(chevron, $bg-color);
       color: $bg-color;
     }

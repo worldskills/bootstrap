@@ -22,3 +22,9 @@
     background-size: 0.7rem;
   }
 }
+
+
+// There's a 'light' but that's very light gray. We want a white one.
+.btn-outline-white {
+  @include button-outline-variant($white);
+}
