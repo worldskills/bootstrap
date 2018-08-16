@@ -76,12 +76,12 @@ $cyan-tint-4: #72D0EB !default;
 $cyan-tint-5: #8FDBF0 !default;
 $cyan-tint-6: #A8E4F3 !default;
 
-$green-tint-1: #5FC5BD !default;
-$green-tint-2: #70C9C1 !default;
-$green-tint-3: #81D6C9 !default;
-$green-tint-4: #8AE2D1 !default;
-$green-tint-5: #ABEADC !default;
-$green-tint-6: #C5F0E6 !default;
+$teal-tint-1: #5FC5BD !default;
+$teal-tint-2: #70C9C1 !default;
+$teal-tint-3: #81D6C9 !default;
+$teal-tint-4: #8AE2D1 !default;
+$teal-tint-5: #ABEADC !default;
+$teal-tint-6: #C5F0E6 !default;
 
 // A light version of the standard link color.
 $ws-link-faded-color: $pink-tint-6 !default;
@@ -125,7 +125,7 @@ $red: $pink-tint-1 !default;
 $orange: $orange-tint-3 !default;
 $yellow: $yellow-tint-4 !default;
 $green: #5FC5BD !default;
-$teal: $green-tint-4 !default;
+$teal: $teal-tint-4 !default;
 $cyan: $cyan-tint-4 !default;
 
 $blue-dark: $blue-dark-tint-1 !default;
