@@ -121,10 +121,10 @@ $blue: $blue-tint-3 !default;
 $indigo: #362D79 !default;
 $purple: $purple-tint-1 !default;
 $pink: $pink-tint-3 !default;
-$red: $pink-tint-1 !default;
+$red: #cc2216 !default;
 $orange: $orange-tint-3 !default;
 $yellow: $yellow-tint-4 !default;
-$green: #5FC5BD !default;
+$green: #379d44 !default;
 $teal: $teal-tint-4 !default;
 $cyan: $cyan-tint-4 !default;
 
@@ -155,7 +155,7 @@ $colors: map-merge(
 );
 
 $primary: $blue !default;
-$secondary: $purple !default;
+$secondary: $gray-500 !default;
 $info: $cyan !default;
 
 $theme-colors: () !default;
@@ -176,7 +176,7 @@ $spacer: 1rem !default;
 
 // Links
 
-$link-color: $blue-tint-4 !default;
+$link-color: $blue-dark-tint-5 !default;
 $link-hover-color: $blue-tint-1 !default;
 
 
@@ -266,10 +266,12 @@ $nav-link-padding-y: 0.5rem !default;
 $navbar-padding-y: 8px !default;
 $navbar-font-size: $font-size-sm !default;
 $navbar-font-weight: $font-weight-base !default;
+$navbar-brand-font-size: 1.75rem !default;
 $navbar-brand-padding-y: 0.3rem !default;
 $navbar-dark-color: $white !default;
 $navbar-dark-hover-color: $white !default;
-$navbar-dark-active-color: $cyan !default;
+$navbar-dark-active-color: $cyan-tint-4 !default;
+$navbar-dark-brand-color: $white !default;
 $navbar-toggler-padding-y: 0.75rem !default;
 $navbar-toggler-padding-x: 0 !default;
 
