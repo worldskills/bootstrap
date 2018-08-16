@@ -70,6 +70,10 @@
 
     .ws-linklist-body {
       flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-self: stretch;
+      justify-content: center;
 
       *:first-child {
         margin-top: 0;
@@ -81,7 +85,7 @@
     }
 
       .ws-linklist-title {
-        margin: 0 0 0.5rem 0;
+        margin: 0.5rem 0;
         font-size: $font-size-lg;
         font-weight: $font-weight-bold;
         width: 100%; // For IE11, otherwise the title goes too wide.
