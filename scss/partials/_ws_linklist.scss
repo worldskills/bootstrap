@@ -32,6 +32,9 @@
 
 // Add .ws-linklist-sticky to the outer block to have it stick to top of page.
 
+// Add .ws-linklist-thumb-xs or .ws-linklist-thumb-sm to the image to get
+// smaller sizes.
+
 
 // Base styles, with thumb and body:
 
@@ -66,6 +69,14 @@
       @include media-breakpoint-up(sm) {
         margin-bottom: 0;
       }
+    }
+
+    .ws-linklist-thumb-sm {
+      max-width: 80px;
+    }
+
+    .ws-linklist-thumb-xs {
+      max-width: 40px;
     }
 
     .ws-linklist-body {
