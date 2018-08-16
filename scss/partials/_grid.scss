@@ -1,0 +1,9 @@
+
+// Modification to standard grid.
+// Add more left/right padding to most contents at narrow width.
+@include media-breakpoint-down(sm) {
+  main > .container {
+    padding-left: $grid-gutter-width;
+    padding-right: $grid-gutter-width;
+  }
+}
