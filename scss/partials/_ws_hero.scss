@@ -23,6 +23,11 @@
 // </figure>
 
 
+// Used in a few places to adjust height/font-size at extra-wide widths.
+$ws-hero-breakpoint-2xl: 1350px;
+$ws-hero-breakpoint-3xl: 1500px;
+
+
 .ws-hero {
   display: flex;
   flex-direction: column;
@@ -225,6 +230,20 @@
       padding-bottom: 10rem;
     }
   }
+
+  // Make taller at even wider widths to the photo fits better.
+  // (Further down we make the text in it bigger too.)
+  @media (min-width: $ws-hero-breakpoint-2xl) {
+    & {
+      min-height: 900px;
+    }
+  }
+
+  @media (min-width: $ws-hero-breakpoint-3xl) {
+    & {
+      min-height: 1000px;
+    }
+  }
 }
 
 .ws-hero-logo {
@@ -243,4 +262,50 @@
   margin-left: auto;
   margin-right: auto;
   max-width: 22em;
+}
+
+
+// Make a ws-hero-image at the top of .page-template-hero pages taller at
+// wider widths:
+.page-template-hero main .ws-hero-image:first-of-type {
+
+  @include media-breakpoint-up(xl) {
+    & {
+      min-height: 500px;
+    }
+  }
+
+  @media (min-width: $ws-hero-breakpoint-2xl) {
+    & {
+      min-height: 550px;
+    }
+  }
+
+  @media (min-width: $ws-hero-breakpoint-3xl) {
+    & {
+      min-height: 700px;
+    }
+  }
+}
+
+// Make the text in these items bigger at wider widths, to look better in
+// their larger heights:
+.ws-hero-overlay,
+.page-template-hero main .ws-hero-image:first-of-type {
+
+  @media (min-width: $ws-hero-breakpoint-2xl) {
+    .ws-hero-title {
+      font-size: 4.5rem;
+    }
+
+    .ws-hero-desc {
+      font-size: $font-size-2xl;
+    }
+  }
+
+  @media (min-width: $ws-hero-breakpoint-3xl) {
+    .ws-hero-title {
+      font-size: 5rem;
+    }
+  }
 }
