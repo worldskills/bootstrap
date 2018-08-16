@@ -179,6 +179,21 @@
   }
 }
 
+.ws-navbar-sub {
+  background: $blue;
+
+  .nav-item {
+    &.active {
+      .nav-link {
+        color: lighten($cyan, 15%);
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
 
 // Variation for pages like the home page.
 // The navbar is immediately followed by a .ws-hero.ws-hero-overlay block.

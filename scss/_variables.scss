@@ -41,12 +41,12 @@ $orange-tint-4: #F89041 !default;
 $orange-tint-5: #FAA44F !default;
 $orange-tint-6: #FBB654 !default;
 
-$red-tint-1: #AC0D56 !default;
-$red-tint-2: #BF1561 !default;
-$red-tint-3: #D51067 !default;
-$red-tint-4: #DD3E75 !default;
-$red-tint-5: #E35883 !default;
-$red-tint-6: #EC7B98 !default;
+$pink-tint-1: #AC0D56 !default;
+$pink-tint-2: #BF1561 !default;
+$pink-tint-3: #D51067 !default;
+$pink-tint-4: #DD3E75 !default;
+$pink-tint-5: #E35883 !default;
+$pink-tint-6: #EC7B98 !default;
 
 $purple-tint-1: #4A0D66 !default;
 $purple-tint-2: #5D2875 !default;
@@ -76,15 +76,15 @@ $cyan-tint-4: #72D0EB !default;
 $cyan-tint-5: #8FDBF0 !default;
 $cyan-tint-6: #A8E4F3 !default;
 
-$green-tint-1: #5FC5BD !default;
-$green-tint-2: #70C9C1 !default;
-$green-tint-3: #81D6C9 !default;
-$green-tint-4: #8AE2D1 !default;
-$green-tint-5: #ABEADC !default;
-$green-tint-6: #C5F0E6 !default;
+$teal-tint-1: #5FC5BD !default;
+$teal-tint-2: #70C9C1 !default;
+$teal-tint-3: #81D6C9 !default;
+$teal-tint-4: #8AE2D1 !default;
+$teal-tint-5: #ABEADC !default;
+$teal-tint-6: #C5F0E6 !default;
 
 // A light version of the standard link color.
-$ws-link-faded-color: $red-tint-6 !default;
+$ws-link-faded-color: $pink-tint-6 !default;
 
 
 // Color system
@@ -120,12 +120,12 @@ $grays: map-merge(
 $blue: $blue-tint-3 !default;
 $indigo: #362D79 !default;
 $purple: $purple-tint-1 !default;
-$pink: $red-tint-3 !default;
-$red: $red-tint-1 !default;
+$pink: $pink-tint-3 !default;
+$red: #cc2216 !default;
 $orange: $orange-tint-3 !default;
 $yellow: $yellow-tint-4 !default;
-$green: #5FC5BD !default;
-$teal: $green-tint-4 !default;
+$green: #379d44 !default;
+$teal: $teal-tint-4 !default;
 $cyan: $cyan-tint-4 !default;
 
 $blue-dark: $blue-dark-tint-1 !default;
@@ -155,7 +155,7 @@ $colors: map-merge(
 );
 
 $primary: $blue !default;
-$secondary: $purple !default;
+$secondary: $gray-500 !default;
 $info: $cyan !default;
 
 $theme-colors: () !default;
@@ -176,7 +176,7 @@ $spacer: 1rem !default;
 
 // Links
 
-$link-color: $blue-tint-4 !default;
+$link-color: $blue-dark-tint-5 !default;
 $link-hover-color: $blue-tint-1 !default;
 
 
@@ -266,10 +266,12 @@ $nav-link-padding-y: 0.5rem !default;
 $navbar-padding-y: 8px !default;
 $navbar-font-size: $font-size-sm !default;
 $navbar-font-weight: $font-weight-base !default;
+$navbar-brand-font-size: 1.75rem !default;
 $navbar-brand-padding-y: 0.3rem !default;
 $navbar-dark-color: $white !default;
 $navbar-dark-hover-color: $white !default;
-$navbar-dark-active-color: $cyan !default;
+$navbar-dark-active-color: $cyan-tint-4 !default;
+$navbar-dark-brand-color: $white !default;
 $navbar-toggler-padding-y: 0.75rem !default;
 $navbar-toggler-padding-x: 0 !default;
 
