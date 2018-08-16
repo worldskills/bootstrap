@@ -41,12 +41,12 @@ $orange-tint-4: #F89041 !default;
 $orange-tint-5: #FAA44F !default;
 $orange-tint-6: #FBB654 !default;
 
-$red-tint-1: #AC0D56 !default;
-$red-tint-2: #BF1561 !default;
-$red-tint-3: #D51067 !default;
-$red-tint-4: #DD3E75 !default;
-$red-tint-5: #E35883 !default;
-$red-tint-6: #EC7B98 !default;
+$pink-tint-1: #AC0D56 !default;
+$pink-tint-2: #BF1561 !default;
+$pink-tint-3: #D51067 !default;
+$pink-tint-4: #DD3E75 !default;
+$pink-tint-5: #E35883 !default;
+$pink-tint-6: #EC7B98 !default;
 
 $purple-tint-1: #4A0D66 !default;
 $purple-tint-2: #5D2875 !default;
@@ -84,7 +84,7 @@ $green-tint-5: #ABEADC !default;
 $green-tint-6: #C5F0E6 !default;
 
 // A light version of the standard link color.
-$ws-link-faded-color: $red-tint-6 !default;
+$ws-link-faded-color: $pink-tint-6 !default;
 
 
 // Color system
@@ -120,8 +120,8 @@ $grays: map-merge(
 $blue: $blue-tint-3 !default;
 $indigo: #362D79 !default;
 $purple: $purple-tint-1 !default;
-$pink: $red-tint-3 !default;
-$red: $red-tint-1 !default;
+$pink: $pink-tint-3 !default;
+$red: $pink-tint-1 !default;
 $orange: $orange-tint-3 !default;
 $yellow: $yellow-tint-4 !default;
 $green: #5FC5BD !default;
