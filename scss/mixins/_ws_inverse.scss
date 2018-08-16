@@ -16,13 +16,16 @@
 
   @if $bg-color {
 
-    .btn.bg-white {
+    .btn-white {
       color: $bg-color;
+
+      &:hover {
+        background-color: $gray-200;
+      }
     }
 
-    .btn.bg-white,
-    .btn-more.bg-white,
-    .btn-more.bg-white:hover,
+    .btn-more.btn-white,
+    .btn-more.btn-white:hover,
     .btn-more.btn-outline-light:hover {
       @include background-svg(chevron, $bg-color);
       color: $bg-color;
