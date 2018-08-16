@@ -205,28 +205,6 @@
   }
 }
 
-
-// The p is first element (probably saying "Featured Article" or similar.
-// Followed by h1 and optional a.btn.
-.ws-feature-has-intro {
-  p {
-    order: 1;
-    font-family: $font-family-serif;
-    margin-bottom: 0.5rem;
-  }
-
-  h1 {
-    order: 2;
-    margin-top: 0;
-    margin-bottom: 2rem;
-  }
-
-  a.btn {
-    order: 3;
-  }
-}
-
-
 // Styles that have an extra div that has a background image.
 // At narrow widths, these are all 100% wide, with .ws-feature-image-inner
 // above .ws-feature-inner.
