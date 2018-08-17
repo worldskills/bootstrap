@@ -18,6 +18,14 @@
 .ws-feature {
   text-rendering: optimizeLegibility;
 
+  @include hover {
+    text-decoration: none;
+
+    .ws-feature-title {
+      text-decoration: underline;
+    }
+  }
+
   .ws-feature-title {
     font-weight: $font-weight-black;
     line-height: $headings-line-height;
