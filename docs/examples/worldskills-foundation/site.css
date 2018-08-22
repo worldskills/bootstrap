@@ -1,6 +1,5 @@
 .wsf-bg-bluegreen {
   background-color: #006a8e;
-  background-image: url('./navbar_stripe.svg');
 }
 
 @media (min-width: 768px) {

@@ -191,6 +191,13 @@
   }
 }
 
+.ws-navbar-stripe {
+  display: block;
+  width: 100%;
+  position: relative;
+  z-index: $ws-zindex-navbar-overlay;
+}
+
 // Variation for pages like the home page.
 // The navbar is immediately followed by a .ws-hero.ws-hero-overlay block.
 // See _ws_hero.scss for associated Hero block styles.
