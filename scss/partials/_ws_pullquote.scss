@@ -1,5 +1,13 @@
 // Pullquote
 
+// By default has the quote mark on the left:
+
+// <figure class="ws-pullquote">
+//   <blockquote>My quote here</blockquote>
+//   <figcaption>Fred Bloggs</figcaption>
+// </figure>
+
+// Add the .ws-pullquote-top class to have the quote mark above the blockquote.
 
 .ws-pullquote {
   @include background-svg(quotes, $blue);
@@ -16,14 +24,23 @@
   }
 
   blockquote {
-    font-size: $font-size-2xl;
+    font-size: $font-size-xl;
     font-family: $font-family-serif;
     font-style: italic;
     color: $blue;
     margin-bottom: ($spacer * 0.5);
+
+    @include media-breakpoint-up(md) {
+      font-size: $font-size-2xl;
+    }
   }
 
   figcaption {
     font-weight: $font-weight-light;
   }
+}
+
+.ws-pullquote-top {
+  padding-left: 0;
+  padding-top: 50px;
 }
