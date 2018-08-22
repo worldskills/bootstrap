@@ -49,10 +49,6 @@
 // Much of the first bunch here is for the narrow width only...
 .ws-navbar-main {
   background-color: $purple;
-  @include background-svg("ws-navbar-stripe", $white);
-  background-position: 50% 0;
-  background-size: 100% 3px;
-  background-repeat: no-repeat;
   padding-left: 0;
   padding-right: 0;
   padding-bottom: 0;
