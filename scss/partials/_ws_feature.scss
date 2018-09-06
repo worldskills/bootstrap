@@ -121,7 +121,7 @@
     background-position: right top, left bottom;
   }
 
-  .ws-feature-lightblue & {
+  .ws-feature-cyan & {
     @include inverse($blue);
     background-image: url(#{$ws-image-path}bg_squares_blue.png);
     background-position: right top;
@@ -151,7 +151,7 @@
   }
 
   &.ws-feature-orange .ws-feature-inner,
-  &.ws-feature-lightblue .ws-feature-inner {
+  &.ws-feature-cyan .ws-feature-inner {
     background-position: -100px center;
     background-repeat: repeat-x;
   }
@@ -160,7 +160,7 @@
     background-image: url(#{$ws-image-path}bg_quotes_pink.png);
   }
 
-  &.ws-feature-lightblue .ws-feature-inner {
+  &.ws-feature-cyan .ws-feature-inner {
     background-image: url(#{$ws-image-path}bg_quotes_blue.png);
     @include background-image-retina("bg_quotes_blue.png", "bg_quotes_blue@2x.png", 722px, 423px);
   }
