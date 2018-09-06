@@ -145,7 +145,7 @@ $ws-hero-breakpoint-6xl: 2560px;
 // Has a 'quote' graphic at top and quote background.
 .ws-hero-quote {
   @include inverse($blue);
-  @include background-image-retina("bg_quotes_blue.png", "bg_quotes_blue@2x.png", 722px, 423px);
+  background-image: url(#{$ws-image-path}bg_quotes_blue.svg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: auto;
