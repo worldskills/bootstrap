@@ -60,7 +60,7 @@
   margin: $spacer $grid-gutter-width ($spacer * 0.5) $grid-gutter-width;
 
   @include media-breakpoint-up(lg) {
-    font-size: $font-size-xl;
+    font-size: $font-size-2xl;
   }
 }
 
