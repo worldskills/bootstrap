@@ -126,6 +126,12 @@
     background-image: url(#{$ws-image-path}bg_squares_blue.png);
     background-position: right top;
   }
+
+  .ws-feature-pink & {
+    @include inverse($pink);
+    background-image: url(#{$ws-image-path}bg_squares_yellow.png);
+    background-position: right top;
+  }
 }
 
 
