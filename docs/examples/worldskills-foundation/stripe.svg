@@ -4,9 +4,9 @@
     <rect x="0" y="0" width="1200" height="3" style="fill:#00546f;"/>
     <rect x="150" y="0" width="1050" height="3" style="fill:#71a088;"/>
     <rect x="300" y="0" width="900" height="3" style="fill:#3f5b58;"/>
-    <rect x="450" y="0" width="750" height="3" style="fill:#00953b;"/>
-    <rect x="600" y="0" width="600" height="3" style="fill:#95d500;"/>
-    <rect x="750" y="0" width="450" height="3" style="fill:#ff6c0e;"/>
-    <rect x="900" y="0" width="300" height="3" style="fill:#d51267;"/>
+    <rect x="450" y="0" width="750" height="3" style="fill:#6b478e;"/>
+    <rect x="600" y="0" width="600" height="3" style="fill:#9779d3;"/>
+    <rect x="750" y="0" width="450" height="3" style="fill:#58c9e7;"/>
+    <rect x="900" y="0" width="300" height="3" style="fill:#3f8edd;"/>
     <rect x="1050" y="0" width="150" height="3" style="fill:#006a8e;"/>
 </svg>
