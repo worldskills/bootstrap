@@ -69,23 +69,3 @@
     @include make-col(6);
   }
 }
-
-// An inline list, aligned right at widest browser width.
-// Apply to a ul or ol.
-.ws-page-footer-list-inline {
-  @include make-row();
-
-  @include media-breakpoint-up(md) {
-    justify-content: flex-end;
-    text-align: right;
-  }
-
-  li {
-    @include make-col-ready();
-    font-size: $font-size-sm;
-
-    @include media-breakpoint-up(sm) {
-      @include make-col(2);
-    }
-  }
-}
