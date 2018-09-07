@@ -21,6 +21,7 @@
 
 .ws-imglink {
   margin-bottom: $grid-gutter-width;
+  padding-bottom: $spacer;
 
   // Add a background.
   // Because if we apply a background to the element itself, then when it's
@@ -93,6 +94,5 @@
 
   @include media-breakpoint-down(sm) {
     height: auto;
-    padding-bottom: $spacer;
   }
 }

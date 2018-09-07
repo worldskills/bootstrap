@@ -10304,6 +10304,7 @@ h6.ws-h-icon,
 
 .ws-imglink {
   margin-bottom: 20px;
+  padding-bottom: 1rem;
 }
 .ws-imglink:before {
   content: "";
@@ -10361,7 +10362,6 @@ h6.ws-h-icon,
 @media (max-width: 767.98px) {
   .ws-block.ws-imglink {
     height: auto;
-    padding-bottom: 1rem;
   }
 }
 
