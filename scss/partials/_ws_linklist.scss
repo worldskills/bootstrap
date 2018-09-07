@@ -59,6 +59,10 @@
     &.active a {
       color: $body-color;
     }
+
+    &:last-child {
+      border-bottom: 0;
+    }
   }
 
     .ws-linklist-thumb {
