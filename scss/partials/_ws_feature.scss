@@ -2,29 +2,43 @@
 //
 // A 'feature' block has a colored background with some text in it.
 // The colored block generally doesn't stretch the full width of the page.
+// An 'feature-image' alternate includes a large image.
 //
 // They should also probably have a .ws-block class, to set their height,
 // and optionally a block dimension like .ws-block-2x1.
 
+
+// A basic single-column feature block, with the entire thing having a link:
+
 // <article class="ws-block ws-feature">
-//   <div class="ws-feature-inner">
-//     <h1 class="ws-feature-title">Title</h1>
-//     <p>Description</p>
-//     <a class="btn btn-primary btn-more" href="#">Read more</a>
-//   </div>
+//   <a class="ws-feature-inner" href="#">
+//     <div class="ws-feature-content">
+//       <h1 class="ws-feature-title">Title</h1>
+//       <p>Description</p>
+//     </div>
+//   </a>
 // </article>
+
+// A feature-image block, 2 columns wide, with 'my-image.jpg' as a background:
+
+// <article class="ws-block ws-feature ws-feature-image ws-block-2x1 ws-feature-blue-2">
+//   <a href="#" class="ws-feature-inner">
+//     <div class="ws-feature-content">
+//       <h1 class="ws-feature-title">Title</h1>
+//       <p>Description</p>
+//     </div>
+//     <div class="ws-feature-image-content" style="background-image: url(my-image.jpg)";>
+//     </div>
+//   </a>
+// </article>
+
+
+// NOTE: For either, the <a class="ws-feature-inner"> could instead be a div
+// with the same class.
 
 
 .ws-feature {
   text-rendering: optimizeLegibility;
-
-  @include hover {
-    text-decoration: none;
-
-    .ws-feature-title {
-      text-decoration: underline;
-    }
-  }
 
   .ws-feature-title {
     font-weight: $font-weight-black;
@@ -66,8 +80,26 @@
   }
 }
 
-// Around the text block with a colored background:
 .ws-feature-inner {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+a.ws-feature-inner {
+
+  @include hover {
+    text-decoration: none;
+
+    .ws-feature-title {
+      text-decoration: underline;
+    }
+  }
+}
+
+
+// Around the text block with a colored background:
+.ws-feature-content {
   // $blue is the default background color if none is specified:
   @include inverse($blue-dark);
   height: 100%;
@@ -151,22 +183,22 @@
     }
   }
 
-  .ws-feature-inner {
+  .ws-feature-content {
     // Less than usual, to allow for quote background image.
     padding-top: 1.5rem;
   }
 
-  &.ws-feature-orange .ws-feature-inner,
-  &.ws-feature-cyan .ws-feature-inner {
+  &.ws-feature-orange .ws-feature-content,
+  &.ws-feature-cyan .ws-feature-content {
     background-position: -100px center;
     background-repeat: repeat-x;
   }
 
-  &.ws-feature-orange .ws-feature-inner {
+  &.ws-feature-orange .ws-feature-content {
     background-image: url(#{$ws-image-path}bg_quotes_orange.svg);
   }
 
-  &.ws-feature-cyan .ws-feature-inner {
+  &.ws-feature-cyan .ws-feature-content {
     background-image: url(#{$ws-image-path}bg_quotes_blue.svg);
   }
 }
@@ -189,7 +221,7 @@
     z-index: 10;
   }
 
-  .ws-feature-inner {
+  .ws-feature-content {
     // Align text to top.
     justify-content: start;
     position: relative;
@@ -219,24 +251,28 @@
 }
 
 // Styles that have an extra div that has a background image.
-// At narrow widths, these are all 100% wide, with .ws-feature-image-inner
-// above .ws-feature-inner.
+// At narrow widths, these are all 100% wide, with .ws-feature-image-content
+// above .ws-feature-content.
 // At wider widths (see further below), they are different depending on their
 // .ws-block size.
 .ws-feature-image {
   background-color: $gray-100;
-  display: flex;
-  align-items: stretch;
-  flex-direction: column;
 
   .ws-feature-inner {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .ws-feature-content {
     order: 2;
   }
 
-  .ws-feature-image-inner {
+  .ws-feature-image-content {
     // The extra inner element, with a background image.
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     order: 1;
   }
 }
@@ -250,18 +286,18 @@
   .ws-feature-image {
     height: $ws-block-min-height * 2;
 
-    .ws-feature-inner,
-    .ws-feature-image-inner {
+    .ws-feature-content,
+    .ws-feature-image-content {
       height: 50%;
     }
 
     &.ws-block-2x2 {
       height: $ws-block-min-height * 2.5;
 
-      .ws-feature-inner {
+      .ws-feature-content {
         height: 33.333333%;
       }
-      .ws-feature-image-inner {
+      .ws-feature-image-content {
         height: 66.6666667%;
       }
     }
@@ -270,18 +306,20 @@
 
 
 @media (min-width: $ws-feature-image-breakpoint) {
-  // Wide enough to put the .ws-feature-inner blocks to the side of the
+  // Wide enough to put the .ws-feature-content blocks to the side of the
   // image, instead of underneath.
 
   .ws-feature-image {
-    flex-direction: row;
-
     .ws-feature-inner {
+      flex-direction: row;
+    }
+
+    .ws-feature-content {
       width: 50%;
       order: 1;
     }
 
-    .ws-feature-image-inner {
+    .ws-feature-image-content {
       flex-grow: 1;
       order: 2;
     }
@@ -303,7 +341,7 @@
     &.ws-block-2x2 {
       position: relative;
 
-      .ws-feature-inner {
+      .ws-feature-content {
         width: calc(50% - (#{$grid-gutter-width} / 2));
         position: absolute;
         bottom: 0;
@@ -322,7 +360,7 @@
     // Full-3-column-width, with inner taking up 1 column.
     &.ws-block-3x1 {
 
-      .ws-feature-inner {
+      .ws-feature-content {
         width: 33.33333%;
       }
     }
