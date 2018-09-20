@@ -10031,7 +10031,7 @@ a.ws-feature-inner:hover .ws-feature-title {
 .ws-hero-cyan {
   background-color: #0E779F;
   color: #fff;
-  background-image: url("../img/backgrounds/bg_cubes_blue.png");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='144px' height='250px' viewBox='0 0 144 250' version='1.1'%3E%3Cg id='bg_cubes_blue' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cpath d='M74.9846349,210 L146,251.42563 L146,336.741037 L73,294.157704 L0,336.741037 L5.55111512e-17,251.42563 L71.0153651,210 L5.55111512e-17,168.57437 L2.26563926e-18,86.741037 L5.55111512e-17,1.42562967 L72,-40.5743703 L72,-41.741037 L73,-41.1577037 L74,-41.741037 L74,-40.5743703 L146,1.42562967 L146,86.741037 L146,168.57437 L74.9846349,210 Z M73,125.842296 L143.015365,85 L73,44.1577037 L2.98463486,85 L73,125.842296 Z M72,127.57437 L2,86.741037 L2,167.42563 L72,208.258963 L72,127.57437 Z M72,211.741037 L2,252.57437 L2,333.258963 L72,292.42563 L72,211.741037 Z M72,-38.258963 L2,2.57437033 L2,83.258963 L72,42.4256297 L72,-38.258963 Z M144,83.258963 L144,2.57437033 L74,-38.258963 L74,42.4256297 L144,83.258963 Z M144,333.258963 L144,252.57437 L74,211.741037 L74,292.42563 L144,333.258963 Z M144,167.42563 L144,86.741037 L74,127.57437 L74,208.258963 L144,167.42563 Z' id='Combined-Shape' fill='%230093B7' fill-rule='nonzero'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
 }
 .ws-hero-cyan a {
   color: #fff;
@@ -10048,12 +10048,6 @@ a.ws-feature-inner:hover .ws-feature-title {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9.19 15.56' width='9.19' height='15.56'%3E%3Cpolygon fill='%230E779F' points='1.41 15.56 0 14.14 6.36 7.78 0 1.41 1.41 0 9.19 7.78 1.41 15.56'/%3E%3C/svg%3E");
   color: #0E779F;
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .ws-hero-cyan {
-    background-image: url("../img/backgrounds/bg_cubes_blue@2x.png");
-    background-size: 144px 250px;
-  }
-}
 .ws-hero-cyan .ws-hero-title {
   background-image: url("../img/backgrounds/bullet_1.png");
 }
@@ -10067,7 +10061,7 @@ a.ws-feature-inner:hover .ws-feature-title {
 .ws-hero-purple {
   background-color: #4A0D66;
   color: #fff;
-  background-image: url("../img/backgrounds/bg_cubes_pink.png");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='144px' height='250px' viewBox='0 0 144 250' version='1.1'%3E%3Cg id='bg_cubes_blue' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cpath d='M74.9846349,210 L146,251.42563 L146,336.741037 L73,294.157704 L0,336.741037 L5.55111512e-17,251.42563 L71.0153651,210 L5.55111512e-17,168.57437 L2.26563926e-18,86.741037 L5.55111512e-17,1.42562967 L72,-40.5743703 L72,-41.741037 L73,-41.1577037 L74,-41.741037 L74,-40.5743703 L146,1.42562967 L146,86.741037 L146,168.57437 L74.9846349,210 Z M73,125.842296 L143.015365,85 L73,44.1577037 L2.98463486,85 L73,125.842296 Z M72,127.57437 L2,86.741037 L2,167.42563 L72,208.258963 L72,127.57437 Z M72,211.741037 L2,252.57437 L2,333.258963 L72,292.42563 L72,211.741037 Z M72,-38.258963 L2,2.57437033 L2,83.258963 L72,42.4256297 L72,-38.258963 Z M144,83.258963 L144,2.57437033 L74,-38.258963 L74,42.4256297 L144,83.258963 Z M144,333.258963 L144,252.57437 L74,211.741037 L74,292.42563 L144,333.258963 Z M144,167.42563 L144,86.741037 L74,127.57437 L74,208.258963 L144,167.42563 Z' id='Combined-Shape' fill='%23720d66' fill-rule='nonzero'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
 }
 .ws-hero-purple a {
   color: #fff;
@@ -10084,26 +10078,14 @@ a.ws-feature-inner:hover .ws-feature-title {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9.19 15.56' width='9.19' height='15.56'%3E%3Cpolygon fill='%234A0D66' points='1.41 15.56 0 14.14 6.36 7.78 0 1.41 1.41 0 9.19 7.78 1.41 15.56'/%3E%3C/svg%3E");
   color: #4A0D66;
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .ws-hero-purple {
-    background-image: url("../img/backgrounds/bg_cubes_pink@2x.png");
-    background-size: 144px 250px;
-  }
-}
 .ws-hero-purple .ws-hero-title {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='24' viewBox='0 0 22 24' version='1.1' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;'%3E%3Cpath d='M0,5.5l11,-5.5l11,5.5l0,13l-11,5.5l-11,-5.5l0,-13Z' style='fill:%238ae2d1;'/%3E%3Cpath d='M11,0l11,5.5l0,13l-11,5.5l0,-24Z' style='fill:%23d51067;'/%3E%3Cpath d='M11,0l11,5.5l-11,5.5l-11,-5.5l11,-5.5Z' style='fill:%230084ad;'/%3E%3Cpath d='M22,5.5l-11,5.5l0,-11l11,5.5Z' style='fill:%23003764;'/%3E%3C/svg%3E");
 }
 
 .ws-hero-gray {
   background-color: #f7f7f7;
-  background-image: url("../img/backgrounds/bg_cubes_white.png");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='144px' height='250px' viewBox='0 0 144 250' version='1.1'%3E%3Cg id='bg_cubes_blue' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cpath d='M74.9846349,210 L146,251.42563 L146,336.741037 L73,294.157704 L0,336.741037 L5.55111512e-17,251.42563 L71.0153651,210 L5.55111512e-17,168.57437 L2.26563926e-18,86.741037 L5.55111512e-17,1.42562967 L72,-40.5743703 L72,-41.741037 L73,-41.1577037 L74,-41.741037 L74,-40.5743703 L146,1.42562967 L146,86.741037 L146,168.57437 L74.9846349,210 Z M73,125.842296 L143.015365,85 L73,44.1577037 L2.98463486,85 L73,125.842296 Z M72,127.57437 L2,86.741037 L2,167.42563 L72,208.258963 L72,127.57437 Z M72,211.741037 L2,252.57437 L2,333.258963 L72,292.42563 L72,211.741037 Z M72,-38.258963 L2,2.57437033 L2,83.258963 L72,42.4256297 L72,-38.258963 Z M144,83.258963 L144,2.57437033 L74,-38.258963 L74,42.4256297 L144,83.258963 Z M144,333.258963 L144,252.57437 L74,211.741037 L74,292.42563 L144,333.258963 Z M144,167.42563 L144,86.741037 L74,127.57437 L74,208.258963 L144,167.42563 Z' id='Combined-Shape' fill='%23fff' fill-rule='nonzero'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
   color: #4A0D66;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .ws-hero-gray {
-    background-image: url("../img/backgrounds/bg_cubes_white@2x.png");
-    background-size: 144px 250px;
-  }
 }
 
 .ws-hero-quote {

@@ -119,7 +119,7 @@ $ws-hero-breakpoint-6xl: 2560px;
 
 .ws-hero-cyan {
   @include inverse($blue);
-  @include background-image-retina("bg_cubes_blue.png", "bg_cubes_blue@2x.png", 144px, 250px);
+  @include background-svg("bg-cubes", $blue-tint-4);
 
   .ws-hero-title {
     @include background-image-retina("bullet_1.png", "bullet_1@2x.png" , 21px, 25px);
@@ -128,7 +128,7 @@ $ws-hero-breakpoint-6xl: 2560px;
 
 .ws-hero-purple {
   @include inverse($purple);
-  @include background-image-retina("bg_cubes_pink.png", "bg_cubes_pink@2x.png", 144px, 250px);
+  @include background-svg("bg-cubes", #720d66);
 
   .ws-hero-title {
     @include background-svg("hero-bullet", $white);
@@ -137,7 +137,7 @@ $ws-hero-breakpoint-6xl: 2560px;
 
 .ws-hero-gray {
   background-color: $gray-100;
-  @include background-image-retina("bg_cubes_white.png", "bg_cubes_white@2x.png", 144px, 250px);
+  @include background-svg("bg-cubes", $white);
   color: $purple;
 }
 
