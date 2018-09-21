@@ -118,16 +118,16 @@ a.ws-feature-inner {
   // Variations of colour / bg image:
 
   .ws-feature-blue-2 & {
-    @include background-image-retina("bg_columns_cyan.png", "bg_columns_cyan@2x.png", 329px, 165px);
+    @include background-svg("bg-columns", $blue-tint-3);
     background-repeat: no-repeat;
     background-position: left bottom -74px;
   }
   .ws-feature-blue-3 & {
-    background-image: url(#{$ws-image-path}bg_stripes_blue.png);
+    @include background-svg("bg-stripes", $blue-tint-2);
     background-position: top right;
   }
   .ws-feature-blue-4 & {
-    background-image: url(#{$ws-image-path}bg_blocks_blue.png);
+    @include background-svg("bg-blocks", $blue-tint-3);
     background-position: bottom right;
   }
 
@@ -136,7 +136,7 @@ a.ws-feature-inner {
     @include inverse($orange);
   }
   .ws-feature-orange-2 & {
-    background-image: url(#{$ws-image-path}bg_squares_yellow.png);
+    @include background-svg("bg-squares", $yellow-tint-4);
     background-position: right top;
   }
 
@@ -145,23 +145,23 @@ a.ws-feature-inner {
     @include inverse($purple);
   }
   .ws-feature-purple & {
-    background-image: url(#{$ws-image-path}bg_blocks_pink.png);
+    @include background-svg("bg-blocks", $pink-tint-3);
     background-position: right bottom;
   }
   .ws-feature-purple-2 & {
-    background-image: url(#{$ws-image-path}bg_stripes_pink.png), url(#{$ws-image-path}bg_stripes_pink_2.png);
+    @include background-svg("bg-stripes", $pink-tint-3);
     background-position: right top, left bottom;
   }
 
   .ws-feature-cyan & {
     @include inverse($blue);
-    background-image: url(#{$ws-image-path}bg_squares_blue.png);
+    @include background-svg("bg-squares", $blue-tint-3);
     background-position: right top;
   }
 
   .ws-feature-pink & {
     @include inverse($pink);
-    background-image: url(#{$ws-image-path}bg_squares_yellow.png);
+    @include background-svg("bg-squares", $yellow-tint-4);
     background-position: right top;
   }
 }
@@ -195,11 +195,11 @@ a.ws-feature-inner {
   }
 
   &.ws-feature-orange .ws-feature-content {
-    background-image: url(#{$ws-image-path}bg_quotes_orange.svg);
+    @include background-svg("bg-quotes", $orange-tint-1);
   }
 
   &.ws-feature-cyan .ws-feature-content {
-    background-image: url(#{$ws-image-path}bg_quotes_blue.svg);
+    @include background-svg("bg-quotes", $blue-tint-3);
   }
 }
 
