@@ -122,7 +122,7 @@ $ws-hero-breakpoint-6xl: 2560px;
   background-image: svg-bg-cubes($blue-tint-4);
 
   .ws-hero-title {
-    @include background-image-retina("bullet_1.png", "bullet_1@2x.png" , 21px, 25px);
+    background-image: svg-bullet($pink-tint-3, $orange-tint-3, $yellow-tint-4);
   }
 }
 
@@ -131,7 +131,7 @@ $ws-hero-breakpoint-6xl: 2560px;
   background-image: svg-bg-cubes(#720d66);
 
   .ws-hero-title {
-    background-image: svg-hero-bullet($white);
+    background-image: svg-hero-bullet($teal-tint-4, $pink-tint-3, $blue-tint-3, $blue-dark-tint-1);
   }
 }
 
@@ -145,7 +145,7 @@ $ws-hero-breakpoint-6xl: 2560px;
 // Has a 'quote' graphic at top and quote background.
 .ws-hero-quote {
   @include inverse($blue);
-  background-image: url(#{$ws-image-path}bg_quotes_blue.svg);
+  background-image: svg-bg-quotes($blue-tint-3);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: auto;
@@ -179,7 +179,7 @@ $ws-hero-breakpoint-6xl: 2560px;
 .ws-hero-standfirst {
   padding-top: 5rem;
   padding-bottom: 2rem;
-  background-image: svg-hero-bullet($white);
+  background-image: svg-hero-bullet($teal-tint-4, $pink-tint-3, $blue-tint-3, $blue-dark-tint-1);
   background-repeat: no-repeat;
   background-position: 50% 2.5rem;
   background-size: auto;

@@ -9,7 +9,7 @@ h1, h2, h3, h4, h5, h6,
 
 // To be used with headings; add a cube icon to the left.
 .ws-h-icon {
-  background-image: svg-hero-bullet($white);
+  background-image: svg-hero-bullet($teal-tint-4, $pink-tint-3, $blue-tint-3, $blue-dark-tint-1);
   background-repeat: no-repeat;
   background-position: left 0;
   padding-left: 44px;

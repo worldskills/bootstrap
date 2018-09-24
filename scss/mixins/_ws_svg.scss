@@ -9,8 +9,12 @@
     @return svg-url('<svg viewBox="0 0 9.19 15.56" width="9.19" height="15.56"><polygon transform="rotate(180, 4.595, 7.78)" fill="#{$color}" points="1.41 15.56 0 14.14 6.36 7.78 0 1.41 1.41 0 9.19 7.78 1.41 15.56"/></svg>');
 }
 
-@function svg-hero-bullet($color) {
-    @return svg-url('<svg width="22" height="24" viewBox="0 0 22 24" version="1.1" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><path d="M0,5.5l11,-5.5l11,5.5l0,13l-11,5.5l-11,-5.5l0,-13Z" style="fill:#8ae2d1;"/><path d="M11,0l11,5.5l0,13l-11,5.5l0,-24Z" style="fill:#d51067;"/><path d="M11,0l11,5.5l-11,5.5l-11,-5.5l11,-5.5Z" style="fill:#0084ad;"/><path d="M22,5.5l-11,5.5l0,-11l11,5.5Z" style="fill:#003764;"/></svg>');
+@function svg-bullet($color1, $color2, $color3) {
+    @return svg-url('<svg width="21px" height="25px" viewBox="0 0 21 25" version="1.1"><g id="bullet_1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><polygon id="Path-2" fill="#{$color1}" fill-rule="nonzero" points="10.5 25 21 18.5 21 6.5 0 6.5 0 18.5"></polygon><polygon id="Path-3" fill="#{$color2}" fill-rule="nonzero" points="10.5 25 21 18.5 21 6.5 10.5 12.5"></polygon><polygon id="Path" fill="#{$color3}" fill-rule="nonzero" points="0 6.5 10.5 0 21 6.5 10.5 12.5"></polygon></g></svg>');
+}
+
+@function svg-hero-bullet($color1, $color2, $color3, $color4) {
+    @return svg-url('<svg width="22" height="24" viewBox="0 0 22 24" version="1.1" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><path d="M0,5.5l11,-5.5l11,5.5l0,13l-11,5.5l-11,-5.5l0,-13Z" style="fill:#{$color1};"/><path d="M11,0l11,5.5l0,13l-11,5.5l0,-24Z" style="fill:#{$color2};"/><path d="M11,0l11,5.5l-11,5.5l-11,-5.5l11,-5.5Z" style="fill:#{$color3};"/><path d="M22,5.5l-11,5.5l0,-11l11,5.5Z" style="fill:#{$color4};"/></svg>');
 }
 
 @function svg-close($color) {
