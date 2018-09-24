@@ -193,10 +193,9 @@
 }
 
 .ws-navbar-stripe {
-  display: block;
-  width: 100%;
-  position: relative;
-  z-index: $ws-zindex-navbar-overlay;
+  background-image: svg-navbar-stripe($navbar-stripe-color1, $navbar-stripe-color2, $navbar-stripe-color3, $navbar-stripe-color4, $navbar-stripe-color5, $navbar-stripe-color6, $navbar-stripe-color7, $navbar-stripe-color8);
+  background-repeat: no-repeat;
+  background-size: 100% 3px;
 }
 
 // Variation for pages like the home page.

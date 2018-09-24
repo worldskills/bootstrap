@@ -2,6 +2,10 @@
   background-color: #006a8e;
 }
 
+.ws-navbar-stripe {
+  background-image: url('stripe.svg');
+}
+
 @media (min-width: 768px) {
   .wsf-navbar-main  .nav-item.active .nav-link,
   .wsf-navbar-main .nav-item.active .nav-link:hover {

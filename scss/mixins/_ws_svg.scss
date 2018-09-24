@@ -30,6 +30,11 @@
 }
 
 
+@function svg-navbar-stripe($color1, $color2, $color3, $color4, $color5, $color6, $color7, $color8) {
+    @return svg-url('<svg width="1200px" height="3px" viewBox="0 0 1200 3" preserveAspectRatio="none"><rect x="0" y="0" width="1200" height="3" style="fill:#{$color1};"/><rect x="150" y="0" width="1050" height="3" style="fill:#{$color2};"/><rect x="300" y="0" width="900" height="3" style="fill:#{$color3};"/><rect x="450" y="0" width="750" height="3" style="fill:#{$color4};"/><rect x="600" y="0" width="600" height="3" style="fill:#{$color5};"/><rect x="750" y="0" width="450" height="3" style="fill:#{$color6};"/><rect x="900" y="0" width="300" height="3" style="fill:#{$color7};"/><rect x="1050" y="0" width="150" height="3" style="fill:#{$color8};"/></svg>');
+}
+
+
 //  Function to create an optimized svg url
 //  Version: 1.0.6
 @function svg-url($svg){

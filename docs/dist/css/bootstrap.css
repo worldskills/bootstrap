@@ -10708,10 +10708,9 @@ a.ws-feature-inner:hover .ws-feature-title {
 }
 
 .ws-navbar-stripe {
-  display: block;
-  width: 100%;
-  position: relative;
-  z-index: 100;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200px' height='3px' viewBox='0 0 1200 3' preserveAspectRatio='none'%3E%3Crect x='0' y='0' width='1200' height='3' style='fill:%2372D0EB;'/%3E%3Crect x='150' y='0' width='1050' height='3' style='fill:%230084AD;'/%3E%3Crect x='300' y='0' width='900' height='3' style='fill:%23003764;'/%3E%3Crect x='450' y='0' width='750' height='3' style='fill:%234A0D66;'/%3E%3Crect x='600' y='0' width='600' height='3' style='fill:%23D51067;'/%3E%3Crect x='750' y='0' width='450' height='3' style='fill:%23FF6C0C;'/%3E%3Crect x='900' y='0' width='300' height='3' style='fill:%23FEE300;'/%3E%3Crect x='1050' y='0' width='150' height='3' style='fill:%238AE2D1;'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 100% 3px;
 }
 
 .page-template-hero-overlay .ws-navbar-main {
