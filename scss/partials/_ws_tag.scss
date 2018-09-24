@@ -88,7 +88,7 @@
     a,
     span {
       &::after {
-        @include background-svg(close, $link-color);
+        background-image: svg-close($link-color);
         background-color: $gray-200;
       }
     }

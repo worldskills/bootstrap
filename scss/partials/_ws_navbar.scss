@@ -110,7 +110,7 @@
     // It will change orientiation when menu is open/closed.
     &::before {
       content: "";
-      @include background-svg(chevron, $navbar-dark-color);
+      background-image: svg-chevron($navbar-dark-color);
       background-position: left 50%;
       background-repeat: no-repeat;
       background-size: 0.6rem;

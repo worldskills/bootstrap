@@ -118,16 +118,16 @@ a.ws-feature-inner {
   // Variations of colour / bg image:
 
   .ws-feature-blue-2 & {
-    @include background-svg("bg-columns", $blue-tint-3);
+    background-image: svg-bg-columns($blue-tint-3);
     background-repeat: no-repeat;
     background-position: left bottom -74px;
   }
   .ws-feature-blue-3 & {
-    @include background-svg("bg-stripes", $blue-tint-2);
+    background-image: svg-bg-stripes($blue-tint-2);
     background-position: top right;
   }
   .ws-feature-blue-4 & {
-    @include background-svg("bg-blocks", $blue-tint-3);
+    background-image: svg-bg-blocks($blue-tint-3);
     background-position: bottom right;
   }
 
@@ -136,7 +136,7 @@ a.ws-feature-inner {
     @include inverse($orange);
   }
   .ws-feature-orange-2 & {
-    @include background-svg("bg-squares", $yellow-tint-4);
+    background-image: svg-bg-squares($yellow-tint-4);
     background-position: right top;
   }
 
@@ -145,23 +145,23 @@ a.ws-feature-inner {
     @include inverse($purple);
   }
   .ws-feature-purple & {
-    @include background-svg("bg-blocks", $pink-tint-3);
+    background-image: svg-bg-blocks($pink-tint-3);
     background-position: right bottom;
   }
   .ws-feature-purple-2 & {
-    @include background-svg("bg-stripes", $pink-tint-3);
+    background-image: svg-bg-stripes($pink-tint-3);
     background-position: right top, left bottom;
   }
 
   .ws-feature-cyan & {
     @include inverse($blue);
-    @include background-svg("bg-squares", $blue-tint-3);
+    background-image: svg-bg-squares($blue-tint-3);
     background-position: right top;
   }
 
   .ws-feature-pink & {
     @include inverse($pink);
-    @include background-svg("bg-squares", $yellow-tint-4);
+    background-image: svg-bg-squares($yellow-tint-4);
     background-position: right top;
   }
 }
@@ -195,11 +195,11 @@ a.ws-feature-inner {
   }
 
   &.ws-feature-orange .ws-feature-content {
-    @include background-svg("bg-quotes", $orange-tint-1);
+    background-image: svg-bg-quotes($orange-tint-1);
   }
 
   &.ws-feature-cyan .ws-feature-content {
-    @include background-svg("bg-quotes", $blue-tint-3);
+    background-image: svg-bg-quotes($blue-tint-3);
   }
 }
 

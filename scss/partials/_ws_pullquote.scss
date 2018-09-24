@@ -10,7 +10,7 @@
 // Add the .ws-pullquote-top class to have the quote mark above the blockquote.
 
 .ws-pullquote {
-  @include background-svg(quotes, $blue);
+  background-image: svg-quotes($blue);
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 50px;

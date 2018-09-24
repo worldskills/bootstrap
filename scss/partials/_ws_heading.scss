@@ -62,7 +62,7 @@
 .ws-heading-link {
   font-size: $font-size-lg;
   font-weight: $font-weight-bold;
-  @include background-svg(chevron, $link-color);
+  background-image: svg-chevron($link-color);
   background-position: right 0.05rem;
   background-repeat: no-repeat;
   background-size: 0.7rem;

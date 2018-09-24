@@ -31,7 +31,7 @@
 
 .breadcrumb-item + .breadcrumb-item::before {
   padding-right: 1.6rem;
-  @include background-svg(chevron, $breadcrumb-divider-color);
+  background-image: svg-chevron($breadcrumb-divider-color);
   background-repeat: no-repeat;
   background-position: left center;
   content: ' ';
