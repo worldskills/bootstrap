@@ -207,7 +207,7 @@ a.ws-feature-inner {
 .ws-feature-quote-1 {
   blockquote {
     padding-top: 40px;
-    @include background-image-retina("quotemarks.png", "quotemarks@2x.png", 50px, 30px);
+    background-image: svg-quotemarks($white);
     background-position: 0 0;
     background-repeat: no-repeat;
   }

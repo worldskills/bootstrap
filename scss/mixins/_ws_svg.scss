@@ -53,6 +53,10 @@
     @return svg-url('<svg width="1200px" height="3px" viewBox="0 0 1200 3" preserveAspectRatio="none"><rect x="0" y="0" width="1200" height="3" style="fill:#{$color1};"/><rect x="150" y="0" width="1050" height="3" style="fill:#{$color2};"/><rect x="300" y="0" width="900" height="3" style="fill:#{$color3};"/><rect x="450" y="0" width="750" height="3" style="fill:#{$color4};"/><rect x="600" y="0" width="600" height="3" style="fill:#{$color5};"/><rect x="750" y="0" width="450" height="3" style="fill:#{$color6};"/><rect x="900" y="0" width="300" height="3" style="fill:#{$color7};"/><rect x="1050" y="0" width="150" height="3" style="fill:#{$color8};"/></svg>');
 }
 
+@function svg-quotemarks($color) {
+    @return svg-url('<svg width="50px" height="30px" viewBox="0 0 50 30" version="1.1"><g id="quotemarks" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><polygon id="Path" fill="#{$color}" fill-rule="nonzero" points="45 -7.10542736e-15 45 7 50 10 50 24 38.5 30 27 24 27 10"></polygon><polygon id="Path" fill="#{$color}" fill-rule="nonzero" points="18 -7.10542736e-15 18 7 23 10 23 24 11.5 30 1.77635684e-15 24 1.77635684e-15 10"></polygon></g></svg>');
+}
+
 
 //  Function to create an optimized svg url
 //  Version: 1.0.6
