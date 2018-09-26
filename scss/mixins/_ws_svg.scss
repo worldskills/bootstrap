@@ -61,6 +61,18 @@
     @return svg-url('<svg width="15px" height="8px" viewBox="0 0 15 8" version="1.1"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><polygon id="Triangle" fill="#{$color}" fill-rule="nonzero" points="7.5 0 15 8 0 8"></polygon></g></svg>');
 }
 
+@function svg-timeline-event($border-color, $background-color, $highlight-color) {
+    @return svg-url('<svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1"><g id="timeline_event" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><circle id="Oval" stroke="#{$border-color}" fill="#{$background-color}" fill-rule="nonzero" cx="10.5" cy="10.5" r="10"></circle><circle id="Oval-2" fill="#{$highlight-color}" fill-rule="nonzero" cx="10.5" cy="10.5" r="5.5"></circle></g></svg>');
+}
+
+@function svg-timeline-horizontal($color) {
+    @return svg-url('<svg width="50px" height="1px" viewBox="0 0 50 1" version="1.1"><g id="timeline_horizontal" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square"><path d="M0,0.5 L50,0.5" id="Line" stroke="#{$color}" fill-rule="nonzero"></path></g></svg>');
+}
+
+@function svg-timeline-vertical($color) {
+    @return svg-url('<svg width="1px" height="50px" viewBox="0 0 1 50" version="1.1"><g id="timeline_vertical" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square"><path d="M0.5,0 L0.5,50" id="Line" stroke="#{$color}" fill-rule="nonzero"></path></g></svg>');
+}
+
 
 //  Function to create an optimized svg url
 //  Version: 1.0.6

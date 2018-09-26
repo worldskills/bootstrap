@@ -39,7 +39,7 @@
   display: flex;
   flex-direction: column;
   margin: 2rem 0;
-  background-image: url(#{$ws-image-path}timeline_vertical.png);
+  background-image: svg-timeline-vertical($blue-tint-3);
   background-position: 10px 0;
   background-repeat: repeat-y;
 }
@@ -48,7 +48,7 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    background: url(#{$ws-image-path}timeline_event.png) 0 0 no-repeat;
+    background: svg-timeline-event($blue-tint-3, $white, $white) 0 0 no-repeat;
     padding-left: 55px;
     margin-bottom: 2rem;
 
@@ -60,7 +60,7 @@
     }
 
     &.active {
-      background-image: url(#{$ws-image-path}timeline_event_active.png);
+      background-image: svg-timeline-event($blue-tint-3, $white, $pink-tint-3);
     }
   }
 
@@ -122,12 +122,12 @@
   .ws-timeline-horizontal {
     flex-direction: row;
     justify-content: space-between;
-    background-image: url(#{$ws-image-path}timeline_horizontal.png);
+    background-image: svg-timeline-horizontal($blue-tint-3);
     background-position: 0 10px;
     background-repeat: repeat-x;
 
     .ws-timeline-event {
-      background-image: url(#{$ws-image-path}timeline_event.png);
+      background-image: svg-timeline-event($blue-tint-3, $white, $white);
       padding: 55px 0 0 0;
       margin: 0 $spacer;
       max-width: 33%;
@@ -140,7 +140,7 @@
       }
 
       &.active {
-        background-image: url(#{$ws-image-path}timeline_event_active.png);
+        background-image: svg-timeline-event($blue-tint-3, $white, $pink-tint-3);
       }
     }
 
