@@ -32,8 +32,7 @@
     "css-copy": "cp -r dist/css/ docs/dist/css/",
     "js": "npm run js-copy",
     "js-copy": "cp -r node_modules/bootstrap/dist/js/ dist/js/ && cp -r node_modules/bootstrap/dist/js/ docs/dist/js/ && cp -r node_modules/bootstrap/js/ js/",
-    "img-copy": "cp -r dist/img/ docs/dist/img/",
-    "dist": "npm run bootstrap-copy && npm run css && npm run js && npm run img-copy",
+    "dist": "npm run bootstrap-copy && npm run css && npm run js",
     "watch-css": "nodemon --watch scss/ --ext scss --exec \"npm run css\""
   }
 }
