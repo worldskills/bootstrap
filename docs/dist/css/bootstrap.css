@@ -9320,6 +9320,11 @@ h1, h2, h3, h4, h5, h6,
   margin-bottom: 1rem;
 }
 
+small,
+.small {
+  font-weight: inherit;
+}
+
 .ws-h-icon {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='24' viewBox='0 0 22 24' version='1.1' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;'%3E%3Cpath d='M0,5.5l11,-5.5l11,5.5l0,13l-11,5.5l-11,-5.5l0,-13Z' style='fill:%238AE2D1;'/%3E%3Cpath d='M11,0l11,5.5l0,13l-11,5.5l0,-24Z' style='fill:%23D51067;'/%3E%3Cpath d='M11,0l11,5.5l-11,5.5l-11,-5.5l11,-5.5Z' style='fill:%230084AD;'/%3E%3Cpath d='M22,5.5l-11,5.5l0,-11l11,5.5Z' style='fill:%23003764;'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
