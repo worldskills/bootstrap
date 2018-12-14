@@ -32,6 +32,37 @@
   }
 }
 
+.btn-back {
+  max-width: 100%;
+  background-repeat: no-repeat;
+
+  @include button-back-size();
+
+  &.btn-sm {
+    @include button-back-size(sm);
+  }
+
+  &.btn-lg {
+    @include button-back-size(lg);
+  }
+
+  &,
+  &:hover {
+    background-image: svg-chevron-left($link-color);
+  }
+
+  &.btn-outline-dark {
+    background-image: svg-chevron-left($body-color);
+  }
+
+  &.btn-primary,
+  &.btn-outline-white,
+  &.btn-outline-dark:hover,
+  &.btn-outline-primary:hover {
+    background-image: svg-chevron-left($white);
+  }
+}
+
 .btn-white {
   background-color: $white;
 

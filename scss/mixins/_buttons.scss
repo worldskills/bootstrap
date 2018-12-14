@@ -23,6 +23,25 @@
   }
 }
 
+@mixin button-back-size($size: null) {
+
+  @if $size == sm {
+    padding-left: 1.8rem;
+    background-position: left 0.6rem top 47%;
+    background-size: 0.5rem;
+
+  } @else if $size == lg {
+    padding-left: 3.5rem;
+    background-position: left 1.3rem top 47%;
+    background-size: 0.8rem;
+
+  } @else {
+    padding-left: 3.5rem;
+    background-position: left 1.3rem top 47%;
+    background-size: 0.7rem;
+  }
+}
+
 
 // There's a 'light' but that's very light gray. We want a white one.
 .btn-outline-white {
