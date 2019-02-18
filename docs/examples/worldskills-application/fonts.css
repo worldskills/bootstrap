@@ -1,0 +1,133 @@
+/*
+Inria Serif Copyright (c) 2018 BlackFoundry
+*/
+
+@font-face {
+    font-family: "Inria Serif";
+    src: url("https://www.worldskills.org/application/themes/worldskills_org/fonts/InriaSerif/InriaSerif-Light.eot");
+    src: url("https://www.worldskills.org/application/themes/worldskills_org/fonts/InriaSerif/InriaSerif-Light.eot?#iefix") format("embedded-opentype"),
+         url("https://www.worldskills.org/application/themes/worldskills_org/fonts/InriaSerif/InriaSerif-Light.woff2") format("woff2"),
+         url("https://www.worldskills.org/application/themes/worldskills_org/fonts/InriaSerif/InriaSerif-Light.woff") format("woff"),
+         url("https://www.worldskills.org/application/themes/worldskills_org/fonts/InriaSerif/InriaSerif-Light.svg") format("svg");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inria Serif";
+    src: url("https://www.worldskills.org/application/themes/worldskills_org/fonts/InriaSerif/InriaSerif-LightItalic.eot");
+    src: url("https://www.worldskills.org/application/themes/worldskills_org/fonts/InriaSerif/InriaSerif-LightItalic.eot?#iefix") format("embedded-opentype"),
+         url("https://www.worldskills.org/application/themes/worldskills_org/fonts/InriaSerif/InriaSerif-LightItalic.woff2") format("woff2"),
+         url("https://www.worldskills.org/application/themes/worldskills_org/fonts/InriaSerif/InriaSerif-LightItalic.woff") format("woff"),
+         url("https://www.worldskills.org/application/themes/worldskills_org/fonts/InriaSerif/InriaSerif-LightItalic.svg") format("svg");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Inria Serif";
+    src: url("https://www.worldskills.org/application/themes/worldskills_org/fonts/InriaSerif/InriaSerif-Italic.eot");
+    src: url("https://www.worldskills.org/application/themes/worldskills_org/fonts/InriaSerif/InriaSerif-Italic.eot?#iefix") format("embedded-opentype"),
+         url("https://www.worldskills.org/application/themes/worldskills_org/fonts/InriaSerif/InriaSerif-Italic.woff2") format("woff2"),
+         url("https://www.worldskills.org/application/themes/worldskills_org/fonts/InriaSerif/InriaSerif-Italic.woff") format("woff"),
+         url("https://www.worldskills.org/application/themes/worldskills_org/fonts/InriaSerif/InriaSerif-Italic.svg") format("svg");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Inria Serif";
+    src: url("https://www.worldskills.org/application/themes/worldskills_org/fonts/InriaSerif/InriaSerif-Regular.eot");
+    src: url("https://www.worldskills.org/application/themes/worldskills_org/fonts/InriaSerif/InriaSerif-Regular.eot?#iefix") format("embedded-opentype"),
+         url("https://www.worldskills.org/application/themes/worldskills_org/fonts/InriaSerif/InriaSerif-Regular.woff2") format("woff2"),
+         url("https://www.worldskills.org/application/themes/worldskills_org/fonts/InriaSerif/InriaSerif-Regular.woff") format("woff"),
+         url("https://www.worldskills.org/application/themes/worldskills_org/fonts/InriaSerif/InriaSerif-Regular.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inria Serif";
+    src: url("https://www.worldskills.org/application/themes/worldskills_org/fonts/InriaSerif/InriaSerif-Bold.eot");
+    src: url("https://www.worldskills.org/application/themes/worldskills_org/fonts/InriaSerif/InriaSerif-Bold.eot?#iefix") format("embedded-opentype"),
+         url("https://www.worldskills.org/application/themes/worldskills_org/fonts/InriaSerif/InriaSerif-Bold.woff2") format("woff2"),
+         url("https://www.worldskills.org/application/themes/worldskills_org/fonts/InriaSerif/InriaSerif-Bold.woff") format("woff"),
+         url("https://www.worldskills.org/application/themes/worldskills_org/fonts/InriaSerif/InriaSerif-Bold.svg") format("svg");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inria Serif";
+    src: url("https://www.worldskills.org/application/themes/worldskills_org/fonts/InriaSerif/InriaSerif-BoldItalic.eot");
+    src: url("https://www.worldskills.org/application/themes/worldskills_org/fonts/InriaSerif/InriaSerif-BoldItalic.eot?#iefix") format("embedded-opentype"),
+         url("https://www.worldskills.org/application/themes/worldskills_org/fonts/InriaSerif/InriaSerif-BoldItalic.woff2") format("woff2"),
+         url("https://www.worldskills.org/application/themes/worldskills_org/fonts/InriaSerif/InriaSerif-BoldItalic.woff") format("woff"),
+         url("https://www.worldskills.org/application/themes/worldskills_org/fonts/InriaSerif/InriaSerif-BoldItalic.svg") format("svg");
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+/*
+This CSS resource incorporates links to font software which is the valuable copyrighted
+property of Monotype and/or its suppliers. You may not attempt to copy, install,
+redistribute, convert, modify or reverse engineer this font software. Please contact Monotype
+with any questions regarding Web Fonts:  http://www.linotype.com
+*/
+
+@font-face {
+      font-family: "FrutigerLTW04";
+    src: url("https://www.worldskills.org/application/themes/worldskills_org/fonts/1572247/53595583-8a9c-4c63-9220-f4d1c3364a9d.eot?#iefix");
+    src: url("https://www.worldskills.org/application/themes/worldskills_org/fonts/1572247/53595583-8a9c-4c63-9220-f4d1c3364a9d.eot?#iefix") format("eot"), url("https://www.worldskills.org/application/themes/worldskills_org/fonts/1572247/93b7d028-28f3-473a-821f-7a139c59305a.woff2") format("woff2"), url("https://www.worldskills.org/application/themes/worldskills_org/fonts/1572247/1f5eb399-3fe2-4a88-946d-1621c81da877.woff") format("woff"), url("https://www.worldskills.org/application/themes/worldskills_org/fonts/1572247/8ae8c829-0376-410b-8c6a-92503273d37e.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "FrutigerLTW04";
+    src: url("https://www.worldskills.org/application/themes/worldskills_org/fonts/1572251/03e8fd3e-1eac-46b9-9a86-9a34c71daf36.eot?#iefix");
+    src: url("https://www.worldskills.org/application/themes/worldskills_org/fonts/1572251/03e8fd3e-1eac-46b9-9a86-9a34c71daf36.eot?#iefix") format("eot"), url("https://www.worldskills.org/application/themes/worldskills_org/fonts/1572251/1d58422d-05aa-49c4-b24d-4253a9fa60c9.woff2") format("woff2"), url("https://www.worldskills.org/application/themes/worldskills_org/fonts/1572251/32a3c1b8-61bd-4946-9da4-a57376b6b020.woff") format("woff"), url("https://www.worldskills.org/application/themes/worldskills_org/fonts/1572251/20517b3b-48d8-4c96-8db2-7f51f71449d9.ttf") format("truetype");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "FrutigerLTW04";
+    src: url("https://www.worldskills.org/application/themes/worldskills_org/fonts/1572255/3c1542d6-dbb8-4bb3-85e5-730bbf131fcc.eot?#iefix");
+    src: url("https://www.worldskills.org/application/themes/worldskills_org/fonts/1572255/3c1542d6-dbb8-4bb3-85e5-730bbf131fcc.eot?#iefix") format("eot"), url("https://www.worldskills.org/application/themes/worldskills_org/fonts/1572255/61381871-0847-435e-9498-63b7c3d9c071.woff2") format("woff2"), url("https://www.worldskills.org/application/themes/worldskills_org/fonts/1572255/b33c9c65-2311-4db9-a364-ae857e998b70.woff") format("woff"), url("https://www.worldskills.org/application/themes/worldskills_org/fonts/1572255/72290e69-f361-42ef-adc2-ed908eb88cb5.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "FrutigerLTW04";
+    src: url("https://www.worldskills.org/application/themes/worldskills_org/fonts/1572259/24a5e4c6-db46-4dd5-8b46-6dc7ec24614c.eot?#iefix");
+    src: url("https://www.worldskills.org/application/themes/worldskills_org/fonts/1572259/24a5e4c6-db46-4dd5-8b46-6dc7ec24614c.eot?#iefix") format("eot"), url("https://www.worldskills.org/application/themes/worldskills_org/fonts/1572259/1a4ebee8-aa4f-4ac9-ac40-d45077235ab5.woff2") format("woff2"), url("https://www.worldskills.org/application/themes/worldskills_org/fonts/1572259/779bb768-947f-4b9d-8fe7-6223b9953d12.woff") format("woff"), url("https://www.worldskills.org/application/themes/worldskills_org/fonts/1572259/e6b4deca-f2a9-4160-ba62-5afc72da869f.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "FrutigerLTW04";
+    src: url("https://www.worldskills.org/application/themes/worldskills_org/fonts/1572263/92fb90f3-a8af-48d1-aac0-52c736cdc532.eot?#iefix");
+    src: url("https://www.worldskills.org/application/themes/worldskills_org/fonts/1572263/92fb90f3-a8af-48d1-aac0-52c736cdc532.eot?#iefix") format("eot"), url("https://www.worldskills.org/application/themes/worldskills_org/fonts/1572263/63541a87-effb-4b23-a1e5-aded6ef8e33d.woff2") format("woff2"), url("https://www.worldskills.org/application/themes/worldskills_org/fonts/1572263/ede01147-5581-4d28-afc0-303f4c771fd2.woff") format("woff"), url("https://www.worldskills.org/application/themes/worldskills_org/fonts/1572263/a098af66-fef8-439d-abf2-0d61674a33f9.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "FrutigerLTW04";
+    src:url("https://www.worldskills.org/application/themes/worldskills_org/fonts/762077/87917e95-4f06-48a6-938b-ca32ff222a46.eot?#iefix");
+    src:url("https://www.worldskills.org/application/themes/worldskills_org/fonts/762077/87917e95-4f06-48a6-938b-ca32ff222a46.eot?#iefix") format("eot"), url("https://www.worldskills.org/application/themes/worldskills_org/fonts/762077/1c752446-2064-499f-96b8-fab3c37121c5.woff2") format("woff2"), url("https://www.worldskills.org/application/themes/worldskills_org/fonts/762077/08f42a24-bb93-4efc-b320-1af752fe4025.woff") format("woff"), url("https://www.worldskills.org/application/themes/worldskills_org/fonts/762077/ae3a293b-e627-4256-a3d8-addf4228f421.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "FrutigerLTW04";
+    src:url("https://www.worldskills.org/application/themes/worldskills_org/fonts/762119/0d649b1f-6d3f-4b85-bd84-1a44f32b4bc4.eot?#iefix");
+    src:url("https://www.worldskills.org/application/themes/worldskills_org/fonts/762119/0d649b1f-6d3f-4b85-bd84-1a44f32b4bc4.eot?#iefix") format("eot"), url("https://www.worldskills.org/application/themes/worldskills_org/fonts/762119/26db0a52-316d-4caf-8d8e-85817b5acc9f.woff2") format("woff2"), url("https://www.worldskills.org/application/themes/worldskills_org/fonts/762119/4e7cc82c-9964-4d53-ba4d-9ef33e1f3109.woff") format("woff"), url("https://www.worldskills.org/application/themes/worldskills_org/fonts/762119/47a85c82-8563-4f41-a775-becd4cd92a80.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}

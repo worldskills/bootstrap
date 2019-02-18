@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>WorldSkills Application Template</title>
+
+    <link href="fonts.css" rel="stylesheet">
+    <link href="../../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-md ws-navbar-stripe ws-navbar-main">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <svg width="115px" height="22px" viewBox="0 0 220 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;" class="d-inline-block align-baseline" aria-label="WorldSkills">
+                <g>
+                    <path d="M52.271,39.434c-5.36,0 -8.958,-4.397 -8.958,-10.943c0,-6.546 3.598,-10.945 8.958,-10.945c5.358,0 8.959,4.399 8.959,10.945c0,6.546 -3.601,10.943 -8.959,10.943Zm0,-24.453c-9.152,0 -12.397,7.275 -12.397,13.51c0,6.233 3.245,13.509 12.397,13.509c9.151,0 12.398,-7.276 12.398,-13.509c0,-6.235 -3.247,-13.51 -12.398,-13.51Z" style="fill:#fff;fill-rule:nonzero;"/>
+                    <path d="M70.618,19.724l0,-4.232l-2.916,0l0.003,25.798l3.122,0l0,-12.745l-0.006,-0.165c0.006,-4.753 1.352,-10.434 7.767,-10.434l0.975,0.046l0.012,-0.101l0.156,-3.009l-0.363,-0.002c-4.333,0 -7.269,1.636 -8.75,4.844Z" style="fill:#fff;fill-rule:nonzero;"/>
+                    <path d="M134.06,20.521c-2.152,-0.71 -3.726,-1.121 -6.297,-1.121c-1.89,0 -4.145,0.664 -4.145,2.906c0,4.179 12.225,1.529 12.225,11.001c0,6.116 -5.614,8.562 -11.333,8.562c-2.68,0 -5.407,-0.457 -7.977,-1.119l0.419,-5.607c2.203,1.069 4.512,1.733 6.924,1.733c1.788,0 4.62,-0.664 4.62,-3.209c0,-5.146 -12.226,-1.632 -12.226,-11.107c0,-5.653 5.09,-8.153 10.599,-8.153c3.306,0 5.46,0.512 7.662,0.97l-0.471,5.144Z" style="fill:#fff;fill-rule:nonzero;"/>
+                    <rect x="166.803" y="15.051" width="7.034" height="26.239" style="fill:#fff;fill-rule:nonzero;"/>
+                    <path d="M217.817,20.521c-2.151,-0.71 -3.725,-1.121 -6.296,-1.121c-1.892,0 -4.146,0.664 -4.146,2.906c0,4.179 12.225,1.529 12.225,11.001c0,6.116 -5.613,8.562 -11.333,8.562c-2.678,0 -5.405,-0.457 -7.977,-1.119l0.42,-5.607c2.203,1.069 4.513,1.733 6.926,1.733c1.785,0 4.619,-0.664 4.619,-3.209c0,-5.146 -12.227,-1.632 -12.227,-11.107c0,-5.653 5.09,-8.153 10.602,-8.153c3.305,0 5.454,0.512 7.659,0.97l-0.472,5.144Z" style="fill:#fff;fill-rule:nonzero;"/>
+                    <path d="M153.067,26.813l9.962,-11.762l-8.292,0l-8.394,10.497l-0.106,0l0,-24.614l-7.032,2.147l0,38.209l7.032,0l0,-12.737l0.106,0l9.027,12.737l8.919,0l-11.222,-14.477Z" style="fill:#fff;fill-rule:nonzero;"/>
+                    <path d="M101.041,39.334c-7.234,0 -8.017,-7.652 -8.017,-10.942c0,-3.292 0.783,-10.943 8.017,-10.943c5.537,0 8.017,5.495 8.017,10.943c0,5.447 -2.48,10.942 -8.017,10.942Zm11.012,-36.961l-2.995,0.917l0,15.951c-0.652,-1.091 -3.088,-4.428 -8.543,-4.362c-9.031,0.115 -10.927,7.409 -10.927,13.513c0,8.332 4.187,13.512 10.929,13.512c4.014,0 6.73,-1.48 8.541,-4.615l0,4.001l3.121,0l0,-38.956l-0.126,0.039Z" style="fill:#fff;fill-rule:nonzero;"/>
+                    <path d="M85.984,2.376l-2.997,0.912l0,38.003l3.123,0l0,-38.956l-0.126,0.041Z" style="fill:#fff;fill-rule:nonzero;"/>
+                    <path d="M178.373,3.081l0,38.209l7.031,0l0,-40.357l-7.031,2.148Z" style="fill:#fff;fill-rule:nonzero;"/>
+                    <path d="M189.455,3.081l-0.004,0l0,38.209l7.034,0l0,-40.357l-7.03,2.148Z" style="fill:#fff;fill-rule:nonzero;"/>
+                    <path d="M174.384,5.257c0,-2.165 -1.756,-3.917 -3.917,-3.917c-2.161,0 -3.915,1.752 -3.915,3.917c0,2.163 1.754,3.917 3.915,3.917c2.161,0 3.917,-1.754 3.917,-3.917Z" style="fill:#fff;fill-rule:nonzero;"/>
+                    <path d="M3.352,15.492l-3.352,0l0.042,0.128c0.16,0.487 8.402,25.375 8.48,25.603l0.022,0.067l3.856,0c0,0 7.249,-22.333 7.292,-22.468l0.239,0c0.045,0.135 7.294,22.468 7.294,22.468l3.858,0l8.753,-25.798l-3.113,0c0,0 -7.354,22.333 -7.4,22.466l-0.238,0c-0.042,-0.133 -7.082,-22.466 -7.082,-22.466l-3.857,0c0,0 -7.407,22.333 -7.453,22.466l-0.237,0c-0.042,-0.136 -7.032,-22.466 -7.032,-22.466l-0.072,0Z" style="fill:#fff;fill-rule:nonzero;"/>
+                </g>
+            </svg>
+            <span class="ml-1 text-white">Events</span>
+          </a>
+          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              Menu
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Skills</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Countries</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Assessment</a>
+              </li>
+            </ul>
+            <a class="btn btn-light btn-sm ml-2" href="#">Log out</a>
+          </div>
+        </div>
+      </nav>
+      <!-- <nav class="navbar navbar-expand-md ws-navbar-sub">
+        <div class="container">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#" target="_self">Competitions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" target="_self">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" target="_self">Conference</a>
+            </li>
+          </ul>
+        </div>
+      </nav> -->
+    </header>
+
+    <div class="container">
+      <div ui-view="">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Competition</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Assessment Criteria</li>
+            </ol>
+          </nav>
+
+          <p class="float-right">
+              <button class="btn btn-danger">Delete Event</button>
+          </p>
+
+          <h1>WorldSkills Shanghai 2021</h1>
+          <ul class="nav nav-tabs mb-4">
+              <li class="nav-item"><a href="#" class="nav-link active">Event</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Skills</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Sectors</a></li>
+          </ul>
+
+              <form>
+                <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="name">Name <span class="required">*</span></label>
+                          <input type="text" class="form-control" id="name" name="name" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="url">Website</label>
+                          <input type="text" class="form-control" id="url" name="url" placeholder="http://www.example.org">
+                          <span class="form-text">Website address must be less than 255 characters!</span>
+                      </div>
+                      <div class="form-group">
+                          <label for="description">Description</label>
+                          <textarea class="form-control" id="description" name="description" rows="9"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-success" id="saveEntry">Save</button>
+                      <a href="#" class="btn btn-secondary">Cancel</a>
+                  </div>
+                </div>
+              </form>
+          </div>
+
+
+        <hr />
+
+        <div class="alert alert-success"><strong>Item removed!</strong> The selected item/s has been successfully removed.</div>
+
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Personnel</a></li>
+            <li class="breadcrumb-item active">People</li>
+        </ol>
+
+        <p class="pull-right">
+            <a href="#" class="btn btn-primary btn-back">Add Person</a>
+        </p>
+
+        <h1>People</h1>
+
+        <hr />
+
+        <div class="row">
+
+            <div class="col-sm-9">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th><input type="checkbox" /></th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Skill</th>
+                                <th>Position</th>
+                                <th>Member</th>
+                            </tr>
+                        </thead>
+                        <tfoot><tr><td colspan="6"></td></tr></tfoot>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td><a href="#">Howard</a></td>
+                                <td><a href="#">Mcgraw</a></td>
+                                <td>37 Landscape Gardening</td>
+                                <td>Competitior</td>
+                                <td>CH - Switzerland</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td><a href="#">Lillian</a></td>
+                                <td><a href="#">Bruce</a></td>
+                                <td>37 Landscape Gardening</td>
+                                <td>Competitior</td>
+                                <td>AE - United Arab Emirates</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td><a href="#">Tabatha</a></td>
+                                <td><a href="#">Burlew</a></td>
+                                <td>17 Web Design</td>
+                                <td>Competitior</td>
+                                <td>AU - Australia</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td><a href="#">Courtney</a></td>
+                                <td><a href="#">Blowe</a></td>
+                                <td>17 Web Design</td>
+                                <td>Expert</td>
+                                <td>BR - Brazil</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td><a href="#">Minta</a></td>
+                                <td><a href="#">Lash</a></td>
+                                <td>37 Landscape Gardening</td>
+                                <td>Expert</td>
+                                <td>CA - Canada</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="dropdown">
+                          <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                            Actions
+                            <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Delete selected</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Enable selected</a></li>
+                          </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <ul class="pagination pagination-condensed pull-right">
+                            <li><a href="#">&laquo; Previous</a></li>
+                            <li><a href="#">1</a></li>
+                            <li class="active"><a href="#">2 <span class="sr-only">(current)</span></a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">Next &raquo;</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Filter</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="filter1">Name</label>
+                                <input type="text" class="form-control" id="filter1">
+                            </div>
+                            <div class="form-group">
+                                <label for="filter2">Category</label>
+                                <select class="form-control" id="filter2">
+                                    <option>-</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Apply filters</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <hr class="" />
+
+        <div class="row">
+
+            <div class="col-md-9 col-md-push-3">
+
+                <div class="alert alert-warning"><strong>Outdated content!</strong> This content hasn't been updateded for some time and might be outdated.</div>
+
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Competition</a></li>
+                    <li class="breadcrumb-item active">Assessment Criteria</li>
+                </ol>
+
+                <div class="page-header">
+                    <h1>Objective &amp; Subjective Assessment</h1>
+                </div>
+
+                <p>There are two different types of assessment:  Objective and Subjective.</p>
+                
+                <p>Objective assessments are those for which an exact mark can be awarded according to a precise rule. 
+                The competitor is either awarded the mark or is not. Thus the award for an objective Aspect is either 
+                a mark as specified within the Aspect definition or zero. In some cases it is possible to vary the mark 
+                award on an exact formula - for example where a tolerance is given it would be acceptable to award part 
+                marks at one level of achieved tolerance and higher marks for reaching a better tolerance level. This 
+                information can be applied to an 'Aspect' by using additional lines (Add) of marking instructions.</p>
+
+                <p>Subjective assessments are those where the mark awarded depends on the personal opinion of a group 
+                of judges. This type of marking usually involves an assessment of personal skill or creative ability. 
+                It is a form of Aesthetic assessment. The judges, individually and without discussion with their 
+                colleagues, decide the scores they will award for each Aspect of Criterion (on a scale of 1 to 10). 
+                The marking group then get together as a team and every judge in the group displays, at a suitable 
+                signal, a score card according to his/her opinion of the quality of the item. The team must mark ALL 
+                competitors for the aspects they are assessing.</p>
+                
+            </div>
+            <div class="col-md-3 col-md-pull-9 sidebar" role="navigation">
+
+                <hr class="visible-xs visible-sm" />
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Competition</h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul class="list-unstyled">
+                            <li><a href="#">Skills &amp; Skill Rules</a></li>
+                            <li class="active"><a href="#">Assessment Criteria</a></li>
+                            <li>
+                                <a href="#">Reports</a>
+                                <ul>
+                                    <li><a href="#">Marking Scheme Defined</a></li>
+                                    <li><a href="#">Aspects to Mark</a></li>
+                                    <li><a href="#">Marked Aspects</a></li>
+                                    <li><a href="#">Mark Entry Progress</a></li>
+                                    <li><a href="#">Missing Marks</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Marking Days</a></li>
+                            <li><a href="#">Marking Forms</a></li>
+                            <li><a href="#">Certificates</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="ws-page-footer">
+      <div class="container">
+        <div class="ws-page-footer-row">
+          <aside class="ws-page-footer-col-sm">
+            <h1>About</h1>
+
+            <ul>
+              <li><a href="#">History</a></li>
+              <li><a href="#">Partners</a></li>
+              <li><a href="#">Board of Directors</a></li>
+            </ul>
+          </aside>
+          <aside class="ws-page-footer-col-sm">
+            <h1>Resources</h1>
+            <ul>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Brand guidelines</a></li>
+            </ul>
+          </aside>
+          <aside class="ws-page-footer-col-sm">
+            <h1>Internal</h1>
+            <ul>
+              <li><a href="#">Member Area</a></li>
+              <li><a href="#">People</a></li>
+              <li><a href="#">Events</a></li>
+            </ul>
+          </aside>
+          <aside class="ws-page-footer-col-sm">
+            <h1>Social</h1>
+            <ul>
+                <li><a href="https://www.facebook.com/WorldSkills" target="_blank"><i class="fa fa-facebook-official mr-3"></i>Facebook</a></li>
+                <li><a href="https://twitter.com/WorldSkills" target="_blank"><i class="fa fa-twitter mr-3"></i>Twitter</a></li>
+                <li><a href="https://www.youtube.com/user/WorldSkillsTV" target="_blank"><i class="fa fa-youtube-play mr-3"></i>YouTube</a></li>
+                <li><a href="https://www.flickr.com/photos/worldskills/collections/" target="_blank"><i class="fa fa-flickr mr-3"></i>Flickr</a></li>
+                <li><a href="http://instagram.com/worldskills/" target="_blank"><i class="fa fa-instagram mr-3"></i>Instagram</a></li>
+            </ul>
+          </aside>
+          <aside class="ws-page-footer-col-md">
+          </aside>
+        </div>
+        <div class="ws-page-footer-row">
+          <div class="ws-page-footer-col-lg">
+            <ul class="list-inline">
+              <li class="list-inline-item">© WorldSkills International</li>
+              <li class="list-inline-item"><a href="#">Privacy</a></li>
+              <li class="list-inline-item"><a href="#">Terms</a></li>
+              <li class="list-inline-item"><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="ws-page-footer-col-lg">
+            <p class="text-md-right">
+              <a href="#">Log in</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+</body>
+</html>
