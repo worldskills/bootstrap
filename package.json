@@ -11,9 +11,9 @@
   "devDependencies": {
     "autoprefixer": "^8.6.5",
     "clean-css-cli": "^4.1.11",
-    "nodemon": "^1.18.9",
+    "nodemon": "^1.18.10",
     "postcss-cli": "^5.0.1",
-    "sass": "^1.16.0"
+    "sass": "^1.17.2"
   },
   "style": "dist/css/bootstrap.css",
   "sass": "scss/bootstrap.scss",
