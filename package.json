@@ -1,6 +1,6 @@
 {
   "name": "@worldskills/bootstrap",
-  "version": "4.3.0",
+  "version": "4.3.1",
   "dependencies": {
     "bootstrap": "^4.3.1"
   },
