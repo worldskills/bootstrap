@@ -94,6 +94,11 @@
         }
       }
 
+// The last child is grey if the timeline is on a grey background 
+
+.ws-layout-gray .ws-timeline-event:last-child {
+ background-color: #f7f7f7;
+}
 
 
 @include media-breakpoint-up(sm) {
