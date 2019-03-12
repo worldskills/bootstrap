@@ -3,47 +3,38 @@
 // e.g.
 //
 // <div class="ws-heading-sub">
-//   <h2 class="ws-heading-title ws-h-icon">Hello</h2>
+//   <h2 class="ws-heading-sub-title ws-h-icon">Hello</h2>
 //   <a class="ws-heading-link" href="#">More things</a>
 // </div>
 
-// <div class="ws-heading-article">
-//   <h1 class="ws-heading-title">Hello</h1>
-// </div>
+// <h1 class="ws-heading-title">Hello</h1>
 
-// <div class="ws-heading-article">
-//   <h2 class="ws-heading-standfirst">My standfirst</h2>
-// </div>
+// <h2 class="ws-heading-standfirst">My standfirst</h2>
 
-
-.ws-heading-article {
-
+.ws-heading-title {
   color: $blue-dark;
+  font-weight: $font-weight-black;
+  font-size: $font-size-4xl;
+}
 
-  .ws-heading-title {
-    font-weight: $font-weight-black;
-    font-size: $font-size-4xl;
-    margin-bottom: 1rem;
-  }
+.ws-heading-standfirst {
+  color: $blue-dark;
+  font-family: $font-family-serif;
+  font-size: $font-size-2xl;
+  font-weight: normal;
+  position: relative;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
 
-  .ws-heading-standfirst {
-    font-family: $font-family-serif;
-    font-size: $font-size-2xl;
-    font-weight: normal;
-    position: relative;
-    padding-bottom: 2rem;
-    margin-bottom: 2rem;
-
-    &:after {
-      // Add a line beneath.
-      content: "";
-      width: 158px;
-      height: 1px;
-      background: $cyan;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-    }
+  &:after {
+    // Add a line beneath.
+    content: "";
+    width: 158px;
+    height: 1px;
+    background: $cyan;
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
 }
 
@@ -77,12 +68,11 @@
   .ws-heading-sub {
     display: flex;
     justify-content: space-between;
-
-    .ws-heading-title {
-      margin-bottom: 0;
-    }
   }
 
+  .ws-heading-sub-title {
+    margin-bottom: 0;
+  }
 
   .ws-heading-link {
     margin-top: 0.7rem;
