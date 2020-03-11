@@ -2,7 +2,7 @@
   "name": "@worldskills/bootstrap",
   "version": "4.3.3",
   "dependencies": {
-    "bootstrap": "^4.3.1"
+    "bootstrap": "^4.4.1"
   },
   "peerDependencies": {
     "jquery": "1.9.1 - 3",
