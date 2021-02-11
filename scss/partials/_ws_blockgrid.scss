@@ -9,7 +9,7 @@
 //   <li class="ws-blockgrid-item col-sm-3">
 //     <div class="ws-blockgrid-block">
 //       <div class="ws-blockgrid-block-content">
-//         <a class="ws-blockgrid-block-link" href="#">
+//         <a class="ws-blockgrid-block-link ws-blockgrid-block-flag" href="#">
 //           <img src="#">
 //         </a>
 //       </div>
@@ -55,15 +55,27 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  // Contain the flag/thumbnail
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 }
 
 .ws-blockgrid-block-link {
-  width: 64%;
-  height: auto;
+  width: 100%;
+  height: 100%;
   display: block;
+}
 
-  // The flag.
-  img {
-    width: 100%;
-  }
+.ws-blockgrid-block-thumbnail {
+  width: 90%;
+  height: 90%;
+}
+
+.ws-blockgrid-block-flag {
+  width: 64%;
+  height: 64%;
 }
