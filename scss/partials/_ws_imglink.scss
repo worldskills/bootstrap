@@ -22,6 +22,8 @@
 .ws-imglink {
   margin-bottom: $grid-gutter-width;
   padding-bottom: $spacer;
+  display: flex;
+  flex-flow: column;
 
   // Add a background.
   // Because if we apply a background to the element itself, then when it's
@@ -69,6 +71,10 @@
   margin: 0 $grid-gutter-width;
 }
 
+.ws-imglink-date {
+  margin: auto $grid-gutter-width 0;
+}
+
 @include media-breakpoint-only(md) {
   // Smaller at this width, to still allow us to keep the blocks in columns.
 
@@ -76,7 +82,8 @@
     font-size: $font-size-base;
   }
 
-  .ws-imglink-desc {
+  .ws-imglink-desc,
+  .ws-imglink-date {
     font-size: $font-size-sm;
   }
 }
