@@ -5,6 +5,10 @@
 
   font-weight: $font-weight-light;
 
+  a {
+    text-decoration: underline;
+  }
+
   @include media-breakpoint-up(sm) {
     p, li, dt, dd {
       font-size: $font-size-lg;

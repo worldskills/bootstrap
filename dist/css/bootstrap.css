@@ -10912,6 +10912,9 @@ h6.ws-h-icon,
 .ws-content {
   font-weight: 300;
 }
+.ws-content a {
+  text-decoration: underline;
+}
 @media (min-width: 576px) {
   .ws-content p, .ws-content li, .ws-content dt, .ws-content dd {
     font-size: 1.125rem;
