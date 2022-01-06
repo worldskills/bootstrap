@@ -35,8 +35,8 @@
     display: block;
     top: 0;
     bottom: 0;
-    right: ($grid-gutter-width / 2);
-    left: ($grid-gutter-width / 2);
+    right: ($grid-gutter-width * 0.5);
+    left: ($grid-gutter-width * 0.5);
     z-index: -1;
   }
 }
