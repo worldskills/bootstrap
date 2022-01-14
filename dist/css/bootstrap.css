@@ -160,7 +160,7 @@ a {
   background-color: transparent;
 }
 a:hover {
-  color: #00658F;
+  color: #034973;
   text-decoration: underline;
 }
 
@@ -3102,7 +3102,7 @@ fieldset:disabled a.btn {
   text-decoration: none;
 }
 .btn-link:hover {
-  color: #00658F;
+  color: #034973;
   text-decoration: underline;
 }
 .btn-link:focus, .btn-link.focus {
@@ -4913,7 +4913,7 @@ input[type=button].btn-block {
 }
 .page-link:hover {
   z-index: 2;
-  color: #00658F;
+  color: #034973;
   text-decoration: none;
   background-color: #e8e8e8;
   border-color: #d7d7d7;
@@ -12431,7 +12431,7 @@ a.ws-feature-inner:hover .ws-feature-title {
   color: #EC7B98;
 }
 .ws-tags-item a:hover {
-  color: #00658F;
+  color: #034973;
 }
 .ws-tags-item.active a {
   color: #3E7EB1;
