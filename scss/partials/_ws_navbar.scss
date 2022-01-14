@@ -74,14 +74,16 @@
       padding-top: 1.5rem;
       padding-bottom: 1.5rem;
 
-      &:hover {
+      &:hover,
+      &:focus {
         color: $link-color;
       }
     }
 
     &.active {
       .nav-link,
-      .nav-link:hover {
+      .nav-link:hover,
+      .nav-link:focus {
         color: $purple;
       }
     }
@@ -156,14 +158,16 @@
         padding-top: $navbar-padding-y;
         padding-bottom: $navbar-padding-y;
 
-        &:hover {
+        &:hover,
+        &:focus {
           color: $navbar-dark-hover-color;
         }
       }
 
       &.active {
         .nav-link,
-        .nav-link:hover {
+        .nav-link:hover,
+        .nav-link:focus {
           color: $navbar-dark-active-color;
         }
       }

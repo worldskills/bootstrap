@@ -12088,11 +12088,12 @@ a.ws-feature-inner:hover .ws-feature-title {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
-.ws-navbar-main .nav-item .nav-link:hover {
+.ws-navbar-main .nav-item .nav-link:hover, .ws-navbar-main .nav-item .nav-link:focus {
   color: #3E7EB1;
 }
 .ws-navbar-main .nav-item.active .nav-link,
-.ws-navbar-main .nav-item.active .nav-link:hover {
+.ws-navbar-main .nav-item.active .nav-link:hover,
+.ws-navbar-main .nav-item.active .nav-link:focus {
   color: #4A0D66;
 }
 .ws-navbar-main .btn {
@@ -12151,11 +12152,12 @@ a.ws-feature-inner:hover .ws-feature-title {
     padding-top: 8px;
     padding-bottom: 8px;
   }
-  .ws-navbar-main .nav-item .nav-link:hover {
+  .ws-navbar-main .nav-item .nav-link:hover, .ws-navbar-main .nav-item .nav-link:focus {
     color: #fff;
   }
   .ws-navbar-main .nav-item.active .nav-link,
-.ws-navbar-main .nav-item.active .nav-link:hover {
+.ws-navbar-main .nav-item.active .nav-link:hover,
+.ws-navbar-main .nav-item.active .nav-link:focus {
     color: #72D0EB;
   }
   .ws-navbar-main .btn {
