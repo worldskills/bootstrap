@@ -176,7 +176,8 @@ $ws-hero-breakpoint-6xl: 2560px;
   }
 }
 
-.ws-hero-standfirst {
+.ws-hero-standfirst,
+.ws-hero-kicker {
   padding-top: 5rem;
   padding-bottom: 2rem;
   background-image: svg-hero-bullet($teal-tint-4, $pink-tint-3, $blue-tint-3, $blue-dark-tint-1);
@@ -184,13 +185,19 @@ $ws-hero-breakpoint-6xl: 2560px;
   background-position: 50% 2.5rem;
   background-size: auto;
 
-  .ws-hero-title {
-    order: 2;
+  p {
+    margin-bottom: 0.5rem;
   }
+}
+
+.ws-hero-standfirst {
 
   p {
     order: 1;
-    margin-bottom: 0.5rem;
+  }
+
+  .ws-hero-title {
+    order: 2;
   }
 
   a.btn {
