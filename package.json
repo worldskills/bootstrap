@@ -11,7 +11,7 @@
   "devDependencies": {
     "autoprefixer": "^9.8.6",
     "clean-css-cli": "^4.3.0",
-    "nodemon": "^2.0.4",
+    "nodemon": "^2.0.20",
     "postcss-cli": "^7.1.2",
     "sass": "^1.32.7"
   },
