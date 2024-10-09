@@ -39,6 +39,10 @@
 
 .ws-imglist-item {
   margin-bottom: 2rem;
+
+  // create a new stacking context
+  position: relative;
+  z-index: 1;
 }
 
 .ws-imglist-img-wrapper {
