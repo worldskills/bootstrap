@@ -33,7 +33,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "FrutigerLTW04", Frutiger, Arial, sans-serif;
+  --font-family-sans-serif: Inter, Frutiger, Arial, sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -56,7 +56,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "FrutigerLTW04", Frutiger, Arial, sans-serif;
+  font-family: Inter, Frutiger, Arial, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -369,7 +369,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 h4, .h4 {
@@ -385,7 +385,7 @@ h6, .h6 {
 }
 
 .lead {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: 300;
 }
 
@@ -456,7 +456,7 @@ mark,
 
 .blockquote {
   margin-bottom: 1rem;
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 .blockquote-footer {
@@ -5933,7 +5933,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "FrutigerLTW04", Frutiger, Arial, sans-serif;
+  font-family: Inter, Frutiger, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6035,7 +6035,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "FrutigerLTW04", Frutiger, Arial, sans-serif;
+  font-family: Inter, Frutiger, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -10929,12 +10929,7 @@ h6.ws-h-icon,
     max-width: 56rem;
   }
   .ws-content .lead {
-    font-size: 1.5em;
-  }
-}
-@media (min-width: 992px) {
-  .ws-content p, .ws-content li, .ws-content dt, .ws-content dd {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -10947,7 +10942,7 @@ h6.ws-h-icon,
 }
 
 .events-title {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: 700;
   margin: 0;
 }
@@ -11013,7 +11008,7 @@ h6.ws-h-icon,
 }
 @media (min-width: 992px) {
   .ws-feature .ws-feature-title {
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 1200px) {
@@ -11204,7 +11199,7 @@ a.ws-feature-inner:hover .ws-feature-title {
   font-family: "Inria Serif", serif;
 }
 .ws-feature-quote figcaption .btn {
-  font-family: "FrutigerLTW04", Frutiger, Arial, sans-serif;
+  font-family: Inter, Frutiger, Arial, sans-serif;
 }
 .ws-feature-quote .ws-feature-content {
   padding-top: 1.5rem;
@@ -11341,7 +11336,7 @@ a.ws-feature-inner:hover .ws-feature-title {
 .ws-heading-standfirst {
   color: #003764;
   font-family: "Inria Serif", serif;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: normal;
   position: relative;
   padding-bottom: 2rem;
@@ -11458,7 +11453,7 @@ a.ws-feature-inner:hover .ws-feature-title {
 }
 
 .ws-hero-sm .ws-hero-title {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   line-height: 1.2;
   margin: 0 0 1rem 0;
 }
@@ -11736,7 +11731,7 @@ a.ws-feature-inner:hover .ws-feature-title {
   }
   .ws-hero-overlay .ws-hero-desc,
 .page-template-hero main .ws-hero-image:first-of-type .ws-hero-desc {
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 1440px) {
@@ -11785,7 +11780,7 @@ a.ws-feature-inner:hover .ws-feature-title {
 }
 @media (min-width: 992px) {
   .ws-imglink-title {
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
 }
 
@@ -12364,7 +12359,7 @@ a.ws-feature-inner:hover .ws-feature-title {
 }
 @media (min-width: 768px) {
   .ws-pullquote blockquote {
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
 }
 .ws-pullquote figcaption {
@@ -12583,7 +12578,7 @@ a.ws-feature-inner:hover .ws-feature-title {
     margin-bottom: 0.3em;
   }
   .ws-timeline-horizontal .ws-timeline-title {
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
 }
 

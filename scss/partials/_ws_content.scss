@@ -33,10 +33,4 @@
     }
   }
 
-  @include media-breakpoint-up(lg) {
-    p, li, dt, dd {
-      font-size: $font-size-xl;
-    }
-  }
-
 }
